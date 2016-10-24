@@ -1,0 +1,823 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Berkshire+Swash);
+@import url("single.css");
+
+body{
+	background-color: #021a2e;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	animation-name: animaform;
+ 	animation-duration: 1s;
+/*	overflow-y: hidden;     */
+	
+}
+
+
+.skip{
+	position: absolute;
+	color: white;
+	top: 10px;
+	z-index: 7;
+	width: 200px;
+	left: 60px;
+	text-align:center;
+	padding: 0;
+	margin: 0;
+}
+.skip a,
+.skip a:visited{
+	color:#021a2e
+}
+
+.skip a:focus,
+.skip a:hover{
+	color: white;
+}
+
+header{
+	position: fixed;
+	padding-top: 5px;
+	top: 0px;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	z-index: 6;
+	background-color: #021a2e;
+}
+
+header img{
+	height: 30px;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+
+header img[src|="img/logow3c.svg"],
+header img[src|="../img/logow3c.svg"]{
+	left: 10px;
+	right: auto;
+}
+
+
+.inst{
+	position: fixed;
+	right: 10px;
+	top: 30px;
+	z-index: 20;
+}
+
+.inst li{
+	display: inline-block;
+}
+
+.inst li a.bullet-ins{
+	background-color: white;
+	display: block;
+	width: 10px;
+	height: 10px;
+}
+
+.inst a:link,
+.inst a:visited{
+color: black;
+}
+
+.inst a:focus span,
+.inst a:hover span{
+    display:inline; 
+    position:fixed; 
+    color:white;
+    border:1px solid gray; 
+    background:#663399;
+    white-space: pre-wrap;
+    z-index: 10;
+}
+
+
+.inst a span {
+    display:none; 
+    width:70px;
+    min-height: 50px;
+    position:fixed; 
+    top: 70px;
+    right: 10px;
+    font-size: 0.8em;
+    z-index: -10;
+    text-align: left;
+    padding: 10px;
+}
+
+
+
+
+h1{
+	color: white;
+	padding: 10px 10px 10px 30px;
+	margin-top: 0px;
+	font-family: 'Berkshire Swash', sans-serif;
+	font-size: 4em;
+	margin: 0px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+main#frame{
+/*	background: linear-gradient(to bottom, white, silver);  
+	background: url(images/bg00.jpg) 80%;*/
+	
+}
+
+a,
+a:visited{
+	color: white;
+}
+
+a:hover{
+	color: yellow;
+}
+
+/*--------- lista e celulas dos anos --------*/
+ul#anos{
+	padding-left: 0px;
+	margin-left: 67px;
+	margin-top: 200px;
+
+}
+
+ul#anos li{
+	display:table-cell;
+	list-style: none;
+	border-right: 1px dashed yellow;
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px 0px;
+	padding-bottom: ;
+	text-align: center;
+	font-family: 'Berkshire Swash', sans-serif;
+	font-size: 1.5em;
+	width: 350px;
+
+}
+
+ul#anos li#ano2015,
+ul#anos li#end{
+	border-right: none;
+}
+ul#anos li#end h2{
+	color: #021a2e;
+}
+
+
+h2{
+	color: white;
+	padding: 5px;
+	border-radius: 3px;
+	margin:0px 10px 10px 10px;
+	padding: 0;
+}
+
+.inst h2{
+	color: black;
+	padding: 5px;
+	border-radius: 3px;
+	margin:0px 10px 10px 10px;
+	padding: 0;
+}
+
+
+/*--------- Esferas de todos os ano --------*/
+
+a.bullet{
+	display: block;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	margin-top: 7px;
+	transition: 0.5s;
+	transform:scale(0.6); 
+	display: inline-block;
+
+}
+
+.square{
+	border-radius: none;
+}
+
+a.bullet:hover,
+a.bullet:focus{
+	transform:scale(1);
+	opacity: 1;
+	background: navy;
+	text-decoration: underline;
+
+}
+
+/*--------- Esferas por categorias --------*/
+
+a.bullet[id|="web"]{
+	border: 8px solid #197eb0;
+}
+
+a.bullet[id|="internet"]{
+	border: 8px solid #74913f;
+}
+
+a.bullet[id|="tecnologia"]{
+	border: 8px solid #bfad06;
+}
+
+a.bullet[id|="historia"]{
+	border: 8px solid #a1742d;
+}
+
+a.bullet[id|="economia"]{
+	border: 8px solid #bd3d31;
+}
+
+
+/*--------- checkboxes de selecao --------*/
+
+div.internet, 
+div.tecnologia,
+div.historia,
+div.economia,
+div.web{
+	/*--------- mudar para deixar somente web como padrao --------*/
+	display:none;
+	background-color: blue;
+	height: 130px;
+	white-space: nowrap;
+	font-size: 0.7em;
+}
+
+div.web{
+	display: block;
+}
+
+div#webfs:before,
+div#internetfs:before,
+div#tecnologiafs:before,
+div#historiafs:before,
+div#economiafs:before{
+	content: "";
+	border-radius: 100px;
+	display: block;
+	height: 130px;
+	width: 144px;
+	position: absolute;
+	left: 0px;
+	z-index: 0;
+}
+
+
+div#webls:after,
+div#internetls:after,
+div#tecnologials:after,
+div#historials:after,
+div#economials:after{
+	content: "";
+	border-radius: 100px;
+	height: 130px;
+	width: 144px;
+	display:inline-block;
+	white-space: nowrap;
+	z-index:-1 ;
+
+}
+
+div#webls,
+div#internetls,
+div#tecnologials,
+div#historials,
+div#economials{
+	background: none;
+	margin-left: -70px;
+	width: 67px;
+
+}
+
+
+div#webfs:before,
+div#webls:after{
+	background-color: #9ac1db;
+}
+div#internetfs:before,
+div#internetls:after{
+	background-color: #a5b828;
+}
+div#tecnologiafs:before,
+div#tecnologials:after{
+	background-color: #f0af24;
+}
+div#historiafs:before,
+div#historials:after{
+	background-color: #d65109;
+}
+div#economiafs:before,
+div#economials:after{
+	background-color: #611700	;
+}
+
+div.web{
+	background: #9ac1db;
+}
+
+div.internet{
+	background: #a5b828;
+}
+
+div.tecnologia{
+	background: #f0af24;
+}
+
+div.historia{
+	background: #d65109;
+}
+
+div.economia{
+	background: #611700;
+}
+
+
+
+ul#anos li ul.secitem li{
+	display: ;
+	border-right: 0px solid blue;
+}
+
+
+nav{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	z-index: 5;
+	position: fixed;
+	top: 100px;
+	width: 100%;
+	background-color: #021a2e;
+	
+}
+
+form{
+
+}
+
+fieldset{
+	border: none;
+}
+
+legend{
+	color: white;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 100%;
+
+}
+
+label{
+	margin: 3px 20px 3px 0px;
+	padding: 3px;
+	white-space: nowrap;
+	border-radius: 100px;
+	display: inline-block;
+	width: 120px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+input[type=submit]{
+	display: none;
+}
+
+label[for=checkweb]{
+	background-color: #20aef5;
+}
+
+label[for=checkint]{
+	background-color: #74913f;
+}
+
+label[for=checktec]{
+	background-color: #bfad06;
+}
+
+label[for=checkhis]{
+	background-color: #d65109;
+}
+
+label[for=checkeco]{
+	background-color: #611700;
+}
+
+label[for=checkweb]:hover,
+label[for=checkhis]:hover,
+label[for=checkint]:hover,
+label[for=checktec]:hover,
+label[for=checkeco]:hover{
+opacity: 0.7;	
+}
+
+input#checkweb:focus,
+input#checkhis:focus,
+input#checkint:focus,
+input#checktec:focus,
+input#checkeco:focus{
+	background-color: yellow;
+}
+
+
+/*--------- tooltip de todos os ano --------*/
+
+a.bullet:focus span,
+a.bullet:hover span{
+    display:inline; 
+    position:absolute; 
+    color:white;
+    border:1px solid gray; 
+    background:#663399;
+    white-space: pre-wrap;
+    z-index: -1;
+}
+
+
+a.bullet span {
+    display:none; 
+    padding:14px 20px;
+    margin-top:-35px; 
+    margin-left:28px;
+    width:300px; 
+    line-height:20px;
+    z-index: 1;
+}
+
+#ano2015 a.bullet span,
+#ano2014 a.bullet span {
+    display:none; 
+    padding:14px 20px;
+    margin-top:-35px; 
+    margin-left:-370px;
+    width:300px; 
+    line-height:20px;
+    z-index: 1;
+}
+
+#ano2015 a.bullet:focus span,
+#ano2015 a.bullet:hover span,
+#ano2014 a.bullet:focus span,
+#ano2014 a.bullet:hover span{
+    display:inline; 
+    position:absolute; 
+    color:white;
+    border:1px solid gray; 
+    background:#663399;
+    white-space: pre-wrap;
+    z-index: -1;
+}
+
+/*--------- Conteudo exibido ao clicar - Gerais--------*/
+
+div[id|="internet"],
+div[id|="tecnologia"],
+div[id|="web"],
+div[id|="historia"],
+div[id|="economia"],
+div[id|="browse"],
+div[id|="contrib"],
+div[id|="about"]{
+	position: fixed;
+	top:180px;
+	left: 20%;
+	z-index: 100;
+	height: 300px;
+	width: 500px;
+	color: white;
+	border: 7px solid white;
+	padding: 10px;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+	font-family: 'Open Sans', sans-serif;
+	white-space: normal;
+	display: none;
+}
+
+div[id|="internet"]{
+	background: #74913f;
+}
+div[id|="tecnologia"]{
+background: #bfad06;
+}
+div[id|="web"]{
+background: #377ba6;
+}
+div[id|="historia"]{
+background: #a1742d;
+
+}
+div[id|="economia"]{
+background: #bd3d31;
+color: black;
+}
+
+div[id|="browse"],
+div[id|="contrib"],
+div[id|="about"]{
+background: silver;
+color: black;
+}
+
+
+
+div p{
+	text-align: left;
+	padding: 10px;
+}
+
+div img{
+	float: left;
+	width: 40%;
+	margin-right: 10px;
+	border: 2px solid white;
+	box-shadow: 2px 2px 5px black;
+}
+
+.close{
+	border: 1px solid silver;
+	border-right: 2px solid silver;
+	border-bottom: 2px solid silver;
+	padding: 3px;
+	background-color:gray;
+	float: right;
+	width: 20px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	color: white;
+	text-decoration: none;
+	transition:0.5s;
+}
+
+.close:hover,
+.close:focus{
+	background-color:white;
+	color: navy;
+}
+
+
+@media print {
+	body{
+		background-color: transparent;
+		color: black;
+	}
+
+
+ul#anos{
+	padding-left: 0px;
+	padding-top: 100px;
+	margin: 0 auto;
+	width: 600px;
+}
+
+ul#anos li{
+	display:table-row;
+	list-style: none;
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px 0px;
+	padding-bottom: ;
+	text-align: center;
+	font-family: 'Berkshire Swash', sans-serif;
+	font-size: 1.5em;
+	margin-left: 67px;
+	width: 600px;
+
+
+}
+
+ul#anos li#end{
+	display:none;
+}
+ul#anos li#end h2{
+	color: #021a2e;
+}
+
+li div.internet, 
+li div.tecnologia,
+li div.historia,
+li div.economia,
+li div.web{
+	/*--------- mudar para deixar somente web como padrao --------*/
+	display:inline;
+	color: black;
+}
+
+div.hide{
+	display: block;
+	position: inherit;
+	width: 100%;
+}
+
+div a.bullet,
+div[id|="browse"],
+div[id|="contrib"],
+div[id|="about"],
+nav,
+div#webfs:before,
+div#webls:after,
+div#internetfs:before,
+div#internetls:after,
+.close,
+form,
+.inst{
+
+	display: none;
+}
+
+li h2,
+h1{
+	color: black;
+}
+
+main ul#anos{
+	margin-top: 0px;
+
+}
+
+header img[src|="img/logow3c.svg"],
+header img[src|="img/logosceweb.svg"]{
+	background-color: black;
+	top: 50px;
+}
+}
+
+
+/* formulario de perguntas */
+
+@keyframes animaform{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes animaformout{
+	0%{
+		opacity: 0;
+	}
+
+	0.0001%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+.previous{
+	position: absolute;
+	z-index: 6;
+	background-color: rgba(256, 256, 256, 0.95);
+	background-size: 2000px;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	color: black;
+	padding-top: 130px;
+
+
+}
+
+.previous form{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.previous > p{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1em;
+}
+
+.previous legend,
+.previous label,
+.previous a{
+	color: black;
+}
+
+.previous label{
+	display: block;
+}
+
+.previous p{
+	margin-bottom: 20px;
+	margin-top: 0px;
+	padding-top: 20px;
+}
+
+.usointernet,
+.classeusointernet{
+	background-color: red;
+}
+
+.usoweb,
+.classeusoweb{
+	background-color: blue;
+}
+
+.usoimagem,
+.classusoimagem{
+	background-color: pink;
+}
+
+.usovideo,
+.classusovideo{
+	background-color: yellow;
+}
+
+.usocompra,
+.classusocompra{
+	background-color: green;
+}
+
+.usobusca,
+.classusobusca{
+	background-color: #00CCFF;
+}
+
+.usorede,
+.classusorede{
+	background-color: gold;
+}
+
+.usointernet,
+.usoweb,
+.usoimagem,
+.usovideo,
+.usocompra,
+.usobusca,
+.usorede{
+	padding: 3px;
+}
+
+
+
+.classeusointernet,
+.classeusoweb,
+.classusoimagem,
+.classusovideo,
+.classusocompra,
+.classusobusca,
+.classusorede{
+	float: left;
+	font-family: verdana;
+	font-size: 0.6em;
+	z-index: 1;
+	width: 100%;
+	display: inline;
+	min-height: 40px;
+}
+
+
+
+.previous a{
+	background-color: #3399FF;
+	padding: 10px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px silver;
+	transition: 1s;
+}
+
+.previous a:hover,
+.previous a:focus{
+	background-color: #3399CC;
+	text-decoration: underline;
+	transform: scale(1.1);
+
+}
+
+
+div.anoempty .classeusointernet,
+div.anoempty .classeusoweb,
+div.anoempty .classusoimagem,
+div.anoempty .classusovideo,
+div.anoempty .classusocompra,
+div.anoempty .classusobusca,
+div.anoempty .classusorede{
+	background: red;
+	display: none;
+	visibility: hidden;
+}
+
+
+label[for|="buscanaweblist"]{
+	display: none;
+}

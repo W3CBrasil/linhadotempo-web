@@ -1,0 +1,727 @@
+/*--------- Quadrados de especificacoes --------*/
+#web-1990-02,
+#web-1995-01,
+#web-1996-01,
+#web-1997-01,
+#web-1997-02,
+#web-1998-01,
+#web-1999-01,
+#web-2001-01,
+#web-2002-01,
+#web-2004-01,
+#web-2004-02,
+#web-2006-01,
+#web-2008-02,
+#web-2008-03,
+#web-2008-04,
+#web-2009-01,
+#web-2011-03,
+#web-2013-01,
+#web-2014-01,
+#web-2014-02{
+	border-radius: 0;
+}
+
+
+
+/*--------- Conteudo especial para cada ano --------*/
+
+li#ano1969 a#internet-1969-01{
+	background: url(img/arpanet.jpg) no-repeat white; 
+	background-size: 150%;
+	background-position: 0px 0px, center;
+}
+
+li#ano1974 a#internet-1974-01{
+	background: url(img/internet.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 20px, center;
+}
+
+li#ano1986 a#internet-1986-01{
+	background: url(img/ietflogo.gif) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 20px, center;
+}
+
+li#ano1989 a#web-1989-01{
+	background: url(img/foto-timbl.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 0px, center;
+}
+
+
+li#ano1989 a#internet-1989-01{
+	background: url(img/logo-cgi-old.gif) no-repeat white; 
+	background-size: 180%;
+	background-position: -60px 10px, center;
+}
+
+li#ano1990 a#web-1990-01{
+	background: url(img/browser.jpg) no-repeat white; 
+	background-size: 150%;
+	background-position: 0px 0px, center;
+}
+
+li#ano1990 a#web-1990-02{
+	background: url(img/html1.jpg) no-repeat white; 
+	background-size: 150%;
+	background-position: 0px 0px, center;
+}
+
+li#ano1990 a#internet-1990-01{
+	background: url(img/iana-logo.jpg) no-repeat white; 
+	background-size: 120%;
+	background-position: 0px 20px, center;
+}
+
+li#ano1992 a#web-1992-01{
+	background: url(img/first-image.jpg) no-repeat white; 
+	background-size: 130%;
+	background-position: 0px 0px, center;
+}
+
+li#ano1992 a#internet-1992-01{
+	background: url(img/isoc.gif) no-repeat white; 
+	background-size: 130%;
+	background-position: -10px 15px, center;
+}
+
+li#ano1993 a#web-1993-01{
+	background: url(img/web.jpg) no-repeat white; 
+	background-size: 130%;
+	background-position: 0px 0px, center;
+}
+
+li#ano1993 a#web-1993-02{
+	background: url(img/mosaic.jpg) no-repeat white; 
+	background-size: 130%;
+	background-position: 0px 0px, center;
+}
+
+li#ano1994 a#web-1994-01{
+	background: url(img/w3c.jpg) no-repeat white; 
+	background-size: 130%;
+	background-position: -10px 10px, center;
+}
+
+li#ano1994 a#web-1994-02{
+	background: url(img/netscape.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 10px, center;
+}
+
+li#ano1994 a#web-1994-03{
+	background: url(img/url.jpg) no-repeat white; 
+	background-size: 200%;
+	background-position: -10px 10px, center;
+}
+
+li#ano1995 a#web-1995-01{
+	background: url(img/html2.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 10px 20px, center;
+}
+
+li#ano1995 a#web-1995-02{
+	background: url(img/ebay.jpg) no-repeat white; 
+	background-size: 130%;
+	background-position: -10px -20px, center;
+}
+
+li#ano1995 a#web-1995-03{
+	background: url(img/ie1.jpg) no-repeat white; 
+	background-size: 130%;
+	background-position: 0px 0px, center;
+}
+
+li#ano1995 a#web-1995-04{
+	background: url(img/brendan.jpg) no-repeat white; 
+	background-size: 130%;
+	background-position: -10px -5px, center;
+}
+
+li#ano1995 a#internet-1995-01{
+	background: url(img/cgi.jpg) no-repeat white; 
+	background-size: 130%;
+	background-position: -10px -5px, center;
+}
+
+li#ano1995 a#internet-1995-02{
+	background: url(img/dominiocom.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px -5px, center;
+}
+
+li#ano1996 a#web-1996-01{
+	background: url(img/css1.jpg) no-repeat white; 
+	background-size: 130%;
+	background-position: -10px -5px, center;
+}
+
+li#ano1996 a#web-1996-02{
+	background: url(img/hotmail.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 5px, center;
+}
+
+li#ano1996 a#web-1996-03{
+	background: url(img/uol.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px -5px, center;
+}
+
+li#ano1996 a#internet-1996-01{
+	background: url(img/http1.jpg) no-repeat white; 
+	background-size: 200%;
+	background-position: 0px -5px, center;
+}
+
+li#ano1996 a#internet-1996-02{
+	background: url(img/flash.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px -5px, center;
+}
+
+li#ano1997 a#web-1997-01{
+	background: url(img/html3.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 10px, center;
+}
+
+li#ano1997 a#web-1997-02{
+	background: url(img/html4.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 10px, center;
+}
+
+li#ano1997 a#internet-1997-01{
+	background: url(img/google.jpg) no-repeat white; 
+	background-size: 150%;
+	background-position: 0px 20px, center;
+}
+
+li#ano1997 a#internet-1997-02{
+	background: url(img/receita.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano1998 a#web-1998-01{
+	background: url(img/css2.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 10px, center;
+}
+
+li#ano1998 a#internet-1998-01{
+	background: url(img/icann.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano1998 a#internet-1998-02{
+	background: url(img/ipv6.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano1999 a#web-1999-01{
+	background: url(img/wcag1.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 10px, center;
+}
+
+li#ano1999 a#internet-1999-01{
+	background: url(img/napster.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano1999 a#internet-1999-02{
+	background: url(img/NeilGershenfeld.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2001 a#web-2001-01{
+	background: url(img/semantic.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 20px, center;
+}
+
+li#ano2001 a#web-2001-02{
+	background: url(img/xhtml1.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2001 a#web-2001-03{
+	background: url(img/wikipedia.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2001 a#web-2001-04{
+	background: url(img/ie6.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 20px, center;
+}
+
+li#ano2001 a#internet-2001-01{
+	background: url(img/wsis.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+
+li#ano2002 a#web-2002-01{
+	background: url(img/html5.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+
+li#ano2002 a#web-2002-02{
+	background: url(img/firefox.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+
+li#ano2003 a#web-2003-01{
+	background: url(img/safari.jpg) no-repeat white; 
+	background-size: 70%;
+	background-position: 15px 10px, center;
+}
+
+li#ano2003 a#internet-2003-01{
+	background: url(img/wsis.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+
+li#ano2004 a#web-2004-01{
+	background: url(img/rdf.jpg) no-repeat white; 
+	background-size: 70%;
+	background-position: 15px 15px, center;
+}
+
+li#ano2004 a#web-2004-02{
+	background: url(img/owl.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2004 a#web-2004-03{
+	background: url(img/whatwg.jpg) no-repeat white; 
+	background-size: 70%;
+	background-position: 15px 15px, center;
+}
+
+
+li#ano2004 a#web-2004-04{
+	background: url(img/orkut.jpg) no-repeat white; 
+	background-size: 200%;
+	background-position: 10px 15px, center;
+}
+
+
+li#ano2004 a#web-2004-05{
+	background: url(img/facebook.jpg) no-repeat white; 
+	background-size: 70%;
+	background-position: 15px 15px, center;
+}
+
+li#ano2005 a#web-2005-01{
+	background: url(img/youtube.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2005 a#web-2005-02{
+	background: url(img/uri.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2005 a#internet-2005-01{
+	background: url(img/logo-nicbr.png) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2005 a#internet-2005-02{
+	background: url(img/tic.jpg) no-repeat white; 
+	background-size:150%;
+	background-position: -20px 0px, center;
+}
+
+li#ano2005 a#internet-2005-03{
+	background: url(img/wsis.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+
+li#ano2006 a#web-2006-01{
+	background: url(img/xml1.jpg) no-repeat white; 
+	background-size:180%;
+	background-position: 0px 20px, center;
+}
+
+li#ano2006 a#web-2006-02{
+	background: url(img/twitter.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2006 a#internet-2006-01{
+	background: url(img/igf.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+
+li#ano2007 a#web-2007-01{
+	background: url(img/w3c-brasil.jpg) no-repeat white; 
+	background-size:220%;
+	background-position: -60px 0px, center;
+}
+
+li#ano2007 a#web-2007-02{
+	background: url(img/streetview.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+
+li#ano2008 a#web-2008-01{
+	background: url(img/html5.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2008 a#web-2008-02{
+	background: url(img/wcag2.jpg) no-repeat white; 
+	background-size:120%;
+	background-position: 0px 10px, center;
+}
+
+li#ano2008 a#web-2008-03{
+	background: url(img/sparql.jpg) no-repeat white; 
+	background-size: 150%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2008 a#web-2008-04{
+	background: url(img/mobile-web.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2008 a#web-2008-05{
+	background: url(img/chrome.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 5px, center;
+}
+
+li#ano2008 a#internet-2008-01{
+	background: url(img/dropbox.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+
+li#ano2009 a#web-2009-01{
+	background: url(img/xhtml2.jpg) no-repeat white; 
+	background-size:120%;
+	background-position: 0px 10px, center;
+}
+
+li#ano2009 a#web-2009-02{
+	background: url(img/webbr.gif) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 30px, center;
+}
+
+li#ano2009 a#web-2009-03{
+	background: url(img/bing.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 10px, center;
+}
+
+li#ano2009 a#web-2009-04{
+	background: url(img/chff.jpg) no-repeat white; 
+	background-size:120%;
+	background-position: -10px -10px, center;
+}
+
+li#ano2010 a#web-2010-01{
+	background: url(img/instagram.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 10px, center;
+}
+
+li#ano2010 a#internet-2010-01{
+	background: url(img/logo-forum.png) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+
+
+li#ano2011 a#web-2011-01{
+	background: url(img/todosnaweb.jpg) no-repeat white; 
+	background-size:200%;
+	background-position: 0px 30px, center;
+}
+
+li#ano2011 a#web-2011-02{
+	background: url(img/webtv.jpg) no-repeat white; 
+	background-size: 150%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2011 a#web-2011-03{
+	background: url(img/css3.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2011 a#web-2011-04{
+	background: url(img/googleplus.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2011 a#internet-2011-01{
+	background: url(img/itu-logo.jpg) no-repeat white; 
+	background-size: 140%;
+	background-position: -20px -2px, center;
+}
+
+li#ano2013 a#web-2013-01{
+	background: url(img/sparql.jpg) no-repeat white; 
+	background-size: 150%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2014 a#web-2014-01{
+	background: url(img/html5.jpg) no-repeat white; 
+	background-size:100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2014 a#web-2014-02{
+	background: url(img/rdf.jpg) no-repeat white; 
+	background-size: 70%;
+	background-position: 10px 15px, center;
+}
+
+li#ano2014 a#web-2014-03{
+	background: url(img/dwbp.jpg) no-repeat white; 
+	background-size: 120%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2014 a#internet-2014-01{
+	background: url(img/egi.jpg) no-repeat white; 
+	background-size: 90%;
+	background-position: 0px 20px, center;
+}
+
+li#ano2014 a#internet-2014-02{
+	background: url(img/netmundial.jpg) no-repeat white; 
+	background-size: 120%;
+	background-position: 0px 20px, center;
+}
+
+li#ano2014 a#internet-2014-03{
+	background: url(img/icann.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2015 a#web-2015-01{
+	background: url(img/ceweb.jpg) no-repeat white; 
+	background-size: 120%;
+	background-position: -10px 15px, center;
+}
+
+li#ano2015 a#web-2015-02{
+	background: url(img/webpayments.png) no-repeat white; 
+	background-size: 120%;
+	background-position: -10px 0px, center;
+}
+
+li#ano2015 a#internet-2015-01{
+	background: url(img/http2.jpg) no-repeat white; 
+	background-size: 130%;
+	background-position: -10px -5px, center;
+}
+
+
+/* MOBILE */
+
+
+@media (min-width: 0px) and (max-width: 1023px) {
+body{
+	width: 100%;
+}
+
+
+
+header h1{
+	font-size: 180%;
+	padding: 5px 0px 0px 10px;
+	text-align: center;
+}	
+body header{
+	padding-top: 1px;
+}
+
+main ul#anos{
+	margin-top: 140px;
+}
+
+li h2{
+	font-size: 1em;
+}
+
+div a.bullet{
+	display: block;
+	height: 80px;
+	width: 80px;
+	display: inline-block;
+	border: 2px solid;
+}
+
+div a.bullet[id|="web"]{
+	border: 4px solid #197eb0;
+}
+
+div a.bullet[id|="internet"]{
+	border: 4px solid #74913f;
+}
+
+div a.bullet[id|="tecnologia"]{
+	border: 4px solid #bfad06;
+}
+
+div a.bullet[id|="historia"]{
+	border: 4px solid #a1742d;
+}
+
+div a.bullet[id|="economia"]{
+	border: 4px solid #bd3d31;
+}
+
+
+.skip,
+#vertical
+{
+	display: none;
+}
+body nav{
+	top: 50px;
+	background-color: #021a2e;
+
+}
+nav fieldset{
+	padding: 0px;
+}
+
+fieldset legend{
+
+}
+
+header img,
+header img[src|="img/logow3c.svg"],
+header img[src|="img/logosceweb.svg"]{
+left: auto;
+top: 400px;
+z-index: 0;
+}
+
+
+main div[id|="internet"], 
+main div[id|="tecnologia"], 
+main div[id|="web"], 
+main div[id|="historia"], 
+main div[id|="economia"],
+header div[id|="browse"],
+header div[id|="contrib"],
+header div[id|="about"]{
+	top: 40px;
+	left: 10px;
+	width: 270px;
+	height: 240px;
+	font-size: 0.8em;
+}
+
+main div.internet, 
+main div.tecnologia,
+main div.historia,
+main div.economia,
+main div.web{
+	height: 100px;
+}
+
+main div#webfs:before,
+main div#internetfs:before,
+main div#tecnologiafs:before,
+main div#historiafs:before,
+main div#economiafs:before,
+main div#webls:after,
+main div#internetls:after,
+main div#tecnologials:after,
+main div#historials:after,
+main div#economials:after{
+	width: 130px;
+	height: 100px;
+}
+
+div h3{
+	margin-top: 0px;
+	font-size: 0.9em;
+}
+
+div a.bullet span,
+div a.bullet span {
+    display:none; 
+    padding:7px 10px;
+    margin-top:-30px; 
+    margin-left:-170px;
+    width:300px; 
+    line-height:20px;
+    position: fixed;
+}
+
+div img{
+	width: 20%;
+}
+
+}
+
+
+@media (min-width: 0px) and (max-width: 1023px) and (orientation: landscape) {
+main div[id|="internet"], 
+main div[id|="tecnologia"], 
+main div[id|="web"], 
+main div[id|="historia"], 
+main div[id|="economia"],
+header div[id|="browse"],
+header div[id|="contrib"],
+header div[id|="about"]{
+	top: 40px;
+	left: 10px;
+	width: 470px;
+	height: 240px;
+	font-size: 0.9em;
+	z-index: 6;
+}
+
+
+}
+
