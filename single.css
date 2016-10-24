@@ -701,7 +701,11 @@ div a.bullet span {
 div img{
 	width: 20%;
 }
-
+	
+.github{
+	position: fixed;
+	top: 430px;
+}
 }
 
 
