@@ -19,7 +19,7 @@ body{
 	top: 10px;
 	z-index: 7;
 	width: 200px;
-	left: 60px;
+	left: 160px;
 	text-align:center;
 	padding: 0;
 	margin: 0;
@@ -651,7 +651,14 @@ header img[src|="img/logosceweb.svg"]{
 }
 }
 
-
+.github{
+	color: white;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	font-size: 0.7em;
+	margin: 0px;
+}
 /* formulario de perguntas */
 
 @keyframes animaform{
