@@ -561,6 +561,12 @@ li#ano2015 a#internet-2015-01{
 	background-position: -10px -5px, center;
 }
 
+/* ee */
+
+#web-2009-ee{
+	display: none;
+	background: linear-gradient(to bottom, rgba(247,255,0,1) 0%, rgba(255,21,0,1) 100%);
+}
 
 /* MOBILE */
 
