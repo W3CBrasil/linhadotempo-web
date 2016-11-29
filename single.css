@@ -2,15 +2,16 @@
 #web-1990-02,
 #web-1995-01,
 #web-1996-01,
+#web-1996-04,
 #web-1997-01,
 #web-1997-02,
 #web-1998-01,
 #web-1999-01,
 #web-2001-01,
+#web-2001-02,
 #web-2002-01,
 #web-2004-01,
 #web-2004-02,
-#web-2006-01,
 #web-2008-02,
 #web-2008-03,
 #web-2008-04,
@@ -18,7 +19,8 @@
 #web-2011-03,
 #web-2013-01,
 #web-2014-01,
-#web-2014-02{
+#web-2014-02
+{
 	border-radius: 0;
 }
 
@@ -171,6 +173,14 @@ li#ano1996 a#web-1996-03{
 	background-position: 0px -5px, center;
 }
 
+li#ano1996 a#web-1996-04{
+	background: url(img/xml1.jpg) no-repeat white; 
+	background-size:180%;
+	background-position: 0px 20px, center;
+}
+
+
+
 li#ano1996 a#internet-1996-01{
 	background: url(img/http1.jpg) no-repeat white; 
 	background-size: 200%;
@@ -184,9 +194,9 @@ li#ano1996 a#internet-1996-02{
 }
 
 li#ano1997 a#web-1997-01{
-	background: url(img/html3.jpg) no-repeat white; 
-	background-size: 100%;
-	background-position: 0px 10px, center;
+	background: url(img/html32.jpg) no-repeat white; 
+	background-size: 170%;
+	background-position: 0px 0px, center;
 }
 
 li#ano1997 a#web-1997-02{
@@ -364,13 +374,8 @@ li#ano2005 a#internet-2005-03{
 }
 
 
-li#ano2006 a#web-2006-01{
-	background: url(img/xml1.jpg) no-repeat white; 
-	background-size:180%;
-	background-position: 0px 20px, center;
-}
 
-li#ano2006 a#web-2006-02{
+li#ano2006 a#web-2006-01{
 	background: url(img/twitter.jpg) no-repeat white; 
 	background-size:100%;
 	background-position: 0px 0px, center;
@@ -507,7 +512,8 @@ li#ano2013 a#web-2013-01{
 	background-position: 0px 0px, center;
 }
 
-li#ano2014 a#web-2014-01{
+li#ano2014 a#web-2014-01,
+li#ano2016 a#web-2016-01{
 	background: url(img/html5.jpg) no-repeat white; 
 	background-size:100%;
 	background-position: 0px 0px, center;
@@ -551,8 +557,8 @@ li#ano2015 a#web-2015-01{
 
 li#ano2015 a#web-2015-02{
 	background: url(img/webpayments.png) no-repeat white; 
-	background-size: 120%;
-	background-position: -10px 0px, center;
+	background-size: 160%;
+	background-position: -30px -20px, center;
 }
 
 li#ano2015 a#internet-2015-01{
@@ -568,170 +574,4 @@ li#ano2015 a#internet-2015-01{
 	background: linear-gradient(to bottom, rgba(247,255,0,1) 0%, rgba(255,21,0,1) 100%);
 }
 
-/* MOBILE */
-
-
-@media (min-width: 0px) and (max-width: 1023px) {
-body{
-	width: 100%;
-}
-
-
-
-header h1{
-	font-size: 180%;
-	padding: 5px 0px 0px 10px;
-	text-align: center;
-}	
-body header{
-	padding-top: 1px;
-}
-
-main ul#anos{
-	margin-top: 140px;
-}
-
-li h2{
-	font-size: 1em;
-}
-
-div a.bullet{
-	display: block;
-	height: 80px;
-	width: 80px;
-	display: inline-block;
-	border: 2px solid;
-}
-
-div a.bullet[id|="web"]{
-	border: 4px solid #197eb0;
-}
-
-div a.bullet[id|="internet"]{
-	border: 4px solid #74913f;
-}
-
-div a.bullet[id|="tecnologia"]{
-	border: 4px solid #bfad06;
-}
-
-div a.bullet[id|="historia"]{
-	border: 4px solid #a1742d;
-}
-
-div a.bullet[id|="economia"]{
-	border: 4px solid #bd3d31;
-}
-
-
-.skip,
-#vertical
-{
-	display: none;
-}
-body nav{
-	top: 50px;
-	background-color: #021a2e;
-
-}
-nav fieldset{
-	padding: 0px;
-}
-
-fieldset legend{
-
-}
-
-header img,
-header img[src|="img/logow3c.svg"],
-header img[src|="img/logosceweb.svg"]{
-left: auto;
-top: 400px;
-z-index: 0;
-}
-
-
-main div[id|="internet"], 
-main div[id|="tecnologia"], 
-main div[id|="web"], 
-main div[id|="historia"], 
-main div[id|="economia"],
-header div[id|="browse"],
-header div[id|="contrib"],
-header div[id|="about"]{
-	top: 40px;
-	left: 10px;
-	width: 270px;
-	height: 240px;
-	font-size: 0.8em;
-}
-
-main div.internet, 
-main div.tecnologia,
-main div.historia,
-main div.economia,
-main div.web{
-	height: 100px;
-}
-
-main div#webfs:before,
-main div#internetfs:before,
-main div#tecnologiafs:before,
-main div#historiafs:before,
-main div#economiafs:before,
-main div#webls:after,
-main div#internetls:after,
-main div#tecnologials:after,
-main div#historials:after,
-main div#economials:after{
-	width: 130px;
-	height: 100px;
-}
-
-div h3{
-	margin-top: 0px;
-	font-size: 0.9em;
-}
-
-div a.bullet span,
-div a.bullet span {
-    display:none; 
-    padding:7px 10px;
-    margin-top:-30px; 
-    margin-left:-170px;
-    width:300px; 
-    line-height:20px;
-    position: fixed;
-}
-
-div img{
-	width: 20%;
-}
-	
-.github{
-	position: fixed;
-	top: 430px;
-}
-}
-
-
-@media (min-width: 0px) and (max-width: 1023px) and (orientation: landscape) {
-main div[id|="internet"], 
-main div[id|="tecnologia"], 
-main div[id|="web"], 
-main div[id|="historia"], 
-main div[id|="economia"],
-header div[id|="browse"],
-header div[id|="contrib"],
-header div[id|="about"]{
-	top: 40px;
-	left: 10px;
-	width: 470px;
-	height: 240px;
-	font-size: 0.9em;
-	z-index: 6;
-}
-
-
-}
 
