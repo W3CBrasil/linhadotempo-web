@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8"> 
-	<link rel="stylesheet" href="estiloh.css">
-	<meta property="og:url" content="http://www.ceweb.br/linhadotempo/">
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="estiloh.css">
+    <meta property="og:url" content="http://www.ceweb.br/linhadotempo/">
     <meta property="og:title" content="Linha do tempo da Web">
     <meta property="og:site_name" content="Linha do tempo da Web">
     <meta property="og:image" content="http://www.ceweb.br/linhadotempo/img/thumb.png">
@@ -11,16 +11,16 @@
     <meta property="og:image:width" content="470">
     <meta property="og:image:height" content="246">
     <meta property="og:description" content="Navegue pela história da Web neste infográfico interativo produzido pelo Ceweb.br e W3C Brasil.">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-  	<title>Linha do tempo da Web - Ceweb.br</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Linha do tempo da Web - Ceweb.br</title>
 </head>
 <body>
-<p class="skip"><a href="#skip">Saltar para o conteúdo</a></p>
+<p class="skip"><a href="#skip">Saltar para o conteúdo</a> <a href="#" onclick="css('estilo-lite.css', 0);"  class="simple" title="Abre todas as informações">Abrir todas as informações</a>
 <header>
 <h1>Linha do tempo da Web</h1>
 <a href="http://www.w3c.br/"><img src="img/logow3c.svg" alt="W3C Brasil"></a>
 <a href="http://www.ceweb.br/"><img src="img/logosceweb.svg" alt="Ceweb.br - NIC.br - CGI.br"></a>
-</header>	
+</header>   
 <nav>
 <form>
 <fieldset>
@@ -48,7 +48,7 @@
 <div id="internet-1969-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Criação da ARPANET</h3>
-<p><img src="img/arpanet.jpg" alt="Arpanet">Feito o primeiro nó da ARPANET (Advanced Research Projects Agency Network) pelo trabalho de Leonard Kleinrock, no Network Measurement Center da UCLA.  </p>
+<p><img src="img/arpanet.jpg" alt="Arpanet">Feito o primeiro nó da ARPANET (<span lang="en">Advanced Research Projects Agency Network</span>) pelo trabalho de Leonard Kleinrock, no <span lang="en">Network Measurement Center</span> da UCLA.  </p>
 <p>Fonte: <a href="http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet">ISOC</a>
 </div>
 </div>
@@ -70,7 +70,7 @@
 <div id="internet-1974-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Lançada a RFC675</h3>
-<p><img src="img/internet.jpg" alt="Internet">Foi lançada a especificação 675, pelo IETF, para "Internet Transmission Control Program" (TCP).</p>
+<p><img src="img/internet.jpg" alt="Internet">Lançada a especificação 675, pelo IETF, para "<span lang="en">Internet Transmission Control Program</span>" (TCP).</p>
 <p>Fonte: <a href="https://tools.ietf.org/html/rfc675">IETF</a>
 </div>
 </div>
@@ -89,7 +89,7 @@
 <div id="internet-1986-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Primeira reunião do IETF</h3>
-<p><img src="img/ietflogo.gif" alt="Arpanet">Em 1986 foi realizada a primeira reunião do IETF (Internet Engineering Task Force). </p>
+<p><img src="img/ietflogo.gif" alt="Arpanet">Em 1986 foi realizada a primeira reunião do IETF (<span lang="en">Internet Engineering Task Force</span>). </p>
 <p>Fonte: <a href="http://www.ietf.org/proceedings/01.pdf">IETF</a>
 </div>
 </div>
@@ -104,9 +104,9 @@
 <a id="web-1989-01" href="#" class="bullet" onclick="abre(event);"><span>Tim Berners-Lee cria a Web</span></a>
 <div id="web-1989-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
-<h3>Tim Berners-Lee cria a World Wide Web</h3>
-<p><img src="img/foto-timbl.jpg" alt="Foto de Tim Berners-Lee">Tim Berners-Lee inventa a World Wide Web, ainda como um projeto do CERN (European Organization for Nuclear Research) </p>
-<p>Fonte: <a href="http://www.pewinternet.org/2014/03/11/world-wide-web-timeline/">Pew Research Center</a>
+<h3>Tim Berners-Lee cria a <span lang="en">World Wide Web</span></h3>
+<p><img src="img/foto-timbl.jpg" alt="Foto de Tim Berners-Lee">Tim Berners-Lee inventa a <span lang="en">World Wide Web</span>, ainda como um projeto do CERN (<span lang="en">European Organization for Nuclear Research</span>) </p>
+<p>Fonte: <a href="https://www.w3.org/People/Berners-Lee/1996/ppf.html">W3C</a>
 </div>
 </div>
 
@@ -116,7 +116,7 @@
 <div id="internet-1989-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Delegado o TLD .br ao Brasil</h3>
-<p><img src="img/logo-cgi-old.gif" alt="Foto de Tim Berners-Lee">No dia 18 de abrl de 1989, John Postel delega a Demi Getschko o TLD ".br".</p>
+<p><img src="img/logo-cgi-old.gif" alt="Foto de Tim Berners-Lee">No dia 18 de abril de 1989, John Postel delega a Demi Getschko o TLD ".br".</p>
 <p>Fonte: <a href="http://www.iana.org/domains/root/db/br.html">IANA</a>
 </div>
 </div>
@@ -152,8 +152,8 @@
 <div id="internet-1990-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Primeira menção ao nome IANA</h3>
-<p><img src="img/iana-logo.jpg" alt="Logo da IANA">Primeira menção ao nome IANA (Internet Assigned Numbers Authority), por Jon Postel - que foi diretor da IANA até a sua morte</p>
-<p>Fonte: <a href="http://en.wikipedia.org/wiki/ICANN">Wikipedia</a>
+<p><img src="img/iana-logo.jpg" alt="Logo da IANA">Primeira menção ao nome IANA (<span lang="en">Internet Assigned Numbers Authority</span>), por Jon Postel - que foi diretor da IANA até a sua morte</p>
+<p>Fonte: <a href="https://tools.ietf.org/html/rfc1060">IETF</a>
 </div>
 </div>
 
@@ -174,8 +174,8 @@
 <div id="web-1992-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Publicada a primeira foto na Web</h3>
-<p><img src="img/first-image.jpg" alt="Imagem da primeira foto publicada na Web">Tim-Berners Lee posta a primeira foto da Web, a banda “Les Horribles Cernettes”</p>
-<p>Fonte: <a href="http://www.pewinternet.org/2014/03/11/world-wide-web-timeline/">Pew Research Center</a>
+<p><img src="img/first-image.jpg" alt="Imagem da primeira foto publicada na Web">Tim-Berners Lee posta a primeira foto da Web, uma foto da banda “<span lang="fr">Les Horribles Cernettes</span>”</p>
+<p>Fonte: <a href="http://www.telegraph.co.uk/technology/news/9391110/How-the-first-photo-was-posted-on-the-Web-20-years-ago.html">The Telegraph</a>
 </div>
 </div>
 
@@ -185,8 +185,8 @@
 <div id="internet-1992-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Criação da ISOC</h3>
-<p><img src="img/isoc.gif" alt="Logo da ISOC">A Internet Society (ISOC) foi formada em 1992 para promover normas técnicas e outras especificações para a utilização da Internet.</p>
-<p>Fonte: <a href="http://www.internetsociety.org/history">Internet Society</a>
+<p><img src="img/isoc.gif" alt="Logo da ISOC">A <span lang="en">Internet Society</span> (ISOC) foi formada em 1992 para promover normas técnicas e outras especificações para a utilização da Internet.</p>
+<p>Fonte: <a href="http://www.internetsociety.org/history-timeline/official-formation-date-internet-society">Internet Society</a>
 </div>
 </div>
 
@@ -208,7 +208,7 @@
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>CERN disponibiliza a Web ao mundo</h3>
 <p><img src="img/web.jpg" alt="Imagem do primeiro esboço da Web feito por Tim Bernrs-Lee">O CERN disponibiliza como domínio público e "doa para o mundo" a tecnologia da Web. </p>
-<p>Fonte: <a href="http://www.pewinternet.org/2014/03/11/world-wide-web-timeline/">Pew Internet Research</a>
+<p>Fonte: <a href="http://www.pewinternet.org/2014/03/11/world-wide-web-timeline/" lang="en">Pew Internet Research</a>
 </div>    
 <a id="web-1993-02" href="#" class="bullet" onclick="abre(event);"><span>Lançamento do navegador Mosaic</span></a>
 <div id="web-1993-02-box" class="hide">
@@ -238,7 +238,7 @@
 <div id="web-1994-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Tim Berners-Lee cria o W3C </h3>
-<p><img src="img/w3c.jpg" alt="Logo do W3C">Tim Berners-Lee cria o W3C (World Wide Web Consortium), no MIT (Massachusetts Institute of Technology), em colaboração com o CERN.</p>
+<p><img src="img/w3c.jpg" alt="Logo do W3C">Tim Berners-Lee cria o W3C (<span lang="en">World Wide Web Consortium</span>), no MIT (<span lang="en">Massachusetts Institute of Technology</span>), em colaboração com o CERN.</p>
 <p>Fonte: <a href="http://www.w3.org/Consortium/facts">W3C</a>
 </div>
 
@@ -246,7 +246,7 @@
 <div id="web-1994-02-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Netscape lança a primeira versão do seu navegador</h3>
-<p><img src="img/netscape.jpg" alt="Logo do Netscape Navigator">Lançado um dos primeiros browsers "user friendly" que rapidamente é adotado pelo mercado.</p>
+<p><img src="img/netscape.jpg" alt="Logo do Netscape Navigator">Lançado um dos primeiros browsers "<span lang="en">user friendly</span>" que rapidamente é adotado pelo mercado.</p>
 <p>Fonte: <a href="http://news.bbc.co.uk/2/hi/in_depth/business/2000/microsoft/635689.stm">BBC</a>
 </div>
 
@@ -254,7 +254,7 @@
 <div id="web-1994-03-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Especificação do URL</h3>
-<p><img src="img/url.jpg" alt="Ilustração da barra de endereços URL">Foi especificado o Localizador Padrão de Recursos, em inglês Uniform Resource Locator (URL).</p>
+<p><img src="img/url.jpg" alt="Ilustração da barra de endereços URL">Foi especificado o Localizador Padrão de Recursos, em inglês <span lang="en">Uniform Resource Locator</span> (URL).</p>
 <p>Fonte: <a href="http://www.w3.org/Addressing/URL/url-spec.txt">W3C</a>
 </div>
 </div>
@@ -286,8 +286,8 @@
 <div id="web-1995-02-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Criação do Ebay</h3>
-<p><img src="img/ebay.jpg" alt="Logo do Ebay">Originalmente chamado “AuctionWeb”, listou o primeiro item para venda: um laser pointer quebrado. </p>
-<p>Fonte: <a href="http://www.pewinternet.org/2014/03/11/world-wide-web-timeline/">Pew Research Center</a></p>
+<p><img src="img/ebay.jpg" alt="Logo do Ebay">Originalmente chamado “<span lang="en">AuctionWeb</span>”, listou o primeiro item para venda: um laser pointer quebrado. </p>
+<p>Fonte: <a href="https://www.ebayinc.com/our-company/our-history/">Ebay</a></p>
 </div>
 
 <a id="web-1995-03" href="#" class="bullet" onclick="abre(event);"><span>Lançamento do Internet Explorer</span></a>
@@ -364,6 +364,14 @@
 <p>Fonte: <a href="http://sobre.uol.com.br/historia/linhadotempo.jhtm">UOL</a>
 </div>
 
+<a id="web-1996-04" href="#" class="bullet" onclick="abre(event);"><span>Recomendação XML 1.0</span></a>
+<div id="web-1996-04-box" class="hide">
+<a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
+<h3>W3C publica a recomendação XML 1.0</h3>
+<p><img src="img/xml1.jpg" alt="Imagem do documento XML">Publicado como recomendação o documento XML 1.0 </p>
+<p>Fonte: <a href="http://www.w3.org/TR/1998/REC-xml-19980210">W3C</a>
+</div>
+
 </div>
 
 <!--internet-->
@@ -372,7 +380,7 @@
 <div id="internet-1996-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Publicada a RFC HTTP1</h3>
-<p><img src="img/http1.jpg" alt="Imagem da RFC HTTP1">Publicada a versão 1.0 do Protocolo de Transmissão para Linguagem de Marcação, o HTTP 1.0</p>
+<p><img src="img/http1.jpg" alt="Imagem da RFC HTTP1">Publicada a RFC da versão 1.0 do Protocolo de Transmissão para Linguagem de Marcação, o HTTP 1.0</p>
 <p>Fonte: <a href="http://tools.ietf.org/html/rfc1945">IETF</a>
 </div>
 
@@ -380,8 +388,8 @@
 <div id="internet-1996-02-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Lançamento o Flash 1</h3>
-<p><img src="img/flash.jpg" alt="Logo Flash">Em Dezembro de 1996, FutureSplash foi adquirida pela Macromedia, que renomeou seu produto, um editor de gráficos e animação, como Macromedia Flash 1.0.</p>
-<p>Fonte: <a href="http://mashable.com/2012/11/19/history-of-flash/">Maschable</a>
+<p><img src="img/flash.jpg" alt="Logo Flash">Em Dezembro de 1996 a empresa FutureSplash foi adquirida pela Macromedia, que renomeou seu editor de gráficos e animação para Macromedia Flash 1.0.</p>
+<p>Fonte: <a href="http://mashable.com/2012/11/19/history-of-flash/">Mashable</a>
 </div>
 </div>
 
@@ -401,7 +409,7 @@
 <div id="web-1997-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>HTML3.2 é uma recomendação do W3C</h3>
-<p><img src="img/html3.jpg" alt="Imagem da recomendação do HTML3">A nova versão da linguagem de marcação para hipertexto introduz atributos para formatação visual, como o uso de cores de fundo.</p>
+<p><img src="img/html32.jpg" alt="Imagem da recomendação do HTML3.2">A nova versão da linguagem de marcação para hipertexto introduz atributos para formatação visual, como o uso de cores de fundo.</p>
 <p>Fonte: <a href="http://www.w3.org/TR/REC-html32.html">W3C</a>
 </div>
 
@@ -409,7 +417,7 @@
 <div id="web-1997-02-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>HTML4 é uma recomendação W3C</h3>
-<p><img src="img/html4.jpg" alt="Imagem da recomendação do HTML4">O HTML4 trouxe grandes melhorias, especialmente para formulários e tabelas e para documentos em múltiplos idiomas.</p>
+<p><img src="img/html4.jpg" alt="Imagem da recomendação do HTML4">O HTML4 trouxe grandes melhorias para formulários, tabelas e para documentos em múltiplos idiomas.</p>
 <p>Fonte: <a href="http://www.w3.org/Press/HTML4-REC">W3C</a>
 </div>
 
@@ -454,7 +462,7 @@
 <div id="web-1998-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>CSS2 é uma recomendação do W3C</h3>
-<p><img src="img/css2.jpg" alt="Imagem da recomendação do CSS2">A nova versão das folhas de estilo em cascata trouxe novidades, como as Media Types, que possibiliatam criar estilos para impressão, telas, etc.</p>
+<p><img src="img/css2.jpg" alt="Imagem da recomendação do CSS2">A nova versão das folhas de estilo em cascata trouxe novidades como as Media Types, que possibilitam criar estilos para impressão, telas, etc.</p>
 <p>Fonte: <a href="http://www.w3.org/TR/REC-html32.html">W3C</a>
 </div>
 
@@ -467,7 +475,7 @@
 <div id="internet-1998-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Criação da ICANN</h3>
-<p><img src="img/icann.jpg" alt="Logo da ICANN">Em outubro de 1998, O Departamento de Comércio dos Estados Unidos ("DoC") e a Network Solutions, Inc. ("NSI") firmam um acordo de cooperação e criam a "Internet Corporation for Assigned Names and Numbers". </p>
+<p><img src="img/icann.jpg" alt="Logo da ICANN">Em outubro de 1998, O Departamento de Comércio dos Estados Unidos ("DoC") e a <span lang="en">Network Solutions, Inc</span>. ("NSI") firmam um acordo de cooperação e criam a "<span lang="en">Internet Corporation for Assigned Names and Numbers</span>". </p>
 <p>Fonte: <a href="https://www.icann.org/resources/pages/history-2012-02-25-en">ICANN</a>
 </div>
 
@@ -540,15 +548,15 @@
 <div id="web-2001-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Primeiro artigo sobre Web Semântica</h3>
-<p><img src="img/semantic.jpg" alt="Imagem da publicação The Semantic Web">Tim Berners-Lee, Ames Hendler e Ora Lassila escreveram o primeiro artigo sobre Web Semântica, em inglês The Semantic Web: A new form of Web content that is meaningful to computers will unleash a revolution of new possibilities.</p>
-<p>Fonte: <a href="http://www-sop.inria.fr/acacia/cours/essi2006/Scientific%20American_%20Feature%20Article_%20The%20Semantic%20Web_%20May%202001.pdf">Scientific American</a>
+<p><img src="img/semantic.jpg" alt="Imagem da publicação The Semantic Web">Tim Berners-Lee, Ames Hendler e Ora Lassila escreveram o primeiro artigo sobre Web Semântica, em inglês <span lang="en">The Semantic Web: A new form of Web content that is meaningful to computers will unleash a revolution of new possibilities</span>.</p>
+<p>Fonte: <a href="https://www.scientificamerican.com/article/the-semantic-web/">Scientific American</a>
 </div>
 
 <a id="web-2001-02" href="#" class="bullet" onclick="abre(event);"><span>Recomendação XHTML1</span></a>
 <div id="web-2001-02-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Recomendação XHTML1</h3>
-<p><img src="img/xhtml1.jpg" alt="Imagem da documentação do XHMTL1">XHTML1, uma evolução do HTML é uma recomendação do W3C. </p>
+<p><img src="img/xhtml1.jpg" alt="Imagem da documentação do XHMTL1">XHTML1, uma evolução do HTML, é uma recomendação do W3C. </p>
 <p>Fonte: <a href="http://www.w3.org/TR/xhtml1/">W3C</a>
 </div>
 <a id="web-2001-03" href="#" class="bullet" onclick="abre(event);"><span>Lançamento da Wikipedia</span></a>
@@ -562,7 +570,7 @@
 <div id="web-2001-04-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Microsoft lança o Internet Explorer 6</h3>
-<p><img src="img/ie6.jpg" alt="Logo do Internet Explorer">No dia 27 de agosto de 2001, a Microsoft lança a versão 6 do seu navegador.</p>
+<p><img src="img/ie6.jpg" alt="Logo do Internet Explorer">No dia 27 de agosto de 2001 a Microsoft lança a versão 6 do seu navegador.</p>
 <p>Fonte: <a href="http://www.statetechmagazine.com/article/2013/08/visual-history-internet-explorer">Statetech Magazine</a>
 </div>
 </div>
@@ -573,7 +581,7 @@
 <div id="internet-2001-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>WSIS</h3>
-<p><img src="img/wsis.jpg" alt="Logo da WSIS">Aprovação nas Nações Unidas para criar a WSIS (Cúpula Mundial sobre a Sociedade da Informação / World Summit on the Information Society), em duas partes.</p>
+<p><img src="img/wsis.jpg" alt="Logo da WSIS">Aprovação nas Nações Unidas para criar a WSIS (Cúpula Mundial sobre a Sociedade da Informação / <span lang="en">World Summit on the Information Society</span>), em duas partes.</p>
 <p>Fonte: <a href="http://www.virtualpolicy.net/internet-governance-a-brief-timeline.html">Virtual Policy</a>
 </div>
 </div>
@@ -587,11 +595,11 @@
 <!-- web-->
 <div class="web">
 
-<a id="web-2002-01" href="#" class="bullet" onclick="abre(event);"><span>HTML Design Principles</span></a>
+<a id="web-2002-01" href="#" class="bullet" onclick="abre(event);"><span lang="en">HTML Design Principles</span></a>
 <div id="web-2002-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
-<h3>HTML Design Principles</h3>
-<p><img src="img/html5.jpg" alt="Logo do HTML5">W3C publica o primeiro documento a abordar conceitos do HTML5, chamado “HTML Design Principles”</p>
+<h3 lang="en">HTML Design Principles</h3>
+<p><img src="img/html5.jpg" alt="Logo do HTML5">W3C publica o primeiro documento a abordar conceitos do HTML5, chamado <span lang="en">“HTML Design Principles”</span></p>
 <p>Fonte: <a href="http://www.w3.org/2002/09/wbs/40318/wdhdp/results">W3C</a>
 </div>
 
@@ -622,7 +630,7 @@
 <div id="web-2003-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Lançamento do navegador Safari</h3>
-<p><img src="img/safari.jpg" alt="Logo do Safari">Em 7 de janeiro de 2003, na Macworld San Francisco, Steve Jobs anunciou que a Apple havia desenvolvido seu próprio navegador, chamado Safari</p>
+<p><img src="img/safari.jpg" alt="Logo do Safari">Em 7 de janeiro de 2003, na Macworld São Francisco, Steve Jobs anunciou que a Apple havia desenvolvido seu próprio navegador, chamado Safari</p>
 <p>Fonte: <a href="https://www.apple.com/pr/library/2003/06/23Apple-Releases-Safari-1-0.html">Apple</a>
 </div>
 </div>
@@ -633,7 +641,7 @@
 <div id="internet-2003-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Declaração de Princípios de Genebra na WSIS </h3>
-<p><img src="img/wsis.jpg" alt="Logo da WSIS">Declaração da ONU sobre "Construir a Sociedade da Informação: um desafio global para o novo milênio", na Cúpula Mundial sobre a Sociedade da Informação / World Summit on the Information Society</p>
+<p><img src="img/wsis.jpg" alt="Logo da WSIS">Declaração da ONU sobre "Construir a Sociedade da Informação: um desafio global para o novo milênio", na Cúpula Mundial sobre a Sociedade da Informação / <span lang="en">World Summit on the Information Society</span></p>
 <p>Fonte: <a href="https://www.itu.int/wsis/documents/doc_multi.asp?lang=en&amp;id=1161%7C1160">ITU</a>
 </div>
 </div>
@@ -661,7 +669,7 @@
 <div id="web-2004-02-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Publicada a recomendação OWL</h3>
-<p><img src="img/owl.jpg" alt="Imagem da recomendação OWL">OWL, em inglês Web Ontology Language é criada para facilitar a interoperabilidade das máquinas e dar suporte ao XML, RDF e DRF Schema (RDF-S).</p>
+<p><img src="img/owl.jpg" alt="Imagem da recomendação OWL">OWL, em inglês <span lang="en">Web Ontology Language</span> é criada para facilitar a interoperabilidade das máquinas e dar suporte ao XML, RDF e DRF Schema (RDF-S).</p>
 <p>Fonte: <a href="http://www.w3.org/TR/owl-features/">W3C</a>
 </div>
 
@@ -717,7 +725,7 @@
 <div id="web-2005-02-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Padronização do URI</h3>
-<p><img src="img/uri.jpg" alt="URI">O IETF padronizou o Identificador Uniforme de Recursos, em inglês Uniform Resource Identifier (URI).</p>
+<p><img src="img/uri.jpg" alt="URI">O IETF padronizou o Identificador Uniforme de Recursos, em inglês <span lang="en">Uniform Resource Identifier</span> (URI).</p>
 <p>Fonte: <a href="http://www.ietf.org/rfc/rfc3986.txt">IETF</a>
 </div>
 </div>
@@ -758,15 +766,8 @@
 <h2>2006</h2>
 <!-- web-->
 <div class="web">
-<a id="web-2006-01" href="#" class="bullet" onclick="abre(event);"><span>Recomendação XML 1.0</span></a>
+<a id="web-2006-01" href="#" class="bullet" onclick="abre(event);"><span>Lançamento do Twitter</span></a>
 <div id="web-2006-01-box" class="hide">
-<a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
-<h3>W3C publica a recomendação XML 1.0</h3>
-<p><img src="img/xml1.jpg" alt="Imagem do documento XML">Publicado como recomendação o documento XML 1.0 </p>
-<p>Fonte: <a href="http://www.w3.org/TR/1998/REC-xml-19980210">W3C</a>
-</div>
-<a id="web-2006-02" href="#" class="bullet" onclick="abre(event);"><span>Lançamento do Twitter</span></a>
-<div id="web-2006-02-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Lançamento do Twitter</h3>
 <p><img src="img/twitter.jpg" alt="Ícone do Twitter">Lançada a rede social Twitter, criada para enviar mensagens de apenas 140 caracteres, chamadas de tweets.</p>
@@ -801,7 +802,7 @@
 <div id="web-2007-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Criação do escritório do W3C Brasil</h3>
-<p><img src="img/w3c-brasil.jpg" alt="Logo do W3C Brasil">Por determinação do Comitê Gestor da Internet no Brail, o primeiro escritório do W3C na América Latina é inaugurado em São Paulo.</p>
+<p><img src="img/w3c-brasil.jpg" alt="Logo do W3C Brasil">Por determinação do Comitê Gestor da Internet no Brasil, o primeiro escritório do W3C na América Latina é inaugurado em São Paulo.</p>
 <p>Fonte: <a href="http://www.cgi.br/historicos/#2007">CGI.br</a>
 </div>
 <a id="web-2007-02" href="#" class="bullet" onclick="abre(event);"><span>Lançamento do Google Street View</span></a>
@@ -904,7 +905,7 @@
 <p><img src="img/webbr.gif" alt="Webbr 2009">Em 2009 foi realizada a primeira conferência W3C Brasil, em São Paulo, com o objetivo de discutir o futuro da Web no país. </p>
 <p>Fonte: <a href="http://conferenciaweb.w3c.br/2009/">W3C Brasil</a>
 </div>
-<a id="web-2009-ee" href="#" class="bullet"><span id="web-2009-ee-sp"></span></a>
+<!--<a id="web-2009-ee" href="#" class="bullet"><span id="web-2009-ee-sp"></span></a>-->
 <a id="web-2009-03" href="#" class="bullet" onclick="abre(event);"><span>Lançamento do buscador Bing</span></a>
 <div id="web-2009-03-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
@@ -915,7 +916,7 @@
 <a id="web-2009-04" href="#" class="bullet" onclick="abre(event);"><span>Elemento VIDEO do HTML5</span></a>
 <div id="web-2009-04-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
-<h3>Firefox e Chrome dão suporte ao elemento vídeo</h3>
+<h3>Firefox e Chrome dão suporte ao elemento &#60;video&#62;</h3>
 <p><img src="img/chff.jpg" alt="Imagem dos ícones do Chrome e Firefox">Os navegadores Google Chrome e Mozilla Firefox começam a suportar o novo elemento do HTML 5 para a reprodução de vídeos.</p>
 <p>Fonte: <a href="http://website-archive.mozilla.org/www.mozilla.org/firefox_releasenotes/en-US/firefox/3.5/releasenotes/">Mozilla</a> e <a href="http://www.cnetfrance.fr/news/google-chrome-3-39503164.htm">CNET France</a>
 </div>
@@ -970,14 +971,14 @@
 <div id="web-2011-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Lançamento da primeira edição do Prêmio Todos@Web</h3>
-<p><img src="img/todosnaweb.jpg" alt="Logo todos na Web">A primeira edição do Prêmio Nacional de Acessibilidade na Web do W3C Brasil foi lançada com o objetivo de fomentar e estimular iniciativas acessíveis na Web brasileira.</p>
-<p>Fonte: <a href="http://premio.w3c.br/2012/">W3C Brasil</a>
+<p><img src="img/todosnaweb.jpg" alt="Logo todos na Web">A primeira edição do Prêmio Nacional de Acessibilidade na Web foi lançada com o objetivo de fomentar e estimular iniciativas acessíveis na Web brasileira.</p>
+<p>Fonte: <a href="http://premio.ceweb.br/">Ceweb.br</a>
 </div>
 <a id="web-2011-02" href="#" class="bullet" onclick="abre(event);"><span>Interest Group Web and TV</span></a>
 <div id="web-2011-02-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
-<h3>W3C lança o Interest Group Web and TV</h3>
-<p><img src="img/webtv.jpg" alt="Imagem da página do Interest Group de WebTV">Lançado em fevereiro de 2011, o "Interest Group Web and TV" proporciona um fórum técnico para discussões para Web e TV.</p>
+<h3>W3C lança o <span lang="en">Interest Group Web and TV</span></h3>
+<p><img src="img/webtv.jpg" alt="Imagem da página do Interest Group de WebTV">Lançado em fevereiro de 2011, o "<span lang="en">Interest Group Web and TV</span>" proporciona um fórum técnico para discussões para Web e TV.</p>
 <p>Fonte: <a href="http://www.w3.org/2011/webtv/">W3C</a>
 </div>
 <a id="web-2011-03" href="#" class="bullet" onclick="abre(event);"><span>Seletores CSS3</span></a>
@@ -1003,7 +1004,7 @@
 <div id="internet-2011-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Criação do IoT-GSI pela ITU</h3>
-<p><img src="img/itu-logo.jpg" alt="Logo da gartner">ITU cria a Iniciativa Global de Padrões para a Internet das Coisas, em inglês Global Standards Initiative on Internet of Things (IoT-GSI).</p>
+<p><img src="img/itu-logo.jpg" alt="Logo da gartner">ITU cria a Iniciativa Global de Padrões para a Internet das Coisas, em inglês <span lang="en">Global Standards Initiative on Internet of Things</span> (IoT-GSI).</p>
 <p>Fonte: <a href="http://www.itu.int/en/ITU-T/gsi/iot/Pages/default.aspx">ITU</a>
 </div>
 
@@ -1061,7 +1062,7 @@
 <div id="web-2014-02-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Recomendações RDF</h3>
-<p><img src="img/rdf.jpg" alt="Imagem representando RDF">W3C publica a recomendação RDF 1.1. Turtle e RDF Data Cube Vocabulary</p>
+<p><img src="img/rdf.jpg" alt="Imagem representando RDF">W3C publica a recomendação <span lang="en">RDF 1.1. Turtle</span> e <span lang="en">RDF Data Cube Vocabulary</span></p>
 <p>Fonte: <a href="http://www.w3.org/TR/2014/REC-vocab-data-cube-20140116/">W3C</a>
 </div>
 
@@ -1070,7 +1071,7 @@
 <div id="web-2014-03-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>DWBP e CSVWG</h3>
-<p><img src="img/dwbp.jpg" alt="Imagem representando RDF">W3C lança o Data on the Web Best Practices Working Group e o CSV on the Web Working Group.</p>
+<p><img src="img/dwbp.jpg" alt="Imagem representando RDF">W3C lança o <span lang="en">Data on the Web Best Practices Working Group</span> e o <span lang="en">CSV on the Web Working Group</span>.</p>
 <p>Fonte: <a href="http://www.w3.org/2013/data/Activity">W3C</a>
 </div>
 </div>
@@ -1121,8 +1122,8 @@
 <div id="web-2015-01-box" class="hide">
 <a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
 <h3>Criação do Ceweb.br</h3>
-<p><img src="img/ceweb.jpg" alt="Imagem representando RDF">Criado o Centro de Estudos sobre Tecnologias Web (Cewe.br) para disseminar e promover o uso de tecnologias abertas na Web, fomentar e impulsionar a sua evolução no Brasil.</p>
-<p>Fonte: <a href="http://www.w3.org/TR/2014/REC-turtle-20140225/">W3C</a>
+<p><img src="img/ceweb.jpg" alt="Imagem representando RDF">Criado o Centro de Estudos sobre Tecnologias Web (Ceweb.br) para disseminar e promover o uso de tecnologias abertas na Web, fomentar e impulsionar a sua evolução no Brasil.</p>
+<p>Fonte: <a href="http://www.nic.br/historia/">NIC.br</a>
 </div>
 
 <a id="web-2015-02" href="#" class="bullet" onclick="abre(event);"><span>Lançamento do Web Payments WG</span></a>
@@ -1144,12 +1145,30 @@
 </div>
 
 </div>
- 
- 
- 
- 
- 
- 
+
+</li>
+
+
+
+<li id="ano2016">
+<h2>2016</h2>
+<!-- web-->
+<div class="web">
+<a id="web-2016-01" href="#" class="bullet" onclick="abre(event);"><span>HTML5.1 é uma Recomendação W3C</span></a>
+<div id="web-2016-01-box" class="hide">
+<a href="#" class="close" title="Fechar" onclick="fecha();">x</a>
+<h3>HTML5.1 é uma Recomendação do W3C</h3>
+<p><img src="img/html5.jpg" alt="Imagem representando RDF">Publicado o primeiro documento com algumas revisões do documento da principal linguagem da Web, o HTML.</p>
+<p>Fonte: <a href="https://www.w3.org/TR/html51/">W3C</a>
+</div>
+
+</div>
+<!--internet-->
+<div class="internet">
+
+
+</div>
+
 </li>
 
 
@@ -1164,6 +1183,5 @@
 </main>
 <div id="anoempty"></div>
 <script src="script.js"></script> 
-
 </body>
 </html>
