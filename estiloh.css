@@ -14,15 +14,17 @@ body{
 
 
 .skip{
-	position: absolute;
+	position: fixed;
 	color: white;
 	top: 10px;
 	z-index: 7;
 	width: 200px;
-	left: 160px;
+	left: 60px;
 	text-align:center;
 	padding: 0;
 	margin: 0;
+	white-space: nowrap;
+	font-size: 0.8em;
 }
 .skip a,
 .skip a:visited{
@@ -50,6 +52,26 @@ header img{
 	position: fixed;
 	top: 10px;
 	right: 10px;
+}
+
+header a[href|="http://www.w3c.br/"]:focus,
+header a[href|="http://www.w3c.br/"]:hover{
+	height: 33px;
+	width: 43px;
+	position: fixed;
+	top: 7px;
+	left: 7px;
+	border:1px solid yellow;
+}
+
+header a[href|="http://www.ceweb.br/"]:focus,
+header a[href|="http://www.ceweb.br/"]:hover{
+	height: 33px;
+	width: 203px;
+	position: fixed;
+	top: 7px;
+	right: 8px;
+	border:1px solid yellow;
 }
 
 header img[src|="img/logow3c.svg"],
@@ -136,6 +158,13 @@ a:hover{
 	color: yellow;
 }
 
+
+*[lang=en],
+*[lang=fr]
+ { 
+	font-style: italic;
+}
+
 /*--------- lista e celulas dos anos --------*/
 ul#anos{
 	padding-left: 0px;
@@ -159,7 +188,7 @@ ul#anos li{
 
 }
 
-ul#anos li#ano2015,
+ul#anos li#ano2016,
 ul#anos li#end{
 	border-right: none;
 }
@@ -400,32 +429,17 @@ label[for=checkint]{
 	background-color: #74913f;
 }
 
-label[for=checktec]{
-	background-color: #bfad06;
-}
-
-label[for=checkhis]{
-	background-color: #d65109;
-}
-
-label[for=checkeco]{
-	background-color: #611700;
-}
 
 label[for=checkweb]:hover,
-label[for=checkhis]:hover,
-label[for=checkint]:hover,
-label[for=checktec]:hover,
-label[for=checkeco]:hover{
+label[for=checkint]:hover{
 opacity: 0.7;	
+
 }
 
 input#checkweb:focus,
-input#checkhis:focus,
-input#checkint:focus,
-input#checktec:focus,
-input#checkeco:focus{
-	background-color: yellow;
+input#checkint:focus{
+    
+
 }
 
 
@@ -453,6 +467,7 @@ a.bullet span {
     z-index: 1;
 }
 
+#ano2016 a.bullet span,
 #ano2015 a.bullet span,
 #ano2014 a.bullet span {
     display:none; 
@@ -463,7 +478,8 @@ a.bullet span {
     line-height:20px;
     z-index: 1;
 }
-
+#ano2016 a.bullet:focus span,
+#ano2016 a.bullet:hover span,
 #ano2015 a.bullet:focus span,
 #ano2015 a.bullet:hover span,
 #ano2014 a.bullet:focus span,
@@ -828,3 +844,195 @@ div.anoempty .classusorede{
 label[for|="buscanaweblist"]{
 	display: none;
 }
+
+
+/* MOBILE */
+
+
+@media (min-width: 0px) and (max-width: 1023px) {
+body{
+	width: 100%;
+}
+
+
+
+header h1{
+	font-size: 180%;
+	padding: 5px 0px 0px 10px;
+	text-align: center;
+}	
+body header{
+	padding-top: 1px;
+}
+
+main ul#anos{
+	margin-top: 140px;
+}
+
+li h2{
+	font-size: 1em;
+}
+
+div a.bullet{
+	display: block;
+	height: 80px;
+	width: 80px;
+	display: inline-block;
+	border: 2px solid;
+}
+
+div a.bullet[id|="web"]{
+	border: 4px solid #197eb0;
+}
+
+div a.bullet[id|="internet"]{
+	border: 4px solid #74913f;
+}
+
+div a.bullet[id|="tecnologia"]{
+	border: 4px solid #bfad06;
+}
+
+div a.bullet[id|="historia"]{
+	border: 4px solid #a1742d;
+}
+
+div a.bullet[id|="economia"]{
+	border: 4px solid #bd3d31;
+}
+
+
+.skip,
+#vertical
+{
+	display: none;
+}
+
+a.simple :visited{
+	color: white;
+}
+
+body nav{
+	top: 50px;
+	background-color: #021a2e;
+
+}
+nav fieldset{
+	padding: 0px;
+}
+
+fieldset legend{
+
+}
+
+header img,
+header img[src|="img/logosceweb.svg"]{
+left: auto;
+top: 400px;
+z-index: 0;
+}
+
+
+header img[src|="img/logow3c.svg"]{
+left: 10px;
+top: 400px;
+z-index: 0;
+}
+
+header a[href|="http://www.w3c.br/"]:focus,
+header a[href|="http://www.w3c.br/"]:hover{
+	top: 400px;
+}
+
+header a[href|="http://www.ceweb.br/"]:focus,
+header a[href|="http://www.ceweb.br/"]:hover{
+	top: 400px;
+}
+
+
+main div[id|="internet"], 
+main div[id|="tecnologia"], 
+main div[id|="web"], 
+main div[id|="historia"], 
+main div[id|="economia"],
+header div[id|="browse"],
+header div[id|="contrib"],
+header div[id|="about"]{
+	top: 40px;
+	left: 10px;
+	width: 270px;
+	height: 240px;
+	font-size: 0.8em;
+}
+
+main div.internet, 
+main div.tecnologia,
+main div.historia,
+main div.economia,
+main div.web{
+	height: 100px;
+}
+
+main div#webfs:before,
+main div#internetfs:before,
+main div#tecnologiafs:before,
+main div#historiafs:before,
+main div#economiafs:before,
+main div#webls:after,
+main div#internetls:after,
+main div#tecnologials:after,
+main div#historials:after,
+main div#economials:after{
+	width: 130px;
+	height: 100px;
+}
+
+div h3{
+	margin-top: 0px;
+	font-size: 0.9em;
+}
+
+div a.bullet span,
+div a.bullet span {
+    display:none; 
+    padding:7px 10px;
+    margin-top:-30px; 
+    margin-left:-170px;
+    width:300px; 
+    line-height:20px;
+    position: fixed;
+}
+
+div img{
+	width: 20%;
+}
+
+.github{
+	position: fixed;
+	top: 430px;
+}
+}
+
+
+@media (min-width: 0px) and (max-width: 1023px) and (orientation: landscape) {
+main div[id|="internet"], 
+main div[id|="tecnologia"], 
+main div[id|="web"], 
+main div[id|="historia"], 
+main div[id|="economia"],
+header div[id|="browse"],
+header div[id|="contrib"],
+header div[id|="about"]{
+	top: 40px;
+	left: 10px;
+	width: 470px;
+	height: 240px;
+	font-size: 0.9em;
+	z-index: 6;
+}
+
+
+}
+
+
+
