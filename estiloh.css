@@ -415,6 +415,7 @@ label{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	color: white;
+	border:1px solid #0052cc;
 }
 
 input[type=submit]{
@@ -422,18 +423,19 @@ input[type=submit]{
 }
 
 label[for=checkweb]{
-	background-color: #20aef5;
+	background-color: #076492;
 }
+label[for=checkweb]:hover{
+	background-color: #0a96db;
+}
+
 
 label[for=checkint]{
-	background-color: #74913f;
+	background-color: #475927;
 }
 
-
-label[for=checkweb]:hover,
 label[for=checkint]:hover{
-opacity: 0.7;	
-
+	background-color: #7fa046;	
 }
 
 input#checkweb:focus,
@@ -562,22 +564,28 @@ div img{
 	border: 1px solid silver;
 	border-right: 2px solid silver;
 	border-bottom: 2px solid silver;
-	padding: 3px;
+	padding-left: 3px;
 	background-color:gray;
 	float: right;
 	width: 20px;
 	position: absolute;
 	top: -10px;
 	right: -10px;
-	color: white;
+	color: gray;
 	text-decoration: none;
 	transition:0.5s;
+	font-size: 1px;
+}
+
+.close:before{
+	content: "X";
+	font-size: 12px;
 }
 
 .close:hover,
 .close:focus{
 	background-color:white;
-	color: navy;
+	color: gray;
 }
 
 
