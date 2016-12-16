@@ -1,5 +1,5 @@
 //abre tooltip de cada elemento. Fecha os demais
-function abre(event) { 
+function abre(event) {
     var close = document.getElementsByClassName("hide");
     var hide;
     for (hide = 0; hide < close.length; hide++) {
