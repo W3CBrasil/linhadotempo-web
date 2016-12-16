@@ -578,6 +578,7 @@ div img{
 }
 
 .close:before{
+	color: white;
 	content: "X";
 	font-size: 12px;
 }
