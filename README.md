@@ -1,5 +1,5 @@
 # Linha do Tempo da Web - http://ceweb.br/linhadotempo/
 
-Código da linha do tempo da Web. Uma iniciativa do Ceweb.br para apresentar os principais marcos históricos da Web. Os eventos estão separados por "Web" e "Internet". Ícones circulares são fatos importantes para a Web e ícones quadrados representam a publicação de documentos e recomendações importantes para a Web.
+A linha do tempo da Web é uma iniciativa do Ceweb.br e do W3C Brasil com o objetivo de apresentar de forma interativa e dinâmica a história da Web. 
 
-Ajude a manter a linha do tempo atuallizada adicionando eventos em seus respectivos anos. As imagens de fundo dos ícones vem do arquivo single.css.
+Para sugestões de conteúdo da linha do tempo, submeta um pull request para que possamos pesquisar e complementar os marcos históricos sugeridos.
