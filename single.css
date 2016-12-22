@@ -567,6 +567,12 @@ li#ano2015 a#internet-2015-01{
 	background-position: -10px -5px, center;
 }
 
+li#ano2016 a#web-2016-02{
+	background: url(img/css20.jpg) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 25px, center;
+}
+
 /* ee */
 
 #web-2009-ee{
