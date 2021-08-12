@@ -1,28 +1,4 @@
 /*--------- Quadrados de especificacoes --------*/
-#web-1990-02,
-#web-1995-01,
-#web-1996-01,
-#web-1996-04,
-#web-1997-01,
-#web-1997-02,
-#web-1998-01,
-#web-1999-01,
-#web-2001-01,
-#web-2001-02,
-#web-2002-01,
-#web-2004-01,
-#web-2004-02,
-#web-2008-02,
-#web-2008-03,
-#web-2008-04,
-#web-2009-01,
-#web-2011-03,
-#web-2013-01,
-#web-2014-01,
-#web-2014-02
-{
-	border-radius: 0;
-}
 
 
 
@@ -65,16 +41,22 @@ li#ano1990 a#web-1990-01{
 	background-position: 0px 0px, center;
 }
 
-li#ano1990 a#web-1990-02{
-	background: url(img/html1.jpg) no-repeat white; 
-	background-size: 150%;
-	background-position: 0px 0px, center;
-}
-
 li#ano1990 a#internet-1990-01{
 	background: url(img/iana-logo.jpg) no-repeat white; 
 	background-size: 120%;
 	background-position: 0px 20px, center;
+}
+
+li#ano1991 a#web-1991-01{
+	background: url(img/first-webpage.jpg) no-repeat white; 
+	background-size: 200%;
+	background-position: 0px 0px, center;
+}
+
+li#ano1991 a#web-1991-02{
+	background: url(img/the-first-html-tags.png) no-repeat white; 
+	background-size: 200%;
+	background-position: 0px 0px, center;
 }
 
 li#ano1992 a#web-1992-01{
@@ -98,6 +80,11 @@ li#ano1993 a#web-1993-01{
 li#ano1993 a#web-1993-02{
 	background: url(img/mosaic.jpg) no-repeat white; 
 	background-size: 130%;
+	background-position: 0px 0px, center;
+}
+li#ano1993 a#web-1993-03{
+	background: url(img/html1.jpg) no-repeat white; 
+	background-size: 150%;
 	background-position: 0px 0px, center;
 }
 
@@ -571,6 +558,36 @@ li#ano2016 a#web-2016-02{
 	background: url(img/css20.jpg) no-repeat white; 
 	background-size: 100%;
 	background-position: 0px 25px, center;
+}
+
+li#ano2017 a#web-2017-01{
+	background: url(img/dwbp.png) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 25px, center;
+}
+
+li#ano2017 a#web-2017-02{
+	background: url(img/w3c-idpf.jpg) no-repeat white; 
+	background-size: 200%;
+	background-position: -40px 0px, center;
+}
+
+li#ano2019 a#web-2019-01{
+	background: url(img/dwbp.png) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 25px, center;
+}
+
+li#ano2021 a#web-2021-01{
+	background: url(img/spacex.jpg) no-repeat white; 
+	background-size: 200%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2021 a#web-2021-02{
+	background: url(img/yahoo-respostas.jpg) no-repeat white; 
+	background-size: 200%;
+	background-position: 0px 0px, center;
 }
 
 /* ee */
