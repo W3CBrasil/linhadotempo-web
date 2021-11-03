@@ -474,7 +474,7 @@ a.bullet span {
     z-index: 1;
 }
 
-#ano2019 a.bullet span,
+#ano2020 a.bullet span,
 #ano2021 a.bullet span {
     display:none;
     padding:14px 20px;
@@ -484,6 +484,8 @@ a.bullet span {
     line-height:20px;
     z-index: 1;
 }
+#ano2020 a.bullet:focus span,
+#ano2020 a.bullet:hover span,
 #ano2021 a.bullet:focus span,
 #ano2021 a.bullet:hover span,
 #ano2019 a.bullet:focus span,
