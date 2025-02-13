@@ -193,7 +193,7 @@ ul#anos li{
 
 }
 
-ul#anos li#ano2021,
+ul#anos li#ano2025,
 ul#anos li#end{
     border-right: none;
 }
@@ -474,8 +474,8 @@ a.bullet span {
     z-index: 1;
 }
 
-#ano2020 a.bullet span,
-#ano2021 a.bullet span {
+#ano2022 a.bullet span,
+#ano2025 a.bullet span {
     display:none;
     padding:14px 20px;
     margin-top:-35px;
@@ -484,12 +484,11 @@ a.bullet span {
     line-height:20px;
     z-index: 1;
 }
-#ano2020 a.bullet:focus span,
-#ano2020 a.bullet:hover span,
-#ano2021 a.bullet:focus span,
-#ano2021 a.bullet:hover span,
-#ano2019 a.bullet:focus span,
-#ano2019 a.bullet:hover span{
+
+#ano2022 a.bullet:focus span,
+#ano2022 a.bullet:hover span,
+#ano2025 a.bullet:focus span,
+#ano2025 a.bullet:hover span{
     display:inline;
     position:absolute;
     color:white;

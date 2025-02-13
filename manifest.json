@@ -1,0 +1,45 @@
+{
+    "lang": "pt-br",
+    "name": "Temperature converter app",
+    "start_url": "/linhadotempo/",
+    "orientation": "any",
+    "display": "standalone",
+    "name": "Linha do Tempo da Web",
+    "short_name": "Linha do tempo da Web",
+    "icons": [{
+      "src": "img/icon-128.png",
+        "sizes": "128x128",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }, {
+        "src": "img/icon-144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }, {
+        "src": "img/icon-152.png",
+        "sizes": "152x152",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }, {
+        "src": "img/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }, {
+        "src": "img/icon-256.png",
+        "sizes": "256x256",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }, {
+        "src": "img/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }],
+    "lang": "pt-BR",
+    "start_url": "/linhadotempo/index.html",
+    "display": "standalone",
+    "background_color": "black",
+    "theme_color": "black"
+  }

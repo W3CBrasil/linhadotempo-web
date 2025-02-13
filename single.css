@@ -493,10 +493,30 @@ li#ano2011 a#internet-2011-01{
 	background-position: -20px -2px, center;
 }
 
+li#ano2012 a#web-2012-01{
+	background: url(img/premio-acessibilidade.jpg) no-repeat white; 
+	background-size: 140%;
+	background-position: -20px -2px, center;
+}
+
+
+
 li#ano2013 a#web-2013-01{
 	background: url(img/sparql.jpg) no-repeat white; 
 	background-size: 150%;
 	background-position: 0px 0px, center;
+}
+
+li#ano2013 a#web-2013-02{
+	background: url(img/logo-www2013.png) no-repeat white; 
+	background-size: 150%;
+	background-position: 0px 0px, center;
+}
+
+li#ano2013 a#web-2013-03{
+	background: url(img/cartilha-acessibilidade1.png) no-repeat white; 
+	background-size: 150%;
+	background-position: -20px 0px, center;
 }
 
 li#ano2014 a#web-2014-01,
@@ -548,6 +568,12 @@ li#ano2015 a#web-2015-02{
 	background-position: -30px -20px, center;
 }
 
+li#ano2015 a#web-2015-03{
+	background: url(img/brasao-lbi.png) no-repeat white; 
+	background-size: 160%;
+	background-position: -30px -20px, center;
+}
+
 li#ano2015 a#internet-2015-01{
 	background: url(img/http2.jpg) no-repeat white; 
 	background-size: 130%;
@@ -589,6 +615,24 @@ li#ano2021 a#web-2021-02{
 	background-size: 200%;
 	background-position: 0px 0px, center;
 }
+
+li#ano2022 a#web-2022-01{
+	background: url(img/abnt-mobile.jpg) no-repeat white; 
+	background-size: 200%;
+	background-position: 0px 0px, center;
+}
+li#ano2022 a#web-2022-02{
+	background: url(img/chatgpt.jpg) no-repeat white; 
+	background-size: 200%;
+	background-position: -50px -10px, center;
+}
+
+li#ano2025 a#web-2025-01{
+	background: url(img/deepseek.png) no-repeat white; 
+	background-size: 100%;
+	background-position: 0px 0px, center;
+}
+
 
 /* ee */
 
