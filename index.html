@@ -1,997 +1,3420 @@
-<!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="estiloh.css">
-    <meta property="og:url" content="http://www.ceweb.br/linhadotempo/">
-    <meta property="og:title" content="Linha do tempo da Web">
-    <meta property="og:site_name" content="Linha do tempo da Web">
-    <meta property="og:image" content="http://www.ceweb.br/linhadotempo/img/thumb.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="470">
-    <meta property="og:image:height" content="246">
-    <meta property="og:description" content="Navegue pela história da Web neste infográfico interativo produzido pelo Ceweb.br e W3C Brasil.">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="manifest" href="manifest.json">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="estiloh.css" />
+    <meta property="og:url" content="http://www.ceweb.br/linhadotempo/" />
+    <meta property="og:title" content="Linha do tempo da Web" />
+    <meta property="og:site_name" content="Linha do tempo da Web" />
+    <meta
+      property="og:image"
+      content="http://www.ceweb.br/linhadotempo/img/thumb.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="470" />
+    <meta property="og:image:height" content="246" />
+    <meta
+      property="og:description"
+      content="Navegue pela história da Web neste infográfico interativo produzido pelo Ceweb.br e W3C Brasil."
+    />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="manifest" href="manifest.json" />
     <title>Linha do tempo da Web - Ceweb.br</title>
-</head>
-<body>
-<p class="skip"><a href="#anos" aria-label="Para usuários de leiores de tela: Ao ativar um item da linha do tempo os detalhes do item abrem na página. Pressione seta para baixo para começar a ler o conteúdo aberto. Pressione a tecla ESC para fechar e continuar a navegaão por TAB. Ir para o conteúdo.">Saltar para o conteúdo</a>
-<header>
-<h1>Linha do tempo da Web</h1>
-<a href="http://www.w3c.br/"><img src="img/logow3c.svg" alt="W3C Brasil"></a>
-<a href="http://www.ceweb.br/"><img src="img/logosceweb.svg" alt="Ceweb.br - NIC.br - CGI.br"></a>
-</header>
-<nav>
-<form>
-<fieldset>
-<legend>Selecione os filtros de tema</legend>
-<label for="checkweb"><input type="checkbox" name="filter" id="checkweb" onclick="show()" checked><span>Web</span></label>
-<label for="checkint"><input type="checkbox" name="filter" id="checkint" onclick="show()"><span>Internet</span></label>
-</fieldset>
-<input type="submit" value="exibir categorias">
- </form>
-</nav>
-<main id="frame">
-<ul id="anos">
-<li id="ano1969">
-<h2>1969</h2>
-<!-- web-->
-<div class="web" id="webfs"></div>
-<!--internet-->
-<div class="internet" id="internetfs">
-<a id="internet-1969-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Criação da ARPANET</span></a><div id="internet-1969-01-box" class="hide">
-<h3>Criação da ARPANET</h3>
-<p><img src="img/arpanet.jpg" alt="Arpanet">Feito o primeiro nó da ARPANET (<span lang="en">Advanced Research Projects Agency Network</span>) pelo trabalho de Leonard Kleinrock, no <span lang="en">Network Measurement Center</span> da UCLA.  </p>
-<p>Fonte: <a href="http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet">ISOC</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano1974">
-<h2>1974</h2>
-<!-- web-->
-<div class="web"></div>
-<!--internet-->
-<div class="internet">
-<a id="internet-1974-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançada a RFC675</span></a><div id="internet-1974-01-box" class="hide">
-<h3>Lançada a RFC675</h3>
-<p><img src="img/internet.jpg" alt="Internet">Lançada a especificação 675, pelo IETF, para "<span lang="en">Internet Transmission Control Program</span>" (TCP).</p>
-<p>Fonte: <a href="https://tools.ietf.org/html/rfc675">IETF</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano1986">
-<h2>1986</h2>
-<!-- web-->
-<div class="web"></div>
-<!--internet-->
-<div class="internet">
-<a id="internet-1986-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Primeira reunião do IETF</span></a><div id="internet-1986-01-box" class="hide">
-<h3>Primeira reunião do IETF</h3>
-<p><img src="img/ietflogo.gif" alt="Arpanet">Em 1986 foi realizada a primeira reunião do IETF (<span lang="en">Internet Engineering Task Force</span>). </p>
-<p>Fonte: <a href="http://www.ietf.org/proceedings/01.pdf">IETF</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano1989">
-<h2>1989</h2>
-<!-- web-->
-<div class="web">
-<a id="web-1989-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Tim Berners-Lee cria a Web</span></a><div id="web-1989-01-box" class="hide"><h3>Tim Berners-Lee cria a <span lang="en">World Wide Web</span></h3>
-<p><img src="img/foto-timbl.jpg" alt="Foto de Tim Berners-Lee">Tim Berners-Lee inventa a <span lang="en">World Wide Web</span>, ainda como um projeto do CERN (<span lang="en">European Organization for Nuclear Research</span>) </p>
-<p>Fonte: <a href="https://www.w3.org/People/Berners-Lee/1996/ppf.html">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-1989-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Delegado o TLD .br ao Brasil</span></a><div id="internet-1989-01-box" class="hide">
-<h3>Delegado o TLD .br ao Brasil</h3>
-<p><img src="img/logo-cgi-old.gif" alt="Foto de Tim Berners-Lee">No dia 18 de abril de 1989, John Postel delega a Demi Getschko o TLD ".br".</p>
-<p>Fonte: <a href="http://www.iana.org/domains/root/db/br.html">IANA</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano1990">
-<h2>1990</h2>
-<!-- web-->
-<div class="web">
-<a id="web-1990-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Criação do primeiro browser</span></a><div id="web-1990-01-box" class="hide">
-<h3>Criação do primeiro browser</h3>
-<p><img src="img/browser.jpg" alt="Imagem do primeiro browser inventado por Tim Berners-Lee">Tim Berners-Lee desenvolve o primeiro browser, chamado WorldWideWeb </p>
-<p>Fonte: <a href="https://www.w3.org/People/Berners-Lee/WorldWideWeb.html">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-1990-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Primeira menção ao nome IANA</span></a><div id="internet-1990-01-box" class="hide">
-<h3>Primeira menção ao nome IANA</h3>
-<p><img src="img/iana-logo.jpg" alt="Logo da IANA">Primeira menção ao nome IANA (<span lang="en">Internet Assigned Numbers Authority</span>), por Jon Postel - que foi diretor da IANA até a sua morte</p>
-<p>Fonte: <a href="https://tools.ietf.org/html/rfc1060">IETF</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
+  </head>
+  <body cz-shortcut-listen="true">
+    <p class="skip">
+      <a
+        href="#anos"
+        aria-label="Para usuários de leiores de tela: Ao ativar um item da linha do tempo os detalhes do item abrem na página. Pressione seta para baixo para começar a ler o conteúdo aberto. Pressione a tecla ESC para fechar e continuar a navegaão por TAB. Ir para o conteúdo."
+        >Saltar para o conteúdo</a
+      >
+    </p>
+    <header>
+      <h1>Linha do tempo da Web</h1>
+      <a href="http://www.w3c.br/"
+        ><img src="img/logow3c.svg" alt="W3C Brasil"
+      /></a>
+      <a href="http://www.ceweb.br/"
+        ><img src="img/logosceweb.svg" alt="Ceweb.br - NIC.br - CGI.br"
+      /></a>
+    </header>
+    <nav>
+      <form>
+        <fieldset>
+          <legend>Selecione os filtros de tema</legend>
+          <label for="checkweb"
+            ><input
+              type="checkbox"
+              name="filter"
+              id="checkweb"
+              onclick="show()"
+              checked=""
+            /><span>Web</span></label
+          >
+          <label for="checkint"
+            ><input
+              type="checkbox"
+              name="filter"
+              id="checkint"
+              onclick="show()"
+            /><span>Internet</span></label
+          >
+        </fieldset>
+        <input type="submit" value="exibir categorias" />
+      </form>
+    </nav>
+    <main id="frame">
+      <ul id="anos">
+        <li id="ano1969">
+          <h2>1969</h2>
+          <!-- web-->
+          <div class="web" id="webfs"></div>
+          <!--internet-->
+          <div class="internet" id="internetfs">
+            <a
+              id="internet-1969-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Criação da ARPANET</span></a
+            >
+            <div id="internet-1969-01-box" class="hide">
+              <h3>Criação da ARPANET</h3>
+              <p>
+                <img src="img/arpanet.jpg" alt="Arpanet" />Feito o primeiro nó
+                da ARPANET (<span lang="en"
+                  >Advanced Research Projects Agency Network</span
+                >) pelo trabalho de Leonard Kleinrock, no
+                <span lang="en">Network Measurement Center</span> da UCLA.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.internetsociety.org/internet/what-internet/history-internet/brief-history-internet"
+                  >ISOC</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano1974">
+          <h2>1974</h2>
+          <!-- web-->
+          <div class="web"></div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-1974-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançada a RFC675</span></a
+            >
+            <div id="internet-1974-01-box" class="hide">
+              <h3>Lançada a RFC675</h3>
+              <p>
+                <img src="img/internet.jpg" alt="Internet" />Lançada a
+                especificação 675, pelo IETF, para "<span lang="en"
+                  >Internet Transmission Control Program</span
+                >" (TCP).
+              </p>
+              <p>
+                Fonte: <a href="https://tools.ietf.org/html/rfc675">IETF</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano1986">
+          <h2>1986</h2>
+          <!-- web-->
+          <div class="web"></div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-1986-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Primeira reunião do IETF</span></a
+            >
+            <div id="internet-1986-01-box" class="hide">
+              <h3>Primeira reunião do IETF</h3>
+              <p>
+                <img src="img/ietflogo.gif" alt="Arpanet" />Em 1986 foi
+                realizada a primeira reunião do IETF (<span lang="en"
+                  >Internet Engineering Task Force</span
+                >).
+              </p>
+              <p>
+                Fonte: <a href="http://www.ietf.org/proceedings/01.pdf">IETF</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano1989">
+          <h2>1989</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-1989-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Tim Berners-Lee cria a Web</span></a
+            >
+            <div id="web-1989-01-box" class="hide">
+              <h3>
+                Tim Berners-Lee cria a <span lang="en">World Wide Web</span>
+              </h3>
+              <p>
+                <img
+                  src="img/foto-timbl.jpg"
+                  alt="Foto de Tim Berners-Lee"
+                />Tim Berners-Lee inventa a
+                <span lang="en">World Wide Web</span>, ainda como um projeto do
+                CERN (<span lang="en"
+                  >European Organization for Nuclear Research</span
+                >)
+              </p>
+              <p>
+                Fonte:
+                <a href="https://www.w3.org/People/Berners-Lee/1996/ppf.html"
+                  >W3C</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-1989-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Delegado o TLD .br ao Brasil</span></a
+            >
+            <div id="internet-1989-01-box" class="hide">
+              <h3>Delegado o TLD .br ao Brasil</h3>
+              <p>
+                <img
+                  src="img/logo-cgi-old.gif"
+                  alt="Foto de Tim Berners-Lee"
+                />No dia 18 de abril de 1989, John Postel delega a Demi Getschko
+                o TLD ".br".
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.iana.org/domains/root/db/br.html">IANA</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano1990">
+          <h2>1990</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-1990-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Criação do primeiro browser</span></a
+            >
+            <div id="web-1990-01-box" class="hide">
+              <h3>Criação do primeiro browser</h3>
+              <p>
+                <img
+                  src="img/browser.jpg"
+                  alt="Imagem do primeiro browser inventado por Tim Berners-Lee"
+                />Tim Berners-Lee desenvolve o primeiro browser, chamado
+                WorldWideWeb
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.w3.org/People/Berners-Lee/WorldWideWeb.html"
+                  >W3C</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-1990-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Primeira menção ao nome IANA</span></a
+            >
+            <div id="internet-1990-01-box" class="hide">
+              <h3>Primeira menção ao nome IANA</h3>
+              <p>
+                <img src="img/iana-logo.jpg" alt="Logo da IANA" />Primeira
+                menção ao nome IANA (<span lang="en"
+                  >Internet Assigned Numbers Authority</span
+                >), por Jon Postel - que foi diretor da IANA até a sua morte
+              </p>
+              <p>
+                Fonte: <a href="https://tools.ietf.org/html/rfc1060">IETF</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
 
-<li id="ano1991">
-<h2>1991</h2>
-<!-- web-->
-<div class="web">
-<a id="web-1991-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Primeira página Web publicada</span></a><div id="web-1991-01-box" class="hide">
-<h3>Primeira página Web publicada</h3>
-<p><img src="img/first-webpage.jpg" alt="Captura de tela da primeira página Web publicada">Tim Berners-Lee publica a primeira página Web.</p>
-<p>Fonte: <a href="https://www.businessinsider.com/flashback-this-is-what-the-first-website-ever-looked-like-2011-6#:~:text=The%20first%20web%20page%20went,%2FWWW%2FTheProject.html.">Business Inside</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-1991-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Publicado o documento HTML Tags</span></a><div id="web-1991-02-box" class="hide">
-<h3>Publicado o documento HTML Tags</h3>
-<p><img src="img/the-first-html-tags.png" alt="Captura de tela dd documento HTML Tags">Tim Berners-Lee publica documento contendo as primeiras tags da linguagem de marcação na Web.</p>
-<p>Fonte: <a href="https://www.webdesignmuseum.org/web-design-history/tim-berners-lee-published-a-document-called-html-tags-1991">Web Design Museum</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-</div>
-</li>
+        <li id="ano1991">
+          <h2>1991</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-1991-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Primeira página Web publicada</span></a
+            >
+            <div id="web-1991-01-box" class="hide">
+              <h3>Primeira página Web publicada</h3>
+              <p>
+                <img
+                  src="img/first-webpage.jpg"
+                  alt="Captura de tela da primeira página Web publicada"
+                />Tim Berners-Lee publica a primeira página Web.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.businessinsider.com/flashback-this-is-what-the-first-website-ever-looked-like-2011-6#:~:text=The%20first%20web%20page%20went,%2FWWW%2FTheProject.html."
+                  >Business Inside</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-1991-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Publicado o documento HTML Tags</span></a
+            >
+            <div id="web-1991-02-box" class="hide">
+              <h3>Publicado o documento HTML Tags</h3>
+              <p>
+                <img
+                  src="img/the-first-html-tags.png"
+                  alt="Captura de tela dd documento HTML Tags"
+                />Tim Berners-Lee publica documento contendo as primeiras tags
+                da linguagem de marcação na Web.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.webdesignmuseum.org/web-design-history/tim-berners-lee-published-a-document-called-html-tags-1991"
+                  >Web Design Museum</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
 
-<li id="ano1992">
-<h2>1992</h2>
-<!-- web-->
-<div class="web">
-<a id="web-1992-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Publicada a primeira foto na Web</span></a><div id="web-1992-01-box" class="hide">
-<h3>Publicada a primeira foto na Web</h3>
-<p><img src="img/first-image.jpg" alt="Imagem da primeira foto publicada na Web">Tim-Berners Lee posta a primeira foto da Web, uma foto da banda “<span lang="fr">Les Horribles Cernettes</span>”</p>
-<p>Fonte: <a href="http://www.telegraph.co.uk/technology/news/9391110/How-the-first-photo-was-posted-on-the-Web-20-years-ago.html">The Telegraph</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-1992-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Criação da ISOC</span></a><div id="internet-1992-01-box" class="hide">
-<h3>Criação da ISOC</h3>
-<p><img src="img/isoc.gif" alt="Logo da ISOC">A <span lang="en">Internet Society</span> (ISOC) foi formada em 1992 para promover normas técnicas e outras especificações para a utilização da Internet.</p>
-<p>Fonte: <a href="http://www.internetsociety.org/history-timeline/official-formation-date-internet-society">Internet Society</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano1993">
-<h2>1993</h2>
-<!-- web-->
-<div class="web">
-<a id="web-1993-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>CERN disponibiliza a Web ao mundo</span></a><div id="web-1993-01-box" class="hide">
-<h3>CERN disponibiliza a Web ao mundo</h3>
-<p><img src="img/web.jpg" alt="Imagem do primeiro esboço da Web feito por Tim Bernrs-Lee">O CERN disponibiliza como domínio público e "doa para o mundo" a tecnologia da Web. </p>
-<p>Fonte: <a href="http://www.pewinternet.org/2014/03/11/world-wide-web-timeline/" lang="en">Pew Internet Research</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-1993-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do navegador Mosaic</span></a><div id="web-1993-02-box" class="hide">
-<h3>Lançamento do navegador Mosaic</h3>
-<p><img src="img/mosaic.jpg" alt="Imagem do navegador Mosaic">Mark Anderssen cria o Mosaic, o navegador que ajudou a abrir a web para o público em geral.</p>
-<p>Fonte: <a href="https://www.wired.com/2010/04/0422mosaic-web-browser/">Wired</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-1993-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Primeira versão do HTML</span></a><div id="web-1993-03-box" class="hide">
-<h3>Primeira versão do HTML</h3>
-<p><img src="img/html1.jpg" alt="Imagem da primeira versão do documento HTML1">Tim Berners-Lee publica a primeira versão da Linguagem de Marcação de Hipertexto (HTML).</p>
-<p>Fonte: <a href="http://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet"></div>
-</li>
-<li id="ano1994">
-<h2>1994</h2>
-<!-- web-->
-<div class="web">
-<a id="web-1994-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Tim Berners-Lee cria o W3C </span></a><div id="web-1994-01-box" class="hide">
-<h3>Tim Berners-Lee cria o W3C </h3>
-<p><img src="img/w3c.jpg" alt="Logo do W3C">Tim Berners-Lee cria o W3C (<span lang="en">World Wide Web Consortium</span>), no MIT (<span lang="en">Massachusetts Institute of Technology</span>), em colaboração com o CERN.</p>
-<p>Fonte: <a href="http://www.w3.org/Consortium/facts">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-1994-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Netscape</span></a><div id="web-1994-02-box" class="hide">
-<h3>Netscape lança a primeira versão do seu navegador</h3>
-<p><img src="img/netscape.jpg" alt="Logo do Netscape Navigator">Lançado um dos primeiros browsers "<span lang="en">user friendly</span>" que rapidamente é adotado pelo mercado.</p>
-<p>Fonte: <a href="http://news.bbc.co.uk/2/hi/in_depth/business/2000/microsoft/635689.stm">BBC</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-1994-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Especificação do URL</span></a><!-- novo-->
-<div id="web-1994-03-box" class="hide">
-<h3>Especificação do URL</h3>
-<p><img src="img/url.jpg" alt="Ilustração da barra de endereços URL">Foi especificado o Localizador Padrão de Recursos, em inglês <span lang="en">Uniform Resource Locator</span> (URL).</p>
-<p>Fonte: <a href="http://www.w3.org/Addressing/URL/url-spec.txt">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet"></div>
-</li>
-<li id="ano1995">
-<h2>1995</h2>
-<!-- web-->
-<div class="web"><!-- novo-->
-<a id="web-1995-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>HTML 2 é uma recomendação</span></a><div id="web-1995-01-box" class="hide">
-<h3>HTML 2 é uma recomendação</h3>
-<p><img src="img/html2.jpg" alt="Texto do HTML2">HTML 2 torna-se um padrão pelo IETF, de modo a criar uma especificação para interoperabilidade entre as versões do HTML. </p>
-<p>Fonte: <a href="http://www.w3.org/MarkUp/html-spec/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-1995-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Criação do Ebay</span></a><div id="web-1995-02-box" class="hide">
-<h3>Criação do Ebay</h3>
-<p><img src="img/ebay.jpg" alt="Logo do Ebay">Originalmente chamado “<span lang="en">AuctionWeb</span>”, listou o primeiro item para venda: um laser pointer quebrado. </p>
-<p>Fonte: <a href="https://www.ebayinc.com/our-company/our-history/">Ebay</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-1995-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Internet Explorer</span></a><div id="web-1995-03-box" class="hide">
-<h3>Lançamento do Internet Explorer</h3>
-<p><img src="img/ie1.jpg" alt="Logo do Internet Explorer">Lançado o primeiro navegador Web da Microsoft. O Internet Explorer 1 foi lançado em 1995 junto com o Windows 95.</p>
-<p>Fonte: <a href="http://www.statetechmagazine.com/article/2013/08/visual-history-internet-explorer">StateTec</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-1995-04" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Brendan Eich cria o JavaScript</span></a><div id="web-1995-04-box" class="hide">
-<h3>Brendan Eich cria o JavaScript</h3>
-<p><img src="img/brendan.jpg" alt="Foto de Brendan Eich">Em maio de 1995, Brendan Eich cria o JavaScript em 10 dias.</p>
-<p>Fonte: <a href="https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-1995-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Criação do CGI.br</span></a><div id="internet-1995-01-box" class="hide">
-<h3>Criação do CGI.br</h3>
-<p><img src="img/cgi.jpg" alt="Logo do CGI.br">No dia 31 de maio de 1995, a Portaria Interministerial nº 147 cria o Comitê Gestor da Internet no Brasil (CGI.br). </p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-<p>Fonte: <a href="http://www.cgi.br/historicos/#1995">CGI.br</a>
-</div>
-<a id="internet-1995-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Primeiro domínio .com.br</span></a><div id="internet-1995-02-box" class="hide">
-<h3>Primeiro domínio .com.br</h3>
-<p><img src="img/dominiocom.jpg" alt=".com.br">Segundo Demi Getschko, o primeiro domínio comercial registrado no País foi da Companhia Energética de Minas Gerais (Cemig), em 17 de agosto de 1995.</p>
-<p>Fonte: <a href="http://idgnow.com.br/internet/2009/01/16/conheca-os-50-dominios-mais-antigos-da-internet-brasileira/#&amp;panel1-1">IDG Now!</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano1996">
-<h2>1996</h2>
-<!-- web-->
-<div class="web">
-<a id="web-1996-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>CSS1 é uma recomendação W3C</span></a><div id="web-1996-01-box" class="hide">
-<h3>CSS1 torna-se uma recomendação W3C</h3>
-<p><img src="img/css1.jpg" alt="Imagem da recomendação do CSS1">Devido a necessidade de criar estilos de visualização para documentos, foi criada a Folha de Estilos em Cascata (CSS) 1.0.</p>
-<p>Fonte: <a href="http://www.w3.org/Style/LieBos2e/history/Overview.html">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-1996-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Hotmail</span></a><div id="web-1996-02-box" class="hide">
-<h3>Lançamento do Hotmail</h3>
-<p><img src="img/hotmail.jpg" alt="Logo do Hotmail">Hotmail lança um dos primeiros serviços de Webmail gratuito do mundo.</p>
-<p>Fonte: <a href="https://news.microsoft.com/1999/02/08/msn-hotmail-from-zero-to-30-million-members-in-30-months/">Microsoft</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-1996-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do UOL</span></a><div id="web-1996-03-box" class="hide">
-<h3>Lançamento do UOL</h3>
-<p><img src="img/uol.jpg" alt="Logo do UOL">É lançado o website brasileiro Universo Online. </p>
-<p>Fonte: <a href="http://sobre.uol.com.br/historia/linhadotempo.jhtm">UOL</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-1996-04" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Recomendação XML 1.0</span></a><div id="web-1996-04-box" class="hide">
-<h3>W3C publica a recomendação XML 1.0</h3>
-<p><img src="img/xml1.jpg" alt="Imagem do documento XML">Publicado como recomendação o documento XML 1.0 </p>
-<p>Fonte: <a href="http://www.w3.org/TR/1998/REC-xml-19980210">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-1996-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Publicada a RFC HTTP1</span></a><div id="internet-1996-01-box" class="hide">
-<h3>Publicada a RFC HTTP1</h3>
-<p><img src="img/http1.jpg" alt="Imagem da RFC HTTP1">Publicada a RFC da versão 1.0 do Protocolo de Transmissão para Linguagem de Marcação, o HTTP 1.0</p>
-<p>Fonte: <a href="http://tools.ietf.org/html/rfc1945">IETF</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="internet-1996-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento o Flash 1</span></a><div id="internet-1996-02-box" class="hide">
-<h3>Lançamento o Flash 1</h3>
-<p><img src="img/flash.jpg" alt="Logo Flash">Em Dezembro de 1996 a empresa FutureSplash foi adquirida pela Macromedia, que renomeou seu editor de gráficos e animação para Macromedia Flash 1.0.</p>
-<p>Fonte: <a href="http://mashable.com/2012/11/19/history-of-flash/">Mashable</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano1997">
-<h2>1997</h2>
-<!-- web-->
-<div class="web">
-<a id="web-1997-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>HTML3.2 é uma recomendação</span></a><div id="web-1997-01-box" class="hide">
-<h3>HTML3.2 é uma recomendação do W3C</h3>
-<p><img src="img/html32.jpg" alt="Imagem da recomendação do HTML3.2">A nova versão da linguagem de marcação para hipertexto introduz atributos para formatação visual, como o uso de cores de fundo.</p>
-<p>Fonte: <a href="http://www.w3.org/TR/REC-html32.html">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-1997-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>HTML4 é uma recomendação W3C</span></a><div id="web-1997-02-box" class="hide">
-<h3>HTML4 é uma recomendação W3C</h3>
-<p><img src="img/html4.jpg" alt="Imagem da recomendação do HTML4">O HTML4 trouxe grandes melhorias para formulários, tabelas e para documentos em múltiplos idiomas.</p>
-<p>Fonte: <a href="http://www.w3.org/Press/HTML4-REC">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-1997-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Domínio Google.com é registrado</span></a><div id="internet-1997-01-box" class="hide">
-<h3>Google.com é registrado como um domínio</h3>
-<p><img src="img/google.jpg" alt="Logo do Google">O domínio foi registrado  em 15 de setembro. O nome é uma brincadeira com a palavra "googol", um termo matemático para o número representado pelo numeral 1 seguido por 100 zeros.</p>
-<p>Fonte: <a href="http://www.google.com/about/company/history/">Google</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="internet-1997-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Imposto de Renda pela Internet</span></a><div id="internet-1997-02-box" class="hide">
-<h3>Receita Federal libera a entrega de IR pela Internet</h3>
-<p><img src="img/receita.jpg" alt="Logo da Receita Federal">Com o intuito de facilitar as entregas das declarações de imposto de renda, foi criado um programa específico para transmissão de declarações pela internet, o Receitanet.</p>
-<p>Fonte: <a href="http://www.receita.fazenda.gov.br/Memoria/irpf/historia/hist1997a2014.asp#entregaDeclaracao">Receita federal</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano1998">
-<h2>1998</h2>
-<!-- web-->
-<div class="web">
-<a id="web-1998-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>CSS2 é uma recomendação do W3C</span></a><div id="web-1998-01-box" class="hide">
-<h3>CSS2 é uma recomendação do W3C</h3>
-<p><img src="img/css2.jpg" alt="Imagem da recomendação do CSS2">A nova versão das folhas de estilo em cascata trouxe novidades como as Media Types, que possibilitam criar estilos para impressão, telas, etc.</p>
-<p>Fonte: <a href="http://www.w3.org/TR/REC-html32.html">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-1998-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Criação da ICANN</span></a><div id="internet-1998-01-box" class="hide">
-<h3>Criação da ICANN</h3>
-<p><img src="img/icann.jpg" alt="Logo da ICANN">Em outubro de 1998, O Departamento de Comércio dos Estados Unidos ("DoC") e a <span lang="en">Network Solutions, Inc</span>. ("NSI") firmam um acordo de cooperação e criam a "<span lang="en">Internet Corporation for Assigned Names and Numbers</span>". </p>
-<p>Fonte: <a href="https://www.icann.org/resources/pages/history-2012-02-25-en">ICANN</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="internet-1998-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Publicada a RFC do IPV6</span></a><div id="internet-1998-02-box" class="hide">
-<h3>Publicada a RFC do IPV6</h3>
-<p><img src="img/ipv6.jpg" alt="Logo do ipv6">Lançado o novo protocolo da internet, devido ao esgotamento dos números de IPv4.</p>
-<p>Fonte: <a href="http://postscapes.com/internet-of-things-history">Postcapes</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano1999">
-<h2>1999</h2>
-<!-- web-->
-<div class="web">
-<a id="web-1999-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Publicado o documento WCAG1</span></a><div id="web-1999-01-box" class="hide">
-<h3>Publicado o documento WCAG1</h3>
-<p><img src="img/wcag1.jpg" alt="Imagem da recomendação do wcag1">A primeira versão das Diretrizes de Acessibilidade para Conteúdo Web foi publicada para auxiliar desenvolvedores a tornar as páginas Web acessíveis.</p>
-<p>Fonte: <a href="http://www.w3.org/TR/WAI-WEBCONTENT/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-1999-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Napster</span></a><div id="internet-1999-01-box" class="hide">
-<h3>Lançamento do Napster</h3>
-<p><img src="img/napster.jpg" alt="Logo da Napster">Em junho de 1999, o serviço de compartilhamento de músicas chamado Napster foi lançado.</p>
-<p>Fonte: <a href="http://www.economist.com/news/business/21605917-napsters-founders-demonstrate-challenges-entrepreneurial-second-acts-hit-me-baby-one-more">The Economist</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="internet-1999-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Início da pesquisa sobre IoT</span></a><div id="internet-1999-02-box" class="hide">
-<h3>Início da pesquisa sobre IoT</h3>
-<p><img src="img/NeilGershenfeld.jpg" alt="Foto de Neil Gershenfeld">Neil Gershenfeld escreveu sobre IoT (Internet das Coisas / Internet of Things) no livro book When Things Start to Think e cirou o Auto-ID Labs para pesquisar sobre IoT</p>
-<p>Fonte: <a href="http://postscapes.com/internet-of-things-history">Postcapes</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano2001">
-<h2>2001</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2001-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Primeiro artigo sobre Web Semântica</span></a><div id="web-2001-01-box" class="hide">
-<h3>Primeiro artigo sobre Web Semântica</h3>
-<p><img src="img/semantic.jpg" alt="Imagem da publicação The Semantic Web">Tim Berners-Lee, Ames Hendler e Ora Lassila escreveram o primeiro artigo sobre Web Semântica, em inglês <span lang="en">The Semantic Web: A new form of Web content that is meaningful to computers will unleash a revolution of new possibilities</span>.</p>
-<p>Fonte: <a href="https://www.scientificamerican.com/article/the-semantic-web/">Scientific American</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2001-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Recomendação XHTML1</span></a><div id="web-2001-02-box" class="hide">
-<h3>Recomendação XHTML1</h3>
-<p><img src="img/xhtml1.jpg" alt="Imagem da documentação do XHMTL1">XHTML1, uma evolução do HTML, é uma recomendação do W3C. </p>
-<p>Fonte: <a href="http://www.w3.org/TR/xhtml1/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2001-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento da Wikipedia</span></a><div id="web-2001-03-box" class="hide">
-<h3>Lançamento da Wikipedia</h3>
-<p><img src="img/wikipedia.jpg" alt="Logo da Wikipedia">Lançamento da maior enciclopédia online da internet, a Wikipedia, que foi construída de forma colaborativa pelos usuários.</p>
-<p>Fonte: <a href="http://www.dw.de/inside-wikipedia-attack-of-the-pr-industry/av-17745881">DW.com</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2001-04" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Internet Explorer 6</span></a><div id="web-2001-04-box" class="hide">
-<h3>Microsoft lança o Internet Explorer 6</h3>
-<p><img src="img/ie6.jpg" alt="Logo do Internet Explorer">No dia 27 de agosto de 2001 a Microsoft lança a versão 6 do seu navegador.</p>
-<p>Fonte: <a href="http://www.statetechmagazine.com/article/2013/08/visual-history-internet-explorer">Statetech Magazine</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-2001-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>WSIS</span></a><div id="internet-2001-01-box" class="hide">
-<h3>WSIS</h3>
-<p><img src="img/wsis.jpg" alt="Logo da WSIS">Aprovação nas Nações Unidas para criar a WSIS (Cúpula Mundial sobre a Sociedade da Informação / <span lang="en">World Summit on the Information Society</span>), em duas partes.</p>
-<p>Fonte: <a href="http://www.virtualpolicy.net/internet-governance-a-brief-timeline.html">Virtual Policy</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano2002">
-<h2>2002</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2002-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span lang="en">HTML Design Principles</span></a><div id="web-2002-01-box" class="hide">
-<h3 lang="en">HTML Design Principles</h3>
-<p><img src="img/html5.jpg" alt="Logo do HTML5">W3C publica o primeiro documento a abordar conceitos do HTML5, chamado <span lang="en">“HTML Design Principles”</span></p>
-<p>Fonte: <a href="http://www.w3.org/2002/09/wbs/40318/wdhdp/results">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2002-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do navegador Firefox</span></a><div id="web-2002-02-box" class="hide">
-<h3>Lançamento do navegador Firefox</h3>
-<p><img src="img/firefox.jpg" alt="Logo do firefox">Mozilla lança seu navegador, chamado Mozilla Firefox, desenvolvido de forma open source sob a engine Gecko.</p>
-<p>Fonte: <a href="https://blog.mozilla.org/press/2002/06/mozilla-org-launches-mozilla-1-0/">Mozilla</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet"></div>
-</li>
-<li id="ano2003">
-<h2>2003</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2003-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do navegador Safari</span></a><div id="web-2003-01-box" class="hide">
-<h3>Lançamento do navegador Safari</h3>
-<p><img src="img/safari.jpg" alt="Logo do Safari">Em 7 de janeiro de 2003, na Macworld São Francisco, Steve Jobs anunciou que a Apple havia desenvolvido seu próprio navegador, chamado Safari</p>
-<p>Fonte: <a href="https://www.apple.com/pr/library/2003/06/23Apple-Releases-Safari-1-0.html">Apple</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-2003-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Princípios de Genebra na WSIS </span></a><div id="internet-2003-01-box" class="hide">
-<h3>Declaração de Princípios de Genebra na WSIS </h3>
-<p><img src="img/wsis.jpg" alt="Logo da WSIS">Declaração da ONU sobre "Construir a Sociedade da Informação: um desafio global para o novo milênio", na Cúpula Mundial sobre a Sociedade da Informação / <span lang="en">World Summit on the Information Society</span></p>
-<p>Fonte: <a href="https://www.itu.int/wsis/documents/doc_multi.asp?lang=en&amp;id=1161%7C1160">ITU</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano2004">
-<h2>2004</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2004-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Publicada a recomendação RDF</span></a><div id="web-2004-01-box" class="hide">
-<h3>Publicada a recomendação RDF</h3>
-<p><img src="img/rdf.jpg" alt="Imagem representando RDF">A documentação publicada pelo W3C apresenta o RDF,  um modelo padrão para o intercâmbio de dados na Web.</p>
-<p>Fonte: <a href="http://www.w3.org/RDF/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2004-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Publicada a recomendação OWL</span></a><div id="web-2004-02-box" class="hide">
-<h3>Publicada a recomendação OWL</h3>
-<p><img src="img/owl.jpg" alt="Imagem da recomendação OWL">OWL, em inglês <span lang="en">Web Ontology Language</span> é criada para facilitar a interoperabilidade das máquinas e dar suporte ao XML, RDF e DRF Schema (RDF-S).</p>
-<p>Fonte: <a href="http://www.w3.org/TR/owl-features/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2004-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Criado o WHATWG</span></a><div id="web-2004-03-box" class="hide">
-<h3>Criado o WHATWG</h3>
-<p><img src="img/whatwg.jpg" alt="Logo do WHATWG">Fundado em 2004 por representantes da Apple,  Mozilla Foundation e Opera, o grupo é uma comunidade interessada na evolução da Web.</p>
-<p>Fonte: <a href="https://wiki.whatwg.org/wiki/FAQ#What_is_the_WHATWG.3F">WHATWG</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2004-04" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Orkut</span></a><div id="web-2004-04-box" class="hide">
-<h3>Lançamento do Orkut</h3>
-<p><img src="img/orkut.jpg" alt="Imagem da página incial do OrKut">Criada por um funcionário do Google, Orkut Büyükkökten, a rede social foi amplamente utilizada por brasileiros.</p>
-<p>Fonte: <a href="http://searchenginewatch.com/article/2066827/Google-Releases-Orkut-Social-Networking-Service">Search Engine Watch</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2004-05" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Facebook</span></a><div id="web-2004-05-box" class="hide">
-<h3>Lançamento do Facebook</h3>
-<p><img src="img/facebook.jpg" alt="Logo do facebook">Criada por Mark Zuckemberg, a rede social nasceu em fevereiro de 2004 dentro da universidade de Harvard e se tornou a maior rede social do planeta.</p>
-<p>Fonte: <a href="http://www.businessinsider.com/how-facebook-was-founded-2010-3">Business Insider</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet"></div>
-</li>
-<li id="ano2005">
-<h2>2005</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2005-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do YouTube</span></a><div id="web-2005-01-box" class="hide">
-<h3>Lançamento do YouTube</h3>
-<p><img src="img/youtube.jpg" alt="Logo do Youtube">Lançamento do serviço de publicação de vídeos online, Youtube, que seria comprado pelo Google anos depois.</p>
-<p>Fonte: <a href="http://www.forbes.com/sites/stevenrosenbaum/2014/07/14/user-generated-content-is-dead-as-video-evolves/">Forbes</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2005-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Padronização do URI</span></a><div id="web-2005-02-box" class="hide">
-<h3>Padronização do URI</h3>
-<p><img src="img/uri.jpg" alt="URI">O IETF padronizou o Identificador Uniforme de Recursos, em inglês <span lang="en">Uniform Resource Identifier</span> (URI).</p>
-<p>Fonte: <a href="http://www.ietf.org/rfc/rfc3986.txt">IETF</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-2005-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Criação do NIC.br</span></a><div id="internet-2005-01-box" class="hide">
-<h3>Criação do NIC.br</h3>
-<p><img src="img/logo-nicbr.png" alt="Criação do NIC.br">O NIC.br passou a ser a instituição que administra as ações de registro de nomes sob o .br além de assumir outras atribuições.</p>
-<p>Fonte: <a href="http://nic.br/historia/">NIC.br</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="internet-2005-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Pesquisas TIC</span></a><div id="internet-2005-02-box" class="hide">
-<h3>Cetic.br lança Pesquisas TIC Domicílios e Empresas</h3>
-<p><img src="img/tic.jpg" alt="Capa das pesquisas TIC">Apresentados os primeiros indicadores das Pesquisas TIC Domicílios e TIC Empresas. </p>
-<p>Fonte: <a href="http://www.cgi.br/historicos/#2005">CGI.br</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="internet-2005-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Criação do IGF na WSIS</span></a><div id="internet-2005-03-box" class="hide">
-<h3>Criação do IGF na WSIS </h3>
-<p><img src="img/wsis.jpg" alt="Logo da WSIS"> Agenda de Tunis: criação do IGF na WSIS Cúpula Mundial sobre a Sociedade da Informação.</p>
-<p>Fonte: <a href="http://www.wgig.org/docs/WGIGREPORT.pdf">WGIG REPORT</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano2006">
-<h2>2006</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2006-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Twitter</span></a><div id="web-2006-01-box" class="hide">
-<h3>Lançamento do Twitter</h3>
-<p><img src="img/twitter.jpg" alt="Ícone do Twitter">Lançada a rede social Twitter, criada para enviar mensagens de apenas 140 caracteres, chamadas de tweets.</p>
-<p>Fonte: <a href="http://www.dailyfinance.com/2014/07/22/twitter-new-cfo-anthony-notto/">Daily Finance</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-2006-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Primeira reunião do IGF</span></a><div id="internet-2006-01-box" class="hide">
-<h3>Primeira reunião do IGF</h3>
-<p><img src="img/igf.jpg" alt="Logo do IGF">Primeira reunião do Fórum de Governança da Internet, realizada em Atenas, Grécia.</p>
-<p>Fonte: <a href="http://www.intgovforum.org/cms/aboutigf">IGF</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano2007">
-<h2>2007</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2007-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Criação do W3C Brasil</span></a><div id="web-2007-01-box" class="hide">
-<h3>Criação do escritório do W3C Brasil</h3>
-<p><img src="img/w3c-brasil.jpg" alt="Logo do W3C Brasil">Por determinação do Comitê Gestor da Internet no Brasil, o primeiro escritório do W3C na América Latina é inaugurado em São Paulo.</p>
-<p>Fonte: <a href="http://www.cgi.br/historicos/#2007">CGI.br</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2007-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Google Street View</span></a><div id="web-2007-02-box" class="hide">
-<h3>Lançamento do Google Street View</h3>
-<p><img src="img/streetview.jpg" alt="Ícone do Google Street View">Lançado o serviço de visualização de ruas chamado de Google Street View.</p>
-<p>Fonte: <a href="http://time.com/72563/google-maps-street-view-time-lapse-launches/">Time</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet"></div>
-</li>
-<li id="ano2008">
-<h2>2008</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2008-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Primeira versão do HTML5</span></a><div id="web-2008-01-box" class="hide">
-<h3>Primeira versão da documentação sobre HTML5</h3>
-<p><img src="img/html5.jpg" alt="Logo do HTML5">Lançada a primeira edição do documento com os novos elementos do HTML5.</p>
-<p>Fonte: <a href="http://www.w3.org/TR/2008/WD-html5-20080122/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2008-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Publicado o documento WCAG2.0</span></a><div id="web-2008-02-box" class="hide">
-<h3>Publicado o documento WCAG2.0</h3>
-<p><img src="img/wcag2.jpg" alt="Imagem do documento WCAG2">A iniciativa de Acessibilidade na Web do W3C publica a segunda versão das Diretrizes de Acessibilidade para Conteúdo Web, que ampliam a abordagem da acessibilidade da versão 1.0. </p>
-<p>Fonte: <a href="http://www.w3.org/TR/WCAG20/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2008-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Publicada a recomendação SPARQL</span></a><div id="web-2008-03-box" class="hide">
-<h3>Publicada a recomendação SPARQL</h3>
-<p><img src="img/sparql.jpg" alt="Imagem representando grafos">O documento define a especificação de sintaxe da linguagem SPARQL para RDF.</p>
-<p>Fonte: <a href="http://www.w3.org/TR/rdf-sparql-query/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2008-04" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Mobile Web Best Practices 1.0</span></a><div id="web-2008-04-box" class="hide">
-<h3>W3C publica a recomendação Mobile Web Best Practices 1.0</h3>
-<p><img src="img/mobile-web.jpg" alt="Imagem do folheto de Mobile Web Best Practices">Publicado o primeiro documento sobre boas práticas no desenvolvimento Web para dispositivos móveis.</p>
-<p>Fonte: <a href="http://www.w3.org/TR/2008/REC-mobile-bp-20080729/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2008-05" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Google Chrome</span></a><div id="web-2008-05-box" class="hide">
-<h3>Lançamento do Google Chrome</h3>
-<p><img src="img/chrome.jpg" alt="Logo do Google Chrome">Google lança a primeira versão do seu navegador Web, chamado de Google Chrome.</p>
-<p>Fonte: <a href="http://googleblog.blogspot.com.br/2008/09/fresh-take-on-browser.html">Google</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-2008-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Dropbox</span></a><div id="internet-2008-01-box" class="hide">
-<h3>Lançamento do Dropbox</h3>
-<p><img src="img/dropbox.jpg" alt="Logo do Dropbox">O serviço de armazenamento de arquivos em núvem Dropbox é lançado</p>
-<p>Fonte: <a href="http://www.channelweb.co.uk/crn-uk/news/2356348/dropbox-to-unveil-uk-office-and-expand-business-aim">Channel Web</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div></div>
-</li>
-<li id="ano2009">
-<h2>2009</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2009-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Fim do grupo de XHTML2</span></a><div id="web-2009-01-box" class="hide">
-<h3>W3C encerra o Grupo de Trabalho de XHTML2</h3>
-<p><img src="img/xhtml2.jpg" alt="Imagem da documentação XHTML2">Com o objetivo de concentrar esforços no HTML5, o W3C decide encerrar as atividades do grupo que trabalhava com o XHTML.</p>
-<p>Fonte: <a href="http://www.w3.org/2007/03/XHTML2-WG-charter">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2009-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Conferência Web W3C Brasil</span></a><div id="web-2009-02-box" class="hide">
-<h3>Primeira edição da Conferência Web W3C Brasil</h3>
-<p><img src="img/webbr.gif" alt="Webbr 2009">Em 2009 foi realizada a primeira conferência W3C Brasil, em São Paulo, com o objetivo de discutir o futuro da Web no país. </p>
-<p>Fonte: <a href="http://conferenciaweb.w3c.br/2009/">W3C Brasil</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<!--<a id="web-2009-ee" href="#" class="bullet"><span id="web-2009-ee-sp"></span></a>-->
-<a id="web-2009-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do buscador Bing</span></a><div id="web-2009-03-box" class="hide">
-<h3>Microsoft lança o sistema de busca Bing</h3>
-<p><img src="img/bing.jpg" alt="Webbr 2009">Microsoft lança seu próprio sistema de busca, chamado Bing.</p>
-<p>Fonte: <a href="http://www.businesskorea.co.kr/article/5253/search-engine-competition-microsoft-plunge-korea%E2%80%99s-search-engine-market-h2-year">Business Korea</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2009-04" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Elemento VIDEO do HTML5</span></a><div id="web-2009-04-box" class="hide">
-<h3>Firefox e Chrome dão suporte ao elemento &#60;video&#62;</h3>
-<p><img src="img/chff.jpg" alt="Imagem dos ícones do Chrome e Firefox">Os navegadores Google Chrome e Mozilla Firefox começam a suportar o novo elemento do HTML 5 para a reprodução de vídeos.</p>
-<p>Fonte: <a href="http://website-archive.mozilla.org/www.mozilla.org/firefox_releasenotes/en-US/firefox/3.5/releasenotes/">Mozilla</a> e <a href="http://www.cnetfrance.fr/news/google-chrome-3-39503164.htm">CNET France</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet"></div>
-</li>
-<li id="ano2010">
-<h2>2010</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2010-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Instagram</span></a><div id="web-2010-01-box" class="hide">
-<h3>Lançamento do Instagram</h3>
-<p><img src="img/instagram.jpg" alt="Logo do instagram">Lançado o aplicativo para compartilhamento de fotos, que mais tarde seria comprado pelo Facebook.</p>
-<p>Fonte: <a href="http://www.business2community.com/instagram/8-instagram-tips-business-marketing-0925203">Business to Community</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
- <a id="internet-2010-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Primeiro Fórum da Internet</span></a><div id="internet-2010-01-box" class="hide">
-<h3>Primeiro Fórum da Internet</h3>
-<p><img src="img/logo-forum.png" alt="Logo do Forum da Internet no Brasil">O CGI.br promove o Fórum da Internet no Brasil com o objetivo de reunir participantes dos diversos setores e todos os interessados e envolvidos nos debates e temas a respeito da Internet no Brasil e no mundo.  </p>
-<p>Fonte: <a href="http://forumdainternet.cgi.br/library/">Fórum da Internet</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
- </div>
-</li>
-<li id="ano2011">
-<h2>2011</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2011-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Interest Group Web and TV</span></a><div id="web-2011-02-box" class="hide">
-<h3>W3C lança o <span lang="en">Interest Group Web and TV</span></h3>
-<p><img src="img/webtv.jpg" alt="Imagem da página do Interest Group de WebTV">Lançado em fevereiro de 2011, o "<span lang="en">Interest Group Web and TV</span>" proporciona um fórum técnico para discussões para Web e TV.</p>
-<p>Fonte: <a href="http://www.w3.org/2011/webtv/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2011-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Seletores CSS3</span></a><div id="web-2011-03-box" class="hide">
-<h3>W3C publica recomendações de seletores do CSS3</h3>
-<p><img src="img/css3.jpg" alt="Logo do CSS3">O documento de Seletores CSS3 apresenta novos seletores e linguagens.</p>
-<p>Fonte: <a href="http://www.w3.org/TR/2011/REC-css3-selectors-20110929/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2011-04" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Google+</span></a><div id="web-2011-04-box" class="hide">
-<h3>Lançamento do Google+</h3>
-<p><img src="img/googleplus.jpg" alt="Logo do Google+">Lançada a rede social desenvolvida pelo Google, com o objetivo de competir com o Facebook.</p>
-<p>Fonte: <a href="http://socialbarrel.com/future-facebook-facebook-next-thing-past/56619/">Social Barrel</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-2011-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Criação do IoT-GSI pela ITU</span></a><div id="internet-2011-01-box" class="hide">
-<h3>Criação do IoT-GSI pela ITU</h3>
-<p><img src="img/itu-logo.jpg" alt="Logo da gartner">ITU cria a Iniciativa Global de Padrões para a Internet das Coisas, em inglês <span lang="en">Global Standards Initiative on Internet of Things</span> (IoT-GSI).</p>
-<p>Fonte: <a href="http://www.itu.int/en/ITU-T/gsi/iot/Pages/default.aspx">ITU</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano2012">
-<h2>2012</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2012-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Todos@Web</span></a><div id="web-2012-01-box" class="hide">
-<h3>Lançamento da primeira edição do Prêmio Todos@Web</h3>
-<p><img src="img/premio-acessibilidade.jpg" alt="Logo todos na Web">A primeira edição do Prêmio Nacional de Acessibilidade na Web foi lançada com o objetivo de fomentar e estimular iniciativas acessíveis na Web brasileira.</p>
-<p>Fonte: <a href="https://nic.br/noticia/na-midia/premio-nacional-de-acessibilidade-na-web-acontece-hoje/">NIC.br</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet"></div>
-</li>
-<li id="ano2013">
-<h2>2013</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2013-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Recomendação SPARQL 1.1</span></a><div id="web-2013-01-box" class="hide">
-<h3>W3C publica a recomendação SPARQL 1.1</h3>
-<p><img src="img/sparql.jpg" alt="Imagem representando grafos">A recomendação fornece uma introdução a um conjunto de especificações do W3C que facilitam a consulta e manipulação de grafos RDF na Web.</p>
-<p>Fonte: <a href="http://www.w3.org/TR/sparql11-overview/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2013-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>WWW2013 no Rio</span></a><div id="web-2013-02-box" class="hide">
-<h3>WWW2013 acontece no Rio de Janeiro</h3>
-<p><img src="img/logo-www2013.png" alt="Logo da conferência WWW2013">A 22ª edição da série de conferências WWW aconteceu pela primeira vez em um país da América Latina nos dias 13 a 17 de maio de 2013 no Rio de Janeiro.</p>
-<p>Fonte: <a href="https://www.cgi.br/noticia/www2013-em-quatro-meses-o-maior-evento-global-sobre-a-web-acontecera-no-rio-de-janeiro/323">CGI.br</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2013-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Cartilha de Acessibilidade na Web</span></a><div id="web-2013-03-box" class="hide">
-<h3>Lançamento do primeiro fascículo da Cartilha de Acessibilidade na Web</h3>
-<p><img src="img/cartilha-acessibilidade1.png" alt="Logo da cartilha de acessibilidade web">O W3C Brasil lançou no dia 3 de dezembro o primeiro fascículo da Cartilha de Acessibilidade na Web. Esta cartilha tem como objetivo contextualizar o tema acessibilidade na web, de modo simples e de fácil compreensão a todos.</p>
-<p>Fonte: <a href="https://nic.br/publicacao/cartilha-de-acessibilidade-na-web-fasciculo-i/">NIC.br</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet"></div>
-</li>
-<li id="ano2014">
-<h2>2014</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2014-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>HTML5 é uma recomendação W3C</span></a><div id="web-2014-01-box" class="hide">
-<h3>HTML5 é uma recomendação W3C</h3>
-<p><img src="img/html5.jpg" alt="Logo do HTML5">Durante a celebração dos 25 anos da Web e dos 20 anos do W3C, a documentação do HTML5 é anunciada como uma Recomendação do W3C.</p>
-<p>Fonte: <a href="http://www.w3.org/TR/html5/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2014-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Recomendações RDF</span></a><div id="web-2014-02-box" class="hide">
-<h3>Recomendações RDF</h3>
-<p><img src="img/rdf.jpg" alt="Imagem representando RDF">W3C publica a recomendação <span lang="en">RDF 1.1. Turtle</span> e <span lang="en">RDF Data Cube Vocabulary</span></p>
-<p>Fonte: <a href="http://www.w3.org/TR/2014/REC-vocab-data-cube-20140116/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2014-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>DWBP e CSVWG</span></a><div id="web-2014-03-box" class="hide">
-<h3>DWBP e CSVWG</h3>
-<p><img src="img/dwbp.jpg" alt="Imagem representando RDF">W3C lança o <span lang="en">Data on the Web Best Practices Working Group</span> e o <span lang="en">CSV on the Web Working Group</span>.</p>
-<p>Fonte: <a href="http://www.w3.org/2013/data/Activity">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-2014-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Primeira edição da EGI</span></a><div id="internet-2014-01-box" class="hide">
-<h3>Primeira edição da EGI</h3>
-<p><img src="img/egi.jpg" alt="Logo da Escola de Governança da Internet">Primeira edição do Curso de Curta Duração da Escola de Governança da Internet no Brasil com o objetivo de fomentar e incentivar no Brasil a capacitação, pesquisa e estudos sobre a Governança da Internet. </p>
-<p>Fonte: <a href="http://egi.nic.br/">EGI.br</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="internet-2014-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Netmundial</span></a><div id="internet-2014-02-box" class="hide">
-<h3>Netmundial</h3>
-<p><img src="img/netmundial.jpg" alt="Logo Netmundial">A reunião Netmundial ocorreu em São Paulo com o foco de elaborar princípios para a governança da Internet e apresentar propostas para o desenvolvimento do ecossistema da Internet.
-</p>
-<p>Fonte: <a href="http://netmundial.br/">Netmundial</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="internet-2014-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Primeiro gTLD personalizado no Brasil</span></a><div id="internet-2014-03-box" class="hide">
-<h3>Primeiro gTLD personalizado no Brasil</h3>
-<p><img src="img/icann.jpg" alt="Logo da ICANN">O primeiro domínio de internet personalizado concedido ao Brasil foi para as Organizações Globo. Os órgãos da companhia poderão usar o sufixo .GLOBO em seus sites.</p>
-<p>Fonte: <a href="http://olhardigital.uol.com.br/noticia/globo-e-a-1-empresa-do-brasil-a-conseguir-dominio-de-internet-personalizado/41845">Olhar Digital</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano2015">
-<h2>2015</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2015-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Criação do Ceweb.br</span></a><div id="web-2015-01-box" class="hide">
-<h3>Criação do Ceweb.br</h3>
-<p><img src="img/ceweb.jpg" alt="Imagem representando RDF">Criado o Centro de Estudos sobre Tecnologias Web (Ceweb.br) para disseminar e promover o uso de tecnologias abertas na Web, fomentar e impulsionar a sua evolução no Brasil.</p>
-<p>Fonte: <a href="http://www.nic.br/historia/">NIC.br</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2015-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lançamento do Web Payments WG</span></a><div id="web-2015-02-box" class="hide">
-<h3>Lançamento do grupo de Trabalho de Web Payments</h3>
-<p><img src="img/webpayments.png" alt="Ícone do grupo de trabalho de Web Payments">Em outubro de 2015 o W3C lança o Grupo de Trabalho com foco em discutir processos para tornar os procedimentos de pagamentos online mais simples e seguros na Web.</p>
-<p>Fonte: <a href="https://www.w3.org/blog/news/archives/5088">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2015-03" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Lei Brasileira de Inclusão</span></a><div id="web-2015-03-box" class="hide">
-<h3>Sancionada a Lei Brasileira de Inclusão</h3>
-<p><img src="img/brasao-lbi.png" alt="Brasão do governo brasileiro">No dia 7 de julho de 2015 foi instituída a Lei Brasileira de Inclusão da Pessoa com Deficiência, destinada a assegurar e a promover, em condições de igualdade, o exercício dos direitos e das liberdades fundamentais por pessoa com deficiência.</p>
-<p>Fonte: <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm">Planalto.gov.br</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
+        <li id="ano1992">
+          <h2>1992</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-1992-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Publicada a primeira foto na Web</span></a
+            >
+            <div id="web-1992-01-box" class="hide">
+              <h3>Publicada a primeira foto na Web</h3>
+              <p>
+                <img
+                  src="img/first-image.jpg"
+                  alt="Imagem da primeira foto publicada na Web"
+                />Tim-Berners Lee posta a primeira foto da Web, uma foto da
+                banda “<span lang="fr">Les Horribles Cernettes</span>”
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.telegraph.co.uk/technology/news/9391110/How-the-first-photo-was-posted-on-the-Web-20-years-ago.html"
+                  >The Telegraph</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-1992-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Criação da ISOC</span></a
+            >
+            <div id="internet-1992-01-box" class="hide">
+              <h3>Criação da ISOC</h3>
+              <p>
+                <img src="img/isoc.gif" alt="Logo da ISOC" />A
+                <span lang="en">Internet Society</span> (ISOC) foi formada em
+                1992 para promover normas técnicas e outras especificações para
+                a utilização da Internet.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.internetsociety.org/history-timeline/official-formation-date-internet-society"
+                  >Internet Society</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano1993">
+          <h2>1993</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-1993-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>CERN disponibiliza a Web ao mundo</span></a
+            >
+            <div id="web-1993-01-box" class="hide">
+              <h3>CERN disponibiliza a Web ao mundo</h3>
+              <p>
+                <img
+                  src="img/web.jpg"
+                  alt="Imagem do primeiro esboço da Web feito por Tim Bernrs-Lee"
+                />O CERN disponibiliza como domínio público e "doa para o mundo"
+                a tecnologia da Web.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.pewinternet.org/2014/03/11/world-wide-web-timeline/"
+                  lang="en"
+                  >Pew Internet Research</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-1993-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do navegador Mosaic</span></a
+            >
+            <div id="web-1993-02-box" class="hide">
+              <h3>Lançamento do navegador Mosaic</h3>
+              <p>
+                <img
+                  src="img/mosaic.jpg"
+                  alt="Imagem do navegador Mosaic"
+                />Mark Anderssen cria o Mosaic, o navegador que ajudou a abrir a
+                web para o público em geral.
+              </p>
+              <p>
+                Fonte:
+                <a href="https://www.wired.com/2010/04/0422mosaic-web-browser/"
+                  >Wired</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-1993-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Primeira versão do HTML</span></a
+            >
+            <div id="web-1993-03-box" class="hide">
+              <h3>Primeira versão do HTML</h3>
+              <p>
+                <img
+                  src="img/html1.jpg"
+                  alt="Imagem da primeira versão do documento HTML1"
+                />Tim Berners-Lee publica a primeira versão da Linguagem de
+                Marcação de Hipertexto (HTML).
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt"
+                  >W3C</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
+        <li id="ano1994">
+          <h2>1994</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-1994-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Tim Berners-Lee cria o W3C </span></a
+            >
+            <div id="web-1994-01-box" class="hide">
+              <h3>Tim Berners-Lee cria o W3C</h3>
+              <p>
+                <img src="img/w3c.jpg" alt="Logo do W3C" />Tim Berners-Lee cria
+                o W3C (<span lang="en">World Wide Web Consortium</span>), no MIT
+                (<span lang="en">Massachusetts Institute of Technology</span>),
+                em colaboração com o CERN.
+              </p>
+              <p>Fonte: <a href="http://www.w3.org/Consortium/facts">W3C</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-1994-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Netscape</span></a
+            >
+            <div id="web-1994-02-box" class="hide">
+              <h3>Netscape lança a primeira versão do seu navegador</h3>
+              <p>
+                <img
+                  src="img/netscape.jpg"
+                  alt="Logo do Netscape Navigator"
+                />Lançado um dos primeiros browsers "<span lang="en"
+                  >user friendly</span
+                >" que rapidamente é adotado pelo mercado.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://news.bbc.co.uk/2/hi/in_depth/business/2000/microsoft/635689.stm"
+                  >BBC</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-1994-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Especificação do URL</span></a
+            ><!-- novo-->
+            <div id="web-1994-03-box" class="hide">
+              <h3>Especificação do URL</h3>
+              <p>
+                <img
+                  src="img/url.jpg"
+                  alt="Ilustração da barra de endereços URL"
+                />Foi especificado o Localizador Padrão de Recursos, em inglês
+                <span lang="en">Uniform Resource Locator</span> (URL).
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.w3.org/Addressing/URL/url-spec.txt">W3C</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
+        <li id="ano1995">
+          <h2>1995</h2>
+          <!-- web-->
+          <div class="web">
+            <!-- novo-->
+            <a
+              id="web-1995-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>HTML 2 é uma recomendação</span></a
+            >
+            <div id="web-1995-01-box" class="hide">
+              <h3>HTML 2 é uma recomendação</h3>
+              <p>
+                <img src="img/html2.jpg" alt="Texto do HTML2" />HTML 2 torna-se
+                um padrão pelo IETF, de modo a criar uma especificação para
+                interoperabilidade entre as versões do HTML.
+              </p>
+              <p>
+                Fonte: <a href="http://www.w3.org/MarkUp/html-spec/">W3C</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-1995-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Criação do Ebay</span></a
+            >
+            <div id="web-1995-02-box" class="hide">
+              <h3>Criação do Ebay</h3>
+              <p>
+                <img src="img/ebay.jpg" alt="Logo do Ebay" />Originalmente
+                chamado “<span lang="en">AuctionWeb</span>”, listou o primeiro
+                item para venda: um laser pointer quebrado.
+              </p>
+              <p>
+                Fonte:
+                <a href="https://www.ebayinc.com/our-company/our-history/"
+                  >Ebay</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-1995-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Internet Explorer</span></a
+            >
+            <div id="web-1995-03-box" class="hide">
+              <h3>Lançamento do Internet Explorer</h3>
+              <p>
+                <img src="img/ie1.jpg" alt="Logo do Internet Explorer" />Lançado
+                o primeiro navegador Web da Microsoft. O Internet Explorer 1 foi
+                lançado em 1995 junto com o Windows 95.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.statetechmagazine.com/article/2013/08/visual-history-internet-explorer"
+                  >StateTec</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-1995-04"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Brendan Eich cria o JavaScript</span></a
+            >
+            <div id="web-1995-04-box" class="hide">
+              <h3>Brendan Eich cria o JavaScript</h3>
+              <p>
+                <img src="img/brendan.jpg" alt="Foto de Brendan Eich" />Em maio
+                de 1995, Brendan Eich cria o JavaScript em 10 dias.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript"
+                  >W3C</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-1995-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Criação do CGI.br</span></a
+            >
+            <div id="internet-1995-01-box" class="hide">
+              <h3>Criação do CGI.br</h3>
+              <p>
+                <img src="img/cgi.jpg" alt="Logo do CGI.br" />No dia 31 de maio
+                de 1995, a Portaria Interministerial nº 147 cria o Comitê Gestor
+                da Internet no Brasil (CGI.br).
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+              <p>
+                Fonte: <a href="http://www.cgi.br/historicos/#1995">CGI.br</a>
+              </p>
+            </div>
+            <a
+              id="internet-1995-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Primeiro domínio .com.br</span></a
+            >
+            <div id="internet-1995-02-box" class="hide">
+              <h3>Primeiro domínio .com.br</h3>
+              <p>
+                <img src="img/dominiocom.jpg" alt=".com.br" />Segundo Demi
+                Getschko, o primeiro domínio comercial registrado no País foi da
+                Companhia Energética de Minas Gerais (Cemig), em 17 de agosto de
+                1995.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://idgnow.com.br/internet/2009/01/16/conheca-os-50-dominios-mais-antigos-da-internet-brasileira/#&amp;panel1-1"
+                  >IDG Now!</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano1996">
+          <h2>1996</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-1996-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>CSS1 é uma recomendação W3C</span></a
+            >
+            <div id="web-1996-01-box" class="hide">
+              <h3>CSS1 torna-se uma recomendação W3C</h3>
+              <p>
+                <img
+                  src="img/css1.jpg"
+                  alt="Imagem da recomendação do CSS1"
+                />Devido a necessidade de criar estilos de visualização para
+                documentos, foi criada a Folha de Estilos em Cascata (CSS) 1.0.
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.w3.org/Style/LieBos2e/history/Overview.html"
+                  >W3C</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-1996-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Hotmail</span></a
+            >
+            <div id="web-1996-02-box" class="hide">
+              <h3>Lançamento do Hotmail</h3>
+              <p>
+                <img src="img/hotmail.jpg" alt="Logo do Hotmail" />Hotmail lança
+                um dos primeiros serviços de Webmail gratuito do mundo.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://news.microsoft.com/1999/02/08/msn-hotmail-from-zero-to-30-million-members-in-30-months/"
+                  >Microsoft</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-1996-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do UOL</span></a
+            >
+            <div id="web-1996-03-box" class="hide">
+              <h3>Lançamento do UOL</h3>
+              <p>
+                <img src="img/uol.jpg" alt="Logo do UOL" />É lançado o website
+                brasileiro Universo Online.
+              </p>
+              <p>
+                Fonte:
+                <a href="http://sobre.uol.com.br/historia/linhadotempo.jhtm"
+                  >UOL</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-1996-04"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Recomendação XML 1.0</span></a
+            >
+            <div id="web-1996-04-box" class="hide">
+              <h3>W3C publica a recomendação XML 1.0</h3>
+              <p>
+                <img
+                  src="img/xml1.jpg"
+                  alt="Imagem do documento XML"
+                />Publicado como recomendação o documento XML 1.0
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.w3.org/TR/1998/REC-xml-19980210">W3C</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-1996-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Publicada a RFC HTTP1</span></a
+            >
+            <div id="internet-1996-01-box" class="hide">
+              <h3>Publicada a RFC HTTP1</h3>
+              <p>
+                <img src="img/http1.jpg" alt="Imagem da RFC HTTP1" />Publicada a
+                RFC da versão 1.0 do Protocolo de Transmissão para Linguagem de
+                Marcação, o HTTP 1.0
+              </p>
+              <p>
+                Fonte: <a href="http://tools.ietf.org/html/rfc1945">IETF</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="internet-1996-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento o Flash 1</span></a
+            >
+            <div id="internet-1996-02-box" class="hide">
+              <h3>Lançamento o Flash 1</h3>
+              <p>
+                <img src="img/flash.jpg" alt="Logo Flash" />Em Dezembro de 1996
+                a empresa FutureSplash foi adquirida pela Macromedia, que
+                renomeou seu editor de gráficos e animação para Macromedia Flash
+                1.0.
+              </p>
+              <p>
+                Fonte:
+                <a href="http://mashable.com/2012/11/19/history-of-flash/"
+                  >Mashable</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano1997">
+          <h2>1997</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-1997-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>HTML3.2 é uma recomendação</span></a
+            >
+            <div id="web-1997-01-box" class="hide">
+              <h3>HTML3.2 é uma recomendação do W3C</h3>
+              <p>
+                <img
+                  src="img/html32.jpg"
+                  alt="Imagem da recomendação do HTML3.2"
+                />A nova versão da linguagem de marcação para hipertexto
+                introduz atributos para formatação visual, como o uso de cores
+                de fundo.
+              </p>
+              <p>
+                Fonte: <a href="http://www.w3.org/TR/REC-html32.html">W3C</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-1997-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>HTML4 é uma recomendação W3C</span></a
+            >
+            <div id="web-1997-02-box" class="hide">
+              <h3>HTML4 é uma recomendação W3C</h3>
+              <p>
+                <img
+                  src="img/html4.jpg"
+                  alt="Imagem da recomendação do HTML4"
+                />O HTML4 trouxe grandes melhorias para formulários, tabelas e
+                para documentos em múltiplos idiomas.
+              </p>
+              <p>Fonte: <a href="http://www.w3.org/Press/HTML4-REC">W3C</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-1997-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Domínio Google.com é registrado</span></a
+            >
+            <div id="internet-1997-01-box" class="hide">
+              <h3>Google.com é registrado como um domínio</h3>
+              <p>
+                <img src="img/google.jpg" alt="Logo do Google" />O domínio foi
+                registrado em 15 de setembro. O nome é uma brincadeira com a
+                palavra "googol", um termo matemático para o número representado
+                pelo numeral 1 seguido por 100 zeros.
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.google.com/about/company/history/"
+                  >Google</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="internet-1997-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Imposto de Renda pela Internet</span></a
+            >
+            <div id="internet-1997-02-box" class="hide">
+              <h3>Receita Federal libera a entrega de IR pela Internet</h3>
+              <p>
+                <img src="img/receita.jpg" alt="Logo da Receita Federal" />Com o
+                intuito de facilitar as entregas das declarações de imposto de
+                renda, foi criado um programa específico para transmissão de
+                declarações pela internet, o Receitanet.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.receita.fazenda.gov.br/Memoria/irpf/historia/hist1997a2014.asp#entregaDeclaracao"
+                  >Receita federal</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano1998">
+          <h2>1998</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-1998-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>CSS2 é uma recomendação do W3C</span></a
+            >
+            <div id="web-1998-01-box" class="hide">
+              <h3>CSS2 é uma recomendação do W3C</h3>
+              <p>
+                <img src="img/css2.jpg" alt="Imagem da recomendação do CSS2" />A
+                nova versão das folhas de estilo em cascata trouxe novidades
+                como as Media Types, que possibilitam criar estilos para
+                impressão, telas, etc.
+              </p>
+              <p>
+                Fonte: <a href="http://www.w3.org/TR/REC-html32.html">W3C</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-1998-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Criação da ICANN</span></a
+            >
+            <div id="internet-1998-01-box" class="hide">
+              <h3>Criação da ICANN</h3>
+              <p>
+                <img src="img/icann.jpg" alt="Logo da ICANN" />Em outubro de
+                1998, O Departamento de Comércio dos Estados Unidos ("DoC") e a
+                <span lang="en">Network Solutions, Inc</span>. ("NSI") firmam um
+                acordo de cooperação e criam a "<span lang="en"
+                  >Internet Corporation for Assigned Names and Numbers</span
+                >".
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.icann.org/resources/pages/history-2012-02-25-en"
+                  >ICANN</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="internet-1998-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Publicada a RFC do IPV6</span></a
+            >
+            <div id="internet-1998-02-box" class="hide">
+              <h3>Publicada a RFC do IPV6</h3>
+              <p>
+                <img src="img/ipv6.jpg" alt="Logo do ipv6" />Lançado o novo
+                protocolo da internet, devido ao esgotamento dos números de
+                IPv4.
+              </p>
+              <p>
+                Fonte:
+                <a href="http://postscapes.com/internet-of-things-history"
+                  >Postcapes</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano1999">
+          <h2>1999</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-1999-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Publicado o documento WCAG1</span></a
+            >
+            <div id="web-1999-01-box" class="hide">
+              <h3>Publicado o documento WCAG1</h3>
+              <p>
+                <img
+                  src="img/wcag1.jpg"
+                  alt="Imagem da recomendação do wcag1"
+                />A primeira versão das Diretrizes de Acessibilidade para
+                Conteúdo Web foi publicada para auxiliar desenvolvedores a
+                tornar as páginas Web acessíveis.
+              </p>
+              <p>
+                Fonte: <a href="http://www.w3.org/TR/WAI-WEBCONTENT/">W3C</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-1999-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Napster</span></a
+            >
+            <div id="internet-1999-01-box" class="hide">
+              <h3>Lançamento do Napster</h3>
+              <p>
+                <img src="img/napster.jpg" alt="Logo da Napster" />Em junho de
+                1999, o serviço de compartilhamento de músicas chamado Napster
+                foi lançado.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.economist.com/news/business/21605917-napsters-founders-demonstrate-challenges-entrepreneurial-second-acts-hit-me-baby-one-more"
+                  >The Economist</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="internet-1999-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Início da pesquisa sobre IoT</span></a
+            >
+            <div id="internet-1999-02-box" class="hide">
+              <h3>Início da pesquisa sobre IoT</h3>
+              <p>
+                <img
+                  src="img/NeilGershenfeld.jpg"
+                  alt="Foto de Neil Gershenfeld"
+                />Neil Gershenfeld escreveu sobre IoT (Internet das Coisas /
+                Internet of Things) no livro book When Things Start to Think e
+                cirou o Auto-ID Labs para pesquisar sobre IoT
+              </p>
+              <p>
+                Fonte:
+                <a href="http://postscapes.com/internet-of-things-history"
+                  >Postcapes</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano2001">
+          <h2>2001</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2001-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Primeiro artigo sobre Web Semântica</span></a
+            >
+            <div id="web-2001-01-box" class="hide">
+              <h3>Primeiro artigo sobre Web Semântica</h3>
+              <p>
+                <img
+                  src="img/semantic.jpg"
+                  alt="Imagem da publicação The Semantic Web"
+                />Tim Berners-Lee, Ames Hendler e Ora Lassila escreveram o
+                primeiro artigo sobre Web Semântica, em inglês
+                <span lang="en"
+                  >The Semantic Web: A new form of Web content that is
+                  meaningful to computers will unleash a revolution of new
+                  possibilities</span
+                >.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.scientificamerican.com/article/the-semantic-web/"
+                  >Scientific American</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2001-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Recomendação XHTML1</span></a
+            >
+            <div id="web-2001-02-box" class="hide">
+              <h3>Recomendação XHTML1</h3>
+              <p>
+                <img
+                  src="img/xhtml1.jpg"
+                  alt="Imagem da documentação do XHMTL1"
+                />XHTML1, uma evolução do HTML, é uma recomendação do W3C.
+              </p>
+              <p>Fonte: <a href="http://www.w3.org/TR/xhtml1/">W3C</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2001-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento da Wikipedia</span></a
+            >
+            <div id="web-2001-03-box" class="hide">
+              <h3>Lançamento da Wikipedia</h3>
+              <p>
+                <img
+                  src="img/wikipedia.jpg"
+                  alt="Logo da Wikipedia"
+                />Lançamento da maior enciclopédia online da internet, a
+                Wikipedia, que foi construída de forma colaborativa pelos
+                usuários.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.dw.de/inside-wikipedia-attack-of-the-pr-industry/av-17745881"
+                  >DW.com</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2001-04"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Internet Explorer 6</span></a
+            >
+            <div id="web-2001-04-box" class="hide">
+              <h3>Microsoft lança o Internet Explorer 6</h3>
+              <p>
+                <img src="img/ie6.jpg" alt="Logo do Internet Explorer" />No dia
+                27 de agosto de 2001 a Microsoft lança a versão 6 do seu
+                navegador.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.statetechmagazine.com/article/2013/08/visual-history-internet-explorer"
+                  >Statetech Magazine</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-2001-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>WSIS</span></a
+            >
+            <div id="internet-2001-01-box" class="hide">
+              <h3>WSIS</h3>
+              <p>
+                <img src="img/wsis.jpg" alt="Logo da WSIS" />Aprovação nas
+                Nações Unidas para criar a WSIS (Cúpula Mundial sobre a
+                Sociedade da Informação /
+                <span lang="en">World Summit on the Information Society</span>),
+                em duas partes.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.virtualpolicy.net/internet-governance-a-brief-timeline.html"
+                  >Virtual Policy</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano2002">
+          <h2>2002</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2002-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span lang="en">HTML Design Principles</span></a
+            >
+            <div id="web-2002-01-box" class="hide">
+              <h3 lang="en">HTML Design Principles</h3>
+              <p>
+                <img src="img/html5.jpg" alt="Logo do HTML5" />W3C publica o
+                primeiro documento a abordar conceitos do HTML5, chamado
+                <span lang="en">“HTML Design Principles”</span>
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.w3.org/2002/09/wbs/40318/wdhdp/results"
+                  >W3C</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2002-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do navegador Firefox</span></a
+            >
+            <div id="web-2002-02-box" class="hide">
+              <h3>Lançamento do navegador Firefox</h3>
+              <p>
+                <img src="img/firefox.jpg" alt="Logo do firefox" />Mozilla lança
+                seu navegador, chamado Mozilla Firefox, desenvolvido de forma
+                open source sob a engine Gecko.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://blog.mozilla.org/press/2002/06/mozilla-org-launches-mozilla-1-0/"
+                  >Mozilla</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
+        <li id="ano2003">
+          <h2>2003</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2003-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do navegador Safari</span></a
+            >
+            <div id="web-2003-01-box" class="hide">
+              <h3>Lançamento do navegador Safari</h3>
+              <p>
+                <img src="img/safari.jpg" alt="Logo do Safari" />Em 7 de janeiro
+                de 2003, na Macworld São Francisco, Steve Jobs anunciou que a
+                Apple havia desenvolvido seu próprio navegador, chamado Safari
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.apple.com/pr/library/2003/06/23Apple-Releases-Safari-1-0.html"
+                  >Apple</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-2003-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Princípios de Genebra na WSIS </span></a
+            >
+            <div id="internet-2003-01-box" class="hide">
+              <h3>Declaração de Princípios de Genebra na WSIS</h3>
+              <p>
+                <img src="img/wsis.jpg" alt="Logo da WSIS" />Declaração da ONU
+                sobre "Construir a Sociedade da Informação: um desafio global
+                para o novo milênio", na Cúpula Mundial sobre a Sociedade da
+                Informação /
+                <span lang="en">World Summit on the Information Society</span>
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.itu.int/wsis/documents/doc_multi.asp?lang=en&amp;id=1161%7C1160"
+                  >ITU</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano2004">
+          <h2>2004</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2004-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Publicada a recomendação RDF</span></a
+            >
+            <div id="web-2004-01-box" class="hide">
+              <h3>Publicada a recomendação RDF</h3>
+              <p>
+                <img src="img/rdf.jpg" alt="Imagem representando RDF" />A
+                documentação publicada pelo W3C apresenta o RDF, um modelo
+                padrão para o intercâmbio de dados na Web.
+              </p>
+              <p>Fonte: <a href="http://www.w3.org/RDF/">W3C</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2004-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Publicada a recomendação OWL</span></a
+            >
+            <div id="web-2004-02-box" class="hide">
+              <h3>Publicada a recomendação OWL</h3>
+              <p>
+                <img src="img/owl.jpg" alt="Imagem da recomendação OWL" />OWL,
+                em inglês <span lang="en">Web Ontology Language</span> é criada
+                para facilitar a interoperabilidade das máquinas e dar suporte
+                ao XML, RDF e DRF Schema (RDF-S).
+              </p>
+              <p>Fonte: <a href="http://www.w3.org/TR/owl-features/">W3C</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2004-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Criado o WHATWG</span></a
+            >
+            <div id="web-2004-03-box" class="hide">
+              <h3>Criado o WHATWG</h3>
+              <p>
+                <img src="img/whatwg.jpg" alt="Logo do WHATWG" />Fundado em 2004
+                por representantes da Apple, Mozilla Foundation e Opera, o grupo
+                é uma comunidade interessada na evolução da Web.
+              </p>
+              <p>
+                Fonte:
+                <a href="https://wiki.whatwg.org/wiki/FAQ#What_is_the_WHATWG.3F"
+                  >WHATWG</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2004-04"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Orkut</span></a
+            >
+            <div id="web-2004-04-box" class="hide">
+              <h3>Lançamento do Orkut</h3>
+              <p>
+                <img
+                  src="img/orkut.jpg"
+                  alt="Imagem da página incial do OrKut"
+                />Criada por um funcionário do Google, Orkut Büyükkökten, a rede
+                social foi amplamente utilizada por brasileiros.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://searchenginewatch.com/article/2066827/Google-Releases-Orkut-Social-Networking-Service"
+                  >Search Engine Watch</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2004-05"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Facebook</span></a
+            >
+            <div id="web-2004-05-box" class="hide">
+              <h3>Lançamento do Facebook</h3>
+              <p>
+                <img src="img/facebook.jpg" alt="Logo do facebook" />Criada por
+                Mark Zuckemberg, a rede social nasceu em fevereiro de 2004
+                dentro da universidade de Harvard e se tornou a maior rede
+                social do planeta.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.businessinsider.com/how-facebook-was-founded-2010-3"
+                  >Business Insider</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
+        <li id="ano2005">
+          <h2>2005</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2005-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do YouTube</span></a
+            >
+            <div id="web-2005-01-box" class="hide">
+              <h3>Lançamento do YouTube</h3>
+              <p>
+                <img src="img/youtube.jpg" alt="Logo do Youtube" />Lançamento do
+                serviço de publicação de vídeos online, Youtube, que seria
+                comprado pelo Google anos depois.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.forbes.com/sites/stevenrosenbaum/2014/07/14/user-generated-content-is-dead-as-video-evolves/"
+                  >Forbes</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2005-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Padronização do URI</span></a
+            >
+            <div id="web-2005-02-box" class="hide">
+              <h3>Padronização do URI</h3>
+              <p>
+                <img src="img/uri.jpg" alt="URI" />O IETF padronizou o
+                Identificador Uniforme de Recursos, em inglês
+                <span lang="en">Uniform Resource Identifier</span> (URI).
+              </p>
+              <p>
+                Fonte: <a href="http://www.ietf.org/rfc/rfc3986.txt">IETF</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-2005-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Criação do NIC.br</span></a
+            >
+            <div id="internet-2005-01-box" class="hide">
+              <h3>Criação do NIC.br</h3>
+              <p>
+                <img src="img/logo-nicbr.png" alt="Criação do NIC.br" />O NIC.br
+                passou a ser a instituição que administra as ações de registro
+                de nomes sob o .br além de assumir outras atribuições.
+              </p>
+              <p>Fonte: <a href="http://nic.br/historia/">NIC.br</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="internet-2005-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Pesquisas TIC</span></a
+            >
+            <div id="internet-2005-02-box" class="hide">
+              <h3>Cetic.br lança Pesquisas TIC Domicílios e Empresas</h3>
+              <p>
+                <img
+                  src="img/tic.jpg"
+                  alt="Capa das pesquisas TIC"
+                />Apresentados os primeiros indicadores das Pesquisas TIC
+                Domicílios e TIC Empresas.
+              </p>
+              <p>
+                Fonte: <a href="http://www.cgi.br/historicos/#2005">CGI.br</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="internet-2005-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Criação do IGF na WSIS</span></a
+            >
+            <div id="internet-2005-03-box" class="hide">
+              <h3>Criação do IGF na WSIS</h3>
+              <p>
+                <img src="img/wsis.jpg" alt="Logo da WSIS" /> Agenda de Tunis:
+                criação do IGF na WSIS Cúpula Mundial sobre a Sociedade da
+                Informação.
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.wgig.org/docs/WGIGREPORT.pdf"
+                  >WGIG REPORT</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano2006">
+          <h2>2006</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2006-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Twitter</span></a
+            >
+            <div id="web-2006-01-box" class="hide">
+              <h3>Lançamento do Twitter</h3>
+              <p>
+                <img src="img/twitter.jpg" alt="Ícone do Twitter" />Lançada a
+                rede social Twitter, criada para enviar mensagens de apenas 140
+                caracteres, chamadas de tweets.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.dailyfinance.com/2014/07/22/twitter-new-cfo-anthony-notto/"
+                  >Daily Finance</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-2006-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Primeira reunião do IGF</span></a
+            >
+            <div id="internet-2006-01-box" class="hide">
+              <h3>Primeira reunião do IGF</h3>
+              <p>
+                <img src="img/igf.jpg" alt="Logo do IGF" />Primeira reunião do
+                Fórum de Governança da Internet, realizada em Atenas, Grécia.
+              </p>
+              <p>
+                Fonte: <a href="http://www.intgovforum.org/cms/aboutigf">IGF</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano2007">
+          <h2>2007</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2007-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Criação do W3C Brasil</span></a
+            >
+            <div id="web-2007-01-box" class="hide">
+              <h3>Criação do escritório do W3C Brasil</h3>
+              <p>
+                <img src="img/w3c-brasil.jpg" alt="Logo do W3C Brasil" />Por
+                determinação do Comitê Gestor da Internet no Brasil, o primeiro
+                escritório do W3C na América Latina é inaugurado em São Paulo.
+              </p>
+              <p>
+                Fonte: <a href="http://www.cgi.br/historicos/#2007">CGI.br</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2007-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Google Street View</span></a
+            >
+            <div id="web-2007-02-box" class="hide">
+              <h3>Lançamento do Google Street View</h3>
+              <p>
+                <img
+                  src="img/streetview.jpg"
+                  alt="Ícone do Google Street View"
+                />Lançado o serviço de visualização de ruas chamado de Google
+                Street View.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://time.com/72563/google-maps-street-view-time-lapse-launches/"
+                  >Time</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
+        <li id="ano2008">
+          <h2>2008</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2008-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Primeira versão do HTML5</span></a
+            >
+            <div id="web-2008-01-box" class="hide">
+              <h3>Primeira versão da documentação sobre HTML5</h3>
+              <p>
+                <img src="img/html5.jpg" alt="Logo do HTML5" />Lançada a
+                primeira edição do documento com os novos elementos do HTML5.
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.w3.org/TR/2008/WD-html5-20080122/">W3C</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2008-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Publicado o documento WCAG2.0</span></a
+            >
+            <div id="web-2008-02-box" class="hide">
+              <h3>Publicado o documento WCAG2.0</h3>
+              <p>
+                <img src="img/wcag2.jpg" alt="Imagem do documento WCAG2" />A
+                iniciativa de Acessibilidade na Web do W3C publica a segunda
+                versão das Diretrizes de Acessibilidade para Conteúdo Web, que
+                ampliam a abordagem da acessibilidade da versão 1.0.
+              </p>
+              <p>Fonte: <a href="http://www.w3.org/TR/WCAG20/">W3C</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2008-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Publicada a recomendação SPARQL</span></a
+            >
+            <div id="web-2008-03-box" class="hide">
+              <h3>Publicada a recomendação SPARQL</h3>
+              <p>
+                <img src="img/sparql.jpg" alt="Imagem representando grafos" />O
+                documento define a especificação de sintaxe da linguagem SPARQL
+                para RDF.
+              </p>
+              <p>
+                Fonte: <a href="http://www.w3.org/TR/rdf-sparql-query/">W3C</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2008-04"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Mobile Web Best Practices 1.0</span></a
+            >
+            <div id="web-2008-04-box" class="hide">
+              <h3>W3C publica a recomendação Mobile Web Best Practices 1.0</h3>
+              <p>
+                <img
+                  src="img/mobile-web.jpg"
+                  alt="Imagem do folheto de Mobile Web Best Practices"
+                />Publicado o primeiro documento sobre boas práticas no
+                desenvolvimento Web para dispositivos móveis.
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.w3.org/TR/2008/REC-mobile-bp-20080729/"
+                  >W3C</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2008-05"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Google Chrome</span></a
+            >
+            <div id="web-2008-05-box" class="hide">
+              <h3>Lançamento do Google Chrome</h3>
+              <p>
+                <img src="img/chrome.jpg" alt="Logo do Google Chrome" />Google
+                lança a primeira versão do seu navegador Web, chamado de Google
+                Chrome.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://googleblog.blogspot.com.br/2008/09/fresh-take-on-browser.html"
+                  >Google</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-2008-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Dropbox</span></a
+            >
+            <div id="internet-2008-01-box" class="hide">
+              <h3>Lançamento do Dropbox</h3>
+              <p>
+                <img src="img/dropbox.jpg" alt="Logo do Dropbox" />O serviço de
+                armazenamento de arquivos em núvem Dropbox é lançado
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.channelweb.co.uk/crn-uk/news/2356348/dropbox-to-unveil-uk-office-and-expand-business-aim"
+                  >Channel Web</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano2009">
+          <h2>2009</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2009-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Fim do grupo de XHTML2</span></a
+            >
+            <div id="web-2009-01-box" class="hide">
+              <h3>W3C encerra o Grupo de Trabalho de XHTML2</h3>
+              <p>
+                <img
+                  src="img/xhtml2.jpg"
+                  alt="Imagem da documentação XHTML2"
+                />Com o objetivo de concentrar esforços no HTML5, o W3C decide
+                encerrar as atividades do grupo que trabalhava com o XHTML.
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.w3.org/2007/03/XHTML2-WG-charter">W3C</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2009-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Conferência Web W3C Brasil</span></a
+            >
+            <div id="web-2009-02-box" class="hide">
+              <h3>Primeira edição da Conferência Web W3C Brasil</h3>
+              <p>
+                <img src="img/webbr.gif" alt="Webbr 2009" />Em 2009 foi
+                realizada a primeira conferência W3C Brasil, em São Paulo, com o
+                objetivo de discutir o futuro da Web no país.
+              </p>
+              <p>
+                Fonte:
+                <a href="http://conferenciaweb.w3c.br/2009/">W3C Brasil</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <!--<a id="web-2009-ee" href="#" class="bullet"><span id="web-2009-ee-sp"></span></a>-->
+            <a
+              id="web-2009-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do buscador Bing</span></a
+            >
+            <div id="web-2009-03-box" class="hide">
+              <h3>Microsoft lança o sistema de busca Bing</h3>
+              <p>
+                <img src="img/bing.jpg" alt="Webbr 2009" />Microsoft lança seu
+                próprio sistema de busca, chamado Bing.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.businesskorea.co.kr/article/5253/search-engine-competition-microsoft-plunge-korea%E2%80%99s-search-engine-market-h2-year"
+                  >Business Korea</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2009-04"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Elemento VIDEO do HTML5</span></a
+            >
+            <div id="web-2009-04-box" class="hide">
+              <h3>Firefox e Chrome dão suporte ao elemento &lt;video&gt;</h3>
+              <p>
+                <img
+                  src="img/chff.jpg"
+                  alt="Imagem dos ícones do Chrome e Firefox"
+                />Os navegadores Google Chrome e Mozilla Firefox começam a
+                suportar o novo elemento do HTML 5 para a reprodução de vídeos.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://website-archive.mozilla.org/www.mozilla.org/firefox_releasenotes/en-US/firefox/3.5/releasenotes/"
+                  >Mozilla</a
+                >
+                e
+                <a
+                  href="http://www.cnetfrance.fr/news/google-chrome-3-39503164.htm"
+                  >CNET France</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
+        <li id="ano2010">
+          <h2>2010</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2010-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Instagram</span></a
+            >
+            <div id="web-2010-01-box" class="hide">
+              <h3>Lançamento do Instagram</h3>
+              <p>
+                <img src="img/instagram.jpg" alt="Logo do instagram" />Lançado o
+                aplicativo para compartilhamento de fotos, que mais tarde seria
+                comprado pelo Facebook.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.business2community.com/instagram/8-instagram-tips-business-marketing-0925203"
+                  >Business to Community</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-2010-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Primeiro Fórum da Internet</span></a
+            >
+            <div id="internet-2010-01-box" class="hide">
+              <h3>Primeiro Fórum da Internet</h3>
+              <p>
+                <img
+                  src="img/logo-forum.png"
+                  alt="Logo do Forum da Internet no Brasil"
+                />O CGI.br promove o Fórum da Internet no Brasil com o objetivo
+                de reunir participantes dos diversos setores e todos os
+                interessados e envolvidos nos debates e temas a respeito da
+                Internet no Brasil e no mundo.
+              </p>
+              <p>
+                Fonte:
+                <a href="http://forumdainternet.cgi.br/library/"
+                  >Fórum da Internet</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano2011">
+          <h2>2011</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2011-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Interest Group Web and TV</span></a
+            >
+            <div id="web-2011-02-box" class="hide">
+              <h3>
+                W3C lança o <span lang="en">Interest Group Web and TV</span>
+              </h3>
+              <p>
+                <img
+                  src="img/webtv.jpg"
+                  alt="Imagem da página do Interest Group de WebTV"
+                />Lançado em fevereiro de 2011, o "<span lang="en"
+                  >Interest Group Web and TV</span
+                >" proporciona um fórum técnico para discussões para Web e TV.
+              </p>
+              <p>Fonte: <a href="http://www.w3.org/2011/webtv/">W3C</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2011-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Seletores CSS3</span></a
+            >
+            <div id="web-2011-03-box" class="hide">
+              <h3>W3C publica recomendações de seletores do CSS3</h3>
+              <p>
+                <img src="img/css3.jpg" alt="Logo do CSS3" />O documento de
+                Seletores CSS3 apresenta novos seletores e linguagens.
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.w3.org/TR/2011/REC-css3-selectors-20110929/"
+                  >W3C</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2011-04"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Google+</span></a
+            >
+            <div id="web-2011-04-box" class="hide">
+              <h3>Lançamento do Google+</h3>
+              <p>
+                <img src="img/googleplus.jpg" alt="Logo do Google+" />Lançada a
+                rede social desenvolvida pelo Google, com o objetivo de competir
+                com o Facebook.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://socialbarrel.com/future-facebook-facebook-next-thing-past/56619/"
+                  >Social Barrel</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-2011-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Criação do IoT-GSI pela ITU</span></a
+            >
+            <div id="internet-2011-01-box" class="hide">
+              <h3>Criação do IoT-GSI pela ITU</h3>
+              <p>
+                <img src="img/itu-logo.jpg" alt="Logo da gartner" />ITU cria a
+                Iniciativa Global de Padrões para a Internet das Coisas, em
+                inglês
+                <span lang="en"
+                  >Global Standards Initiative on Internet of Things</span
+                >
+                (IoT-GSI).
+              </p>
+              <p>
+                Fonte:
+                <a href="http://www.itu.int/en/ITU-T/gsi/iot/Pages/default.aspx"
+                  >ITU</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano2012">
+          <h2>2012</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2012-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Todos@Web</span></a
+            >
+            <div id="web-2012-01-box" class="hide">
+              <h3>Lançamento da primeira edição do Prêmio Todos@Web</h3>
+              <p>
+                <img
+                  src="img/premio-acessibilidade.jpg"
+                  alt="Logo todos na Web"
+                />A primeira edição do Prêmio Nacional de Acessibilidade na Web
+                foi lançada com o objetivo de fomentar e estimular iniciativas
+                acessíveis na Web brasileira.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://nic.br/noticia/na-midia/premio-nacional-de-acessibilidade-na-web-acontece-hoje/"
+                  >NIC.br</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
+        <li id="ano2013">
+          <h2>2013</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2013-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Recomendação SPARQL 1.1</span></a
+            >
+            <div id="web-2013-01-box" class="hide">
+              <h3>W3C publica a recomendação SPARQL 1.1</h3>
+              <p>
+                <img src="img/sparql.jpg" alt="Imagem representando grafos" />A
+                recomendação fornece uma introdução a um conjunto de
+                especificações do W3C que facilitam a consulta e manipulação de
+                grafos RDF na Web.
+              </p>
+              <p>
+                Fonte: <a href="http://www.w3.org/TR/sparql11-overview/">W3C</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2013-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>WWW2013 no Rio</span></a
+            >
+            <div id="web-2013-02-box" class="hide">
+              <h3>WWW2013 acontece no Rio de Janeiro</h3>
+              <p>
+                <img
+                  src="img/logo-www2013.png"
+                  alt="Logo da conferência WWW2013"
+                />A 22ª edição da série de conferências WWW aconteceu pela
+                primeira vez em um país da América Latina nos dias 13 a 17 de
+                maio de 2013 no Rio de Janeiro.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.cgi.br/noticia/www2013-em-quatro-meses-o-maior-evento-global-sobre-a-web-acontecera-no-rio-de-janeiro/323"
+                  >CGI.br</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2013-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Cartilha de Acessibilidade na Web</span></a
+            >
+            <div id="web-2013-03-box" class="hide">
+              <h3>
+                Lançamento do primeiro fascículo da Cartilha de Acessibilidade
+                na Web
+              </h3>
+              <p>
+                <img
+                  src="img/cartilha-acessibilidade1.png"
+                  alt="Logo da cartilha de acessibilidade web"
+                />O W3C Brasil lançou no dia 3 de dezembro o primeiro fascículo
+                da Cartilha de Acessibilidade na Web. Esta cartilha tem como
+                objetivo contextualizar o tema acessibilidade na web, de modo
+                simples e de fácil compreensão a todos.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://nic.br/publicacao/cartilha-de-acessibilidade-na-web-fasciculo-i/"
+                  >NIC.br</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
+        <li id="ano2014">
+          <h2>2014</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2014-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>HTML5 é uma recomendação W3C</span></a
+            >
+            <div id="web-2014-01-box" class="hide">
+              <h3>HTML5 é uma recomendação W3C</h3>
+              <p>
+                <img src="img/html5.jpg" alt="Logo do HTML5" />Durante a
+                celebração dos 25 anos da Web e dos 20 anos do W3C, a
+                documentação do HTML5 é anunciada como uma Recomendação do W3C.
+              </p>
+              <p>Fonte: <a href="http://www.w3.org/TR/html5/">W3C</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2014-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Recomendações RDF</span></a
+            >
+            <div id="web-2014-02-box" class="hide">
+              <h3>Recomendações RDF</h3>
+              <p>
+                <img src="img/rdf.jpg" alt="Imagem representando RDF" />W3C
+                publica a recomendação <span lang="en">RDF 1.1. Turtle</span> e
+                <span lang="en">RDF Data Cube Vocabulary</span>
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://www.w3.org/TR/2014/REC-vocab-data-cube-20140116/"
+                  >W3C</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2014-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>DWBP e CSVWG</span></a
+            >
+            <div id="web-2014-03-box" class="hide">
+              <h3>DWBP e CSVWG</h3>
+              <p>
+                <img src="img/dwbp.jpg" alt="Imagem representando RDF" />W3C
+                lança o
+                <span lang="en"
+                  >Data on the Web Best Practices Working Group</span
+                >
+                e o <span lang="en">CSV on the Web Working Group</span>.
+              </p>
+              <p>
+                Fonte: <a href="http://www.w3.org/2013/data/Activity">W3C</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-2014-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Primeira edição da EGI</span></a
+            >
+            <div id="internet-2014-01-box" class="hide">
+              <h3>Primeira edição da EGI</h3>
+              <p>
+                <img
+                  src="img/egi.jpg"
+                  alt="Logo da Escola de Governança da Internet"
+                />Primeira edição do Curso de Curta Duração da Escola de
+                Governança da Internet no Brasil com o objetivo de fomentar e
+                incentivar no Brasil a capacitação, pesquisa e estudos sobre a
+                Governança da Internet.
+              </p>
+              <p>Fonte: <a href="http://egi.nic.br/">EGI.br</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="internet-2014-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Netmundial</span></a
+            >
+            <div id="internet-2014-02-box" class="hide">
+              <h3>Netmundial</h3>
+              <p>
+                <img src="img/netmundial.jpg" alt="Logo Netmundial" />A reunião
+                Netmundial ocorreu em São Paulo com o foco de elaborar
+                princípios para a governança da Internet e apresentar propostas
+                para o desenvolvimento do ecossistema da Internet.
+              </p>
+              <p>Fonte: <a href="http://netmundial.br/">Netmundial</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="internet-2014-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Primeiro gTLD personalizado no Brasil</span></a
+            >
+            <div id="internet-2014-03-box" class="hide">
+              <h3>Primeiro gTLD personalizado no Brasil</h3>
+              <p>
+                <img src="img/icann.jpg" alt="Logo da ICANN" />O primeiro
+                domínio de internet personalizado concedido ao Brasil foi para
+                as Organizações Globo. Os órgãos da companhia poderão usar o
+                sufixo .GLOBO em seus sites.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="http://olhardigital.uol.com.br/noticia/globo-e-a-1-empresa-do-brasil-a-conseguir-dominio-de-internet-personalizado/41845"
+                  >Olhar Digital</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano2015">
+          <h2>2015</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2015-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Criação do Ceweb.br</span></a
+            >
+            <div id="web-2015-01-box" class="hide">
+              <h3>Criação do Ceweb.br</h3>
+              <p>
+                <img src="img/ceweb.jpg" alt="Imagem representando RDF" />Criado
+                o Centro de Estudos sobre Tecnologias Web (Ceweb.br) para
+                disseminar e promover o uso de tecnologias abertas na Web,
+                fomentar e impulsionar a sua evolução no Brasil.
+              </p>
+              <p>Fonte: <a href="http://www.nic.br/historia/">NIC.br</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2015-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lançamento do Web Payments WG</span></a
+            >
+            <div id="web-2015-02-box" class="hide">
+              <h3>Lançamento do grupo de Trabalho de Web Payments</h3>
+              <p>
+                <img
+                  src="img/webpayments.png"
+                  alt="Ícone do grupo de trabalho de Web Payments"
+                />Em outubro de 2015 o W3C lança o Grupo de Trabalho com foco em
+                discutir processos para tornar os procedimentos de pagamentos
+                online mais simples e seguros na Web.
+              </p>
+              <p>
+                Fonte:
+                <a href="https://www.w3.org/blog/news/archives/5088">W3C</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2015-03"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Lei Brasileira de Inclusão</span></a
+            >
+            <div id="web-2015-03-box" class="hide">
+              <h3>Sancionada a Lei Brasileira de Inclusão</h3>
+              <p>
+                <img
+                  src="img/brasao-lbi.png"
+                  alt="Brasão do governo brasileiro"
+                />No dia 7 de julho de 2015 foi instituída a Lei Brasileira de
+                Inclusão da Pessoa com Deficiência, destinada a assegurar e a
+                promover, em condições de igualdade, o exercício dos direitos e
+                das liberdades fundamentais por pessoa com deficiência.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm"
+                  >Planalto.gov.br</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet">
+            <a
+              id="internet-2015-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Publicada a RFC do HTTP2</span></a
+            >
+            <div id="internet-2015-01-box" class="hide">
+              <h3>Publicada a RFC do HTTP2</h3>
+              <p>
+                <img src="img/http2.jpg" alt="Imagem da RFC HTTP2" />Em maio de
+                2015, o IETF publica a segunda versão do Protocolo de
+                Transferência para Linguagem de Marcação, o HTTP2
+              </p>
+              <p>
+                Fonte:
+                <a href="https://httpwg.github.io/specs/rfc7540.html">IETF</a>
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+        </li>
+        <li id="ano2016">
+          <h2>2016</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2016-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>HTML5.1 é uma Recomendação W3C</span></a
+            >
+            <div id="web-2016-01-box" class="hide">
+              <h3>HTML5.1 é uma Recomendação do W3C</h3>
+              <p>
+                <img
+                  src="img/html5.jpg"
+                  alt="Imagem representando RDF"
+                />Publicado o primeiro documento com algumas revisões do
+                documento da principal linguagem da Web, o HTML.
+              </p>
+              <p>Fonte: <a href="https://www.w3.org/TR/html51/">W3C</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2016-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>CSS completa 20 anos</span></a
+            >
+            <div id="web-2016-02-box" class="hide">
+              <h3>CSS completa 20 anos</h3>
+              <p>
+                <img src="img/css20.jpg" alt="Imagem CSS 20" />O W3C publicou o
+                primeiro padrão das Folhas de Estilo em Cascata no dia 17 de
+                dezembro de 1997. Em 2016 o padrão completa 20 anos de
+                existência.
+              </p>
+              <p>
+                Fonte:
+                <a href="https://www.w3.org/2016/12/open-web-platform.html.en"
+                  >W3C</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
 
-</div>
-<!--internet-->
-<div class="internet">
-<a id="internet-2015-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Publicada a RFC do HTTP2</span></a><div id="internet-2015-01-box" class="hide">
-<h3>Publicada a RFC do HTTP2</h3>
-<p><img src="img/http2.jpg" alt="Imagem da RFC HTTP2">Em maio de 2015, o IETF publica a segunda versão do Protocolo de Transferência para Linguagem de Marcação, o HTTP2</p>
-<p>Fonte: <a href="https://httpwg.github.io/specs/rfc7540.html">IETF</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-</div>
-</li>
-<li id="ano2016">
-<h2>2016</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2016-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>HTML5.1 é uma Recomendação W3C</span></a><div id="web-2016-01-box" class="hide">
-<h3>HTML5.1 é uma Recomendação do W3C</h3>
-<p><img src="img/html5.jpg" alt="Imagem representando RDF">Publicado o primeiro documento com algumas revisões do documento da principal linguagem da Web, o HTML.</p>
-<p>Fonte: <a href="https://www.w3.org/TR/html51/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2016-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>CSS completa 20 anos</span></a><div id="web-2016-02-box" class="hide">
-<h3>CSS completa 20 anos</h3>
-<p><img src="img/css20.jpg" alt="Imagem CSS 20">O W3C publicou o primeiro padrão das Folhas de Estilo em Cascata no dia 17 de dezembro de 1997. Em 2016 o padrão completa 20 anos de existência.</p>
-<p>Fonte: <a href="https://www.w3.org/2016/12/open-web-platform.html.en">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>    
-</div>
-<!--internet-->
-<div class="internet">
-</div>
-</li>
+        <li id="ano2017">
+          <h2>2017</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2017-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>DWBP é uma Recomendação W3C</span></a
+            >
+            <div id="web-2017-01-box" class="hide">
+              <h3>DWBP é uma Recomendação do W3C</h3>
+              <p>
+                <img
+                  src="img/dwbp.png"
+                  alt="Captura de tela do documento DWBP"
+                />Documento que apresenta boas práticas na publicação de dados
+                na Web é uma recomendação do W3C.
+              </p>
+              <p>Fonte: <a href="https://www.w3.org/TR/dwbp/">W3C</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2017-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>W3C e IDPF se unem</span></a
+            >
+            <div id="web-2017-02-box" class="hide">
+              <h3>W3C e IDPF se unem</h3>
+              <p>
+                <img
+                  src="img/w3c-idpf.jpg"
+                  alt="Foto de Jeff Jaffe, CEO W3C; Tim Berners-Lee, diretor do W3C; George Kerscher, presidente do IDPF; Bill McCoy, diretor executivo do IDPF, "
+                />W3C e IDPF se unem para trabalhar em conjunto na evolução de
+                padrões para publicações digitais
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.w3.org/2017/01/pressrelease-idpf-w3c-combination.html.en"
+                  >W3C</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
 
+        <li id="ano2019">
+          <h2>2019</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2019-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Tradução autorizada do DWBP</span></a
+            >
+            <div id="web-2019-01-box" class="hide">
+              <h3>Tradução autorizada do DWBP</h3>
+              <p>
+                <img
+                  src="img/dwbp.png"
+                  alt="Captura de tela do documento DWBP"
+                />Documento que apresenta boas práticas na publicação de dados
+                na Web torna-se uma traduçãoem português autorizada pelo W3C
+              </p>
+              <p>Fonte: <a href="https://www.w3.org/TR/dwbp/">W3C</a></p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
 
-<li id="ano2017">
-<h2>2017</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2017-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>DWBP é uma Recomendação W3C</span></a><div id="web-2017-01-box" class="hide">
-<h3>DWBP é uma Recomendação do W3C</h3>
-<p><img src="img/dwbp.png" alt="Captura de tela do documento DWBP">Documento que apresenta boas práticas na publicação de dados na Web é uma recomendação do W3C.</p>
-<p>Fonte: <a href="https://www.w3.org/TR/dwbp/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>
-<a id="web-2017-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>W3C e IDPF se unem</span></a><div id="web-2017-02-box" class="hide">
-<h3>W3C e IDPF se unem</h3>
-<p><img src="img/w3c-idpf.jpg" alt="Foto de Jeff Jaffe, CEO W3C; Tim Berners-Lee, diretor do W3C; George Kerscher, presidente do IDPF; Bill McCoy, diretor executivo do IDPF, ">W3C e IDPF se unem para trabalhar em conjunto na evolução de padrões para publicações digitais</p>
-<p>Fonte: <a href="https://www.w3.org/2017/01/pressrelease-idpf-w3c-combination.html.en">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>    
-</div>
-<!--internet-->
-<div class="internet">
-</div>
-</li>
+        <li id="ano2020">
+          <h2>2020</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2020-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>A Web ganha o espaço sideral</span></a
+            >
+            <div id="web-2020-01-box" class="hide">
+              <h3>A Web ganha o espaço sideral</h3>
+              <p>
+                <img
+                  src="img/spacex.jpg"
+                  alt="Captura de tela do reddit com a discussão sobre o painel dos foguetes"
+                />SpaceX lança foguete que usa HTML, CSS e JavaScript em seus
+                painéis de controle.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.reddit.com/r/spacex/comments/gxb7j1/we_are_the_spacex_software_team_ask_us_anything/ft6bydt/"
+                  >SpaceX Reddit</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
 
-<li id="ano2019">
-<h2>2019</h2>
-<!-- web-->
-<div class="web">
-<a id="web-2019-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Tradução autorizada do DWBP</span></a><div id="web-2019-01-box" class="hide">
-<h3>Tradução autorizada do DWBP</h3>
-<p><img src="img/dwbp.png" alt="Captura de tela do documento DWBP">Documento que apresenta boas práticas na publicação de dados na Web torna-se uma traduçãoem português  autorizada pelo W3C </p>
-<p>Fonte: <a href="https://www.w3.org/TR/dwbp/">W3C</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>   
-</div>
-<!--internet-->
-<div class="internet">
-</div>
-</li>
+        <li id="ano2021">
+          <h2>2021</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2021-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Fim do Yahoo respostas</span></a
+            >
+            <div id="web-2021-02-box" class="hide">
+              <h3>Fim do Yahoo respostas</h3>
+              <p>
+                <img
+                  src="img/yahoo-respostas.jpg"
+                  alt="Captura de tela de pergunta do Yahoo Respostas"
+                />Plataforma colaborativa de perguntas e respostas lançado em
+                2005 foi encerrado em 2021.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.tecmundo.com.br/internet/215016-fim-yahoo-respostas-desativado-maio-2021.htm"
+                  >Tecmundo</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
 
-<li id="ano2020">
-<h2>2020</h2>
-<!-- web-->
-<div class="web">  
-<a id="web-2020-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>A Web ganha o espaço sideral</span></a><div id="web-2020-01-box" class="hide">
-<h3>A Web ganha o espaço sideral</h3>
-<p><img src="img/spacex.jpg" alt="Captura de tela do reddit com a discussão sobre o painel dos foguetes">SpaceX lança foguete que usa HTML, CSS e JavaScript em seus painéis de controle.</p>
-<p>Fonte: <a href="https://www.reddit.com/r/spacex/comments/gxb7j1/we_are_the_spacex_software_team_ask_us_anything/ft6bydt/">SpaceX Reddit</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div> 
-</div> 
-<!--internet-->
-<div class="internet">
-</div>
-</li>
+        <li id="ano2022">
+          <h2>2022</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2022-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Norma ABNT 17060</span></a
+            >
+            <div id="web-2022-01-box" class="hide">
+              <h3>Lançamento da Norma ABNT 17060</h3>
+              <p>
+                <img
+                  src="img/abnt-mobile.jpg"
+                  alt="Captura de tela de pergunta do Yahoo Respostas"
+                />No dia 26 de outubro de 2022 foi lançada a Norma ABNT para
+                acessibilidade em dispositivos móveis.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://nic.br/noticia/releases/norma-da-abnt-sobre-acessibilidade-para-dispositivos-moveis-torna-a-navegacao-mais-inclusiva/"
+                  >NIC.br</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+            <a
+              id="web-2022-02"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>ChatGPT</span></a
+            >
+            <div id="web-2022-02-box" class="hide">
+              <h3>Lançamento do ChatGPT</h3>
+              <p>
+                <img src="img/chatgpt.jpg" alt="Logo do ChatGPT" />No dia 30 de
+                novembro de 2022 foi disponibilizado para o público, o modelo do
+                LLM GPT-3.5.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.techtudo.com.br/listas/2024/11/quando-o-chatgpt-foi-lancado-tire-duvidas-sobre-plataforma-de-ia-edsoftwares.ghtml"
+                  >Techtudo</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
 
-<li id="ano2021">
-<h2>2021</h2>
-<!-- web-->
-<div class="web">  
-<a id="web-2021-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Fim do Yahoo respostas</span></a><div id="web-2021-02-box" class="hide">
-<h3>Fim do Yahoo respostas</h3>
-<p><img src="img/yahoo-respostas.jpg" alt="Captura de tela de pergunta do Yahoo Respostas">Plataforma colaborativa de perguntas e respostas lançado em 2005 foi encerrado em 2021.</p>
-<p>Fonte: <a href="https://www.tecmundo.com.br/internet/215016-fim-yahoo-respostas-desativado-maio-2021.htm">Tecmundo</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>  
-</div>
-<!--internet-->
-<div class="internet">
-</div>
-</li>
+        <li id="ano2025">
+          <h2>2025</h2>
+          <!-- web-->
+          <div class="web">
+            <a
+              id="web-2025-01"
+              href="#"
+              class="bullet"
+              onclick="abre(event);"
+              ><span>Deepseek</span></a
+            >
+            <div id="web-2025-01-box" class="hide">
+              <h3>Lançamento do Deepseek</h3>
+              <p>
+                <img
+                  src="img/deepseek.png"
+                  alt="Captura de tela de pergunta do Yahoo Respostas"
+                />No dia 20 de janeiro de 2025 foi lançado o LLM com licença de
+                modelo aberto.
+              </p>
+              <p>
+                Fonte:
+                <a
+                  href="https://www.techtarget.com/whatis/feature/DeepSeek-explained-Everything-you-need-to-know"
+                  >Techtarget</a
+                >
+              </p>
+              <a
+                href="#"
+                class="close"
+                title="Fechar"
+                aria-label="Fechar"
+                onclick="fecha();"
+                >X</a
+              >
+            </div>
+          </div>
+          <!--internet-->
+          <div class="internet"></div>
+        </li>
 
-<li id="ano2022">
-<h2>2022</h2>
-<!-- web-->
-<div class="web">  
-<a id="web-2022-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Norma ABNT 17060</span></a><div id="web-2022-01-box" class="hide">
-<h3>Lançamento da Norma ABNT 17060</h3>
-<p><img src="img/abnt-mobile.jpg" alt="Captura de tela de pergunta do Yahoo Respostas">No dia 26 de outubro de 2022 foi lançada a Norma ABNT para acessibilidade em dispositivos móveis.</p>
-<p>Fonte: <a href="https://nic.br/noticia/releases/norma-da-abnt-sobre-acessibilidade-para-dispositivos-moveis-torna-a-navegacao-mais-inclusiva/">NIC.br</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>  
-<a id="web-2022-02" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>ChatGPT</span></a><div id="web-2022-02-box" class="hide">
-<h3>Lançamento do ChatGPT</h3>
-<p><img src="img/chatgpt.jpg" alt="Logo do ChatGPT">No dia 30 de novembro de 2022 foi disponibilizado para o público, o modelo do LLM GPT-3.5.</p>
-<p>Fonte: <a href="https://www.techtudo.com.br/listas/2024/11/quando-o-chatgpt-foi-lancado-tire-duvidas-sobre-plataforma-de-ia-edsoftwares.ghtml">Techtudo</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>  
-</div>
-<!--internet-->
-<div class="internet">
-</div>
-</li>
-
-<li id="ano2025">
-<h2>2025</h2>
-<!-- web-->
-<div class="web">  
-<a id="web-2025-01" href="javascript:void(0);" class="bullet" onclick="abre(event);"><span>Deepseek</span></a><div id="web-2025-01-box" class="hide">
-<h3>Lançamento do Deepseek</h3>
-<p><img src="img/deepseek.png" alt="Captura de tela de pergunta do Yahoo Respostas">No dia 20 de janeiro de 2025 foi lançado o LLM com licença de modelo aberto.</p>
-<p>Fonte: <a href="https://www.techtarget.com/whatis/feature/DeepSeek-explained-Everything-you-need-to-know">Techtarget</a></p>
-<a href="javascript:void(0);" class="close" title="Fechar" aria-label="Fechar" onclick="fecha();">X</a>
-</div>  
-</div>
-<!--internet-->
-<div class="internet">
-</div>
-</li>
-
-<!-- ultimo ano -->
-<li id="end">
-<h2>.</h2>
-<div class="web" id="webls"></div>
-<div class="internet" id="internetls"></div>
-</li>
-</ul>
-<p class="github"><a href="https://github.com/W3CBrasil/linhadotempo-web">Contribua com a Linha do tempo da Web</a></p>
-</main>
-<div id="anoempty"></div>
-<script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/linhadotempo/sw.js')
-        .then(function () {
-          console.log('service worker registered');
-        })
-        .catch(function () {
-          console.warn('service worker failed');
-        });
-    }
-  </script>
-<script src="script.js"></script>
-</body>
+        <!-- ultimo ano -->
+        <li id="end">
+          <h2>.</h2>
+          <div class="web" id="webls"></div>
+          <div class="internet" id="internetls"></div>
+        </li>
+      </ul>
+      <p class="github">
+        <a href="https://github.com/W3CBrasil/linhadotempo-web"
+          >Contribua com a Linha do tempo da Web</a
+        >
+      </p>
+    </main>
+    <div id="anoempty"></div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/linhadotempo/sw.js")
+          .then(function () {
+            console.log("service worker registered");
+          })
+          .catch(function () {
+            console.warn("service worker failed");
+          });
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>

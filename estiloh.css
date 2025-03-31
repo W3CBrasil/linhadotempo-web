@@ -1,275 +1,278 @@
-
 /*@import url(http://fonts.googleapis.com/css?family=Open+Sans|Berkshire+Swash);*/
 @import url("single.css");
 
+/* Skip link funcional (sem alterar visual) */
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip:focus {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  width: auto;
+  height: auto;
+  background: #021a2e;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+}
+
 @font-face {
-    font-family: Berkshire Swash;
-    src: url(BerkshireSwash-Regular.ttf)
+  font-family: Berkshire Swash;
+  src: url(BerkshireSwash-Regular.ttf);
 }
 
-body{
-    background-color: #021a2e;
-    margin: 0px;
-    font-family: 'Open Sans', sans-serif;
-    animation-name: animaform;
-    animation-duration: 1s;
-    /*	overflow-y: hidden;     */
-
+body {
+  background-color: #021a2e;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  animation-name: animaform;
+  animation-duration: 1s;
+  /*	overflow-y: hidden;     */
 }
 
-
-.skip{
-    position: fixed;
-    color: white;
-    top: 10px;
-    z-index: 7;
-    width: 200px;
-    left: 60px;
-    text-align:center;
-    padding: 0;
-    margin: 0;
-    white-space: nowrap;
-    font-size: 0.8em;
+.skip {
+  position: fixed;
+  color: white;
+  top: 10px;
+  z-index: 7;
+  width: 200px;
+  left: 60px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 0.8em;
 }
 .skip a,
-.skip a:visited{
-    color:#021a2e
+.skip a:visited {
+  color: #021a2e;
 }
 
 .skip a:focus,
-.skip a:hover{
-    color: white;
+.skip a:hover {
+  color: white;
 }
 
-header{
-    position: fixed;
-    padding-top: 5px;
-    top: 0px;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    z-index: 6;
-/*    background-color: #021a2e;   */
+header {
+  position: fixed;
+  padding-top: 5px;
+  top: 0px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  z-index: 6;
+  /*    background-color: #021a2e;   */
 }
 
-header img{
-    height: 30px;
-    position: fixed;
-    top: 10px;
-    right: 10px;
+header img {
+  height: 30px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
 
 header a[href|="http://www.w3c.br/"]:focus,
-header a[href|="http://www.w3c.br/"]:hover{
-    height: 33px;
-    width: 43px;
-    position: fixed;
-    top: 7px;
-    left: 7px;
-    border:1px solid yellow;
+header a[href|="http://www.w3c.br/"]:hover
+{
+  height: 33px;
+  width: 43px;
+  position: fixed;
+  top: 7px;
+  left: 7px;
+  border: 1px solid yellow;
 }
 
 header a[href|="http://www.ceweb.br/"]:focus,
-header a[href|="http://www.ceweb.br/"]:hover{
-    height: 33px;
-    width: 203px;
-    position: fixed;
-    top: 7px;
-    right: 8px;
-    border:1px solid yellow;
+header a[href|="http://www.ceweb.br/"]:hover
+{
+  height: 33px;
+  width: 203px;
+  position: fixed;
+  top: 7px;
+  right: 8px;
+  border: 1px solid yellow;
 }
 
 header img[src|="img/logow3c.svg"],
-header img[src|="../img/logow3c.svg"]{
-    left: 10px;
-    right: auto;
+header img[src|="../img/logow3c.svg"] {
+  left: 10px;
+  right: auto;
 }
 
-
-.inst{
-    position: fixed;
-    right: 10px;
-    top: 30px;
-    z-index: 20;
+.inst {
+  position: fixed;
+  right: 10px;
+  top: 30px;
+  z-index: 20;
 }
 
-.inst li{
-    display: inline-block;
+.inst li {
+  display: inline-block;
 }
 
-.inst li a.bullet-ins{
-    background-color: white;
-    display: block;
-    width: 10px;
-    height: 10px;
+.inst li a.bullet-ins {
+  background-color: white;
+  display: block;
+  width: 10px;
+  height: 10px;
 }
 
 .inst a:link,
-.inst a:visited{
-    color: black;
+.inst a:visited {
+  color: black;
 }
 
 .inst a:focus span,
-.inst a:hover span{
-    display:inline;
-    position:fixed;
-    color:white;
-    border:1px solid gray;
-    background:#663399;
-    white-space: pre-wrap;
-    z-index: 10;
+.inst a:hover span {
+  display: inline;
+  position: fixed;
+  color: white;
+  border: 1px solid gray;
+  background: #663399;
+  white-space: pre-wrap;
+  z-index: 10;
 }
-
 
 .inst a span {
-    display:none;
-    width:70px;
-    min-height: 50px;
-    position:fixed;
-    top: 70px;
-    right: 10px;
-    font-size: 0.8em;
-    z-index: -10;
-    text-align: left;
-    padding: 10px;
+  display: none;
+  width: 70px;
+  min-height: 50px;
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  font-size: 0.8em;
+  z-index: -10;
+  text-align: left;
+  padding: 10px;
 }
 
-
-
-
-h1{
-    color: white;
-    padding: 10px 10px 10px 30px;
-    margin-top: 0px;
-    font-family: 'Berkshire Swash', sans-serif;
-    font-size: 4em;
-    margin: 0px;
-    text-align: center;
-    white-space: nowrap;
+h1 {
+  color: white;
+  padding: 10px 10px 10px 30px;
+  margin-top: 0px;
+  font-family: "Berkshire Swash", sans-serif;
+  font-size: 4em;
+  margin: 0px;
+  text-align: center;
+  white-space: nowrap;
 }
 
-main#frame{
-    /*	background: linear-gradient(to bottom, white, silver);
+main#frame {
+  /*	background: linear-gradient(to bottom, white, silver);
         background: url(images/bg00.jpg) 80%;*/
-
 }
 
 a,
-a:visited{
-    color: white;
+a:visited {
+  color: white;
 }
 
-a:hover{
-    color: yellow;
+a:hover {
+  color: yellow;
 }
 
-
-*[lang=en],
-*[lang=fr]
-{
-    font-style: italic;
+*[lang="en"],
+*[lang="fr"] {
+  font-style: italic;
 }
 
 /*--------- lista e celulas dos anos --------*/
-ul#anos{
-    padding-left: 0px;
-    margin-left: 67px;
-    margin-top: 200px;
-
+ul#anos {
+  padding-left: 0px;
+  margin-left: 67px;
+  margin-top: 200px;
 }
 
-ul#anos li{
-    display:table-cell;
-    list-style: none;
-    border-right: 1px dashed yellow;
-    border-collapse: collapse;
-    margin: 0px;
-    padding: 0px 0px;
-    padding-bottom: ;
-    text-align: center;
-    font-family: 'Berkshire Swash', sans-serif;
-    font-size: 1.5em;
-    width: 350px;
-
+ul#anos li {
+  display: table-cell;
+  list-style: none;
+  border-right: 1px dashed yellow;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px 0px;
+  text-align: center;
+  font-family: "Berkshire Swash", sans-serif;
+  font-size: 1.5em;
+  width: 350px;
 }
 
 ul#anos li#ano2025,
-ul#anos li#end{
-    border-right: none;
+ul#anos li#end {
+  border-right: none;
 }
-ul#anos li#end h2{
-    color: #021a2e;
-}
-
-
-h2{
-    color: white;
-    padding: 5px;
-    border-radius: 3px;
-    margin:0px 10px 10px 10px;
-    padding: 0;
+ul#anos li#end h2 {
+  color: #021a2e;
 }
 
-.inst h2{
-    color: black;
-    padding: 5px;
-    border-radius: 3px;
-    margin:0px 10px 10px 10px;
-    padding: 0;
+h2 {
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 0px 10px 10px 10px;
+  padding: 0;
 }
 
+.inst h2 {
+  color: black;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 0px 10px 10px 10px;
+  padding: 0;
+}
 
 /*--------- Esferas de todos os ano --------*/
 
-a.bullet{
-    display: block;
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    margin-top: 7px;
-    transition: 0.5s;
-    transform:scale(0.6);
-    display: inline-block;
-
+a.bullet {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  margin-top: 7px;
+  transition: 0.5s;
+  transform: scale(0.6);
+  display: inline-block;
 }
 
-.square{
-    border-radius: none;
+.square {
+  border-radius: none;
 }
 
 a.bullet:hover,
-a.bullet:focus{
-    transform:scale(1);
-    opacity: 1;
-    background: navy;
-    text-decoration: underline;
-
+a.bullet:focus {
+  transform: scale(1);
+  opacity: 1;
+  background: navy;
+  text-decoration: underline;
 }
 
 /*--------- Esferas por categorias --------*/
 
-a.bullet[id|="web"]{
-    border: 8px solid #197eb0;
+a.bullet[id|="web"] {
+  border: 8px solid #197eb0;
 }
 
-a.bullet[id|="internet"]{
-    border: 8px solid #74913f;
+a.bullet[id|="internet"] {
+  border: 8px solid #74913f;
 }
 
-a.bullet[id|="tecnologia"]{
-    border: 8px solid #bfad06;
+a.bullet[id|="tecnologia"] {
+  border: 8px solid #bfad06;
 }
 
-a.bullet[id|="historia"]{
-    border: 8px solid #a1742d;
+a.bullet[id|="historia"] {
+  border: 8px solid #a1742d;
 }
 
-a.bullet[id|="economia"]{
-    border: 8px solid #bd3d31;
+a.bullet[id|="economia"] {
+  border: 8px solid #bd3d31;
 }
-
 
 /*--------- checkboxes de selecao --------*/
 
@@ -277,225 +280,206 @@ div.internet,
 div.tecnologia,
 div.historia,
 div.economia,
-div.web{
-    /*--------- mudar para deixar somente web como padrao --------*/
-    display:none;
-    background-color: blue;
-    height: 130px;
-    white-space: nowrap;
-    font-size: 0.7em;
+div.web {
+  /*--------- mudar para deixar somente web como padrao --------*/
+  display: none;
+  background-color: blue;
+  height: 130px;
+  white-space: nowrap;
+  font-size: 0.7em;
 }
 
-div.web{
-    display: block;
+div.web {
+  display: block;
 }
 
 div#webfs:before,
 div#internetfs:before,
 div#tecnologiafs:before,
 div#historiafs:before,
-div#economiafs:before{
-    content: "";
-    border-radius: 100px;
-    display: block;
-    height: 130px;
-    width: 144px;
-    position: absolute;
-    left: 0px;
-    z-index: 0;
+div#economiafs:before {
+  content: "";
+  border-radius: 100px;
+  display: block;
+  height: 130px;
+  width: 144px;
+  position: absolute;
+  left: 0px;
+  z-index: 0;
 }
-
 
 div#webls:after,
 div#internetls:after,
 div#tecnologials:after,
 div#historials:after,
-div#economials:after{
-    content: "";
-    border-radius: 100px;
-    height: 130px;
-    width: 144px;
-    display:inline-block;
-    white-space: nowrap;
-    z-index:-1 ;
-
+div#economials:after {
+  content: "";
+  border-radius: 100px;
+  height: 130px;
+  width: 144px;
+  display: inline-block;
+  white-space: nowrap;
+  z-index: -1;
 }
 
 div#webls,
 div#internetls,
 div#tecnologials,
 div#historials,
-div#economials{
-    background: none;
-    margin-left: -70px;
-    width: 67px;
-
+div#economials {
+  background: none;
+  margin-left: -70px;
+  width: 67px;
 }
-
 
 div#webfs:before,
-div#webls:after{
-    background-color: #9ac1db;
+div#webls:after {
+  background-color: #9ac1db;
 }
 div#internetfs:before,
-div#internetls:after{
-    background-color: #a5b828;
+div#internetls:after {
+  background-color: #a5b828;
 }
 div#tecnologiafs:before,
-div#tecnologials:after{
-    background-color: #f0af24;
+div#tecnologials:after {
+  background-color: #f0af24;
 }
 div#historiafs:before,
-div#historials:after{
-    background-color: #d65109;
+div#historials:after {
+  background-color: #d65109;
 }
 div#economiafs:before,
-div#economials:after{
-    background-color: #611700	;
+div#economials:after {
+  background-color: #611700;
 }
 
-div.web{
-    background: #9ac1db;
+div.web {
+  background: #9ac1db;
 }
 
-div.internet{
-    background: #a5b828;
+div.internet {
+  background: #a5b828;
 }
 
-div.tecnologia{
-    background: #f0af24;
+div.tecnologia {
+  background: #f0af24;
 }
 
-div.historia{
-    background: #d65109;
+div.historia {
+  background: #d65109;
 }
 
-div.economia{
-    background: #611700;
+div.economia {
+  background: #611700;
 }
 
-
-
-ul#anos li ul.secitem li{
-    display: ;
-    border-right: 0px solid blue;
+ul#anos li ul.secitem li {
+  border-right: 0px solid blue;
 }
 
-
-nav{
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    z-index: 5;
-    position: fixed;
-    top: 100px;
-    width: 100%;
-    background-color: #021a2e;
-
+nav {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  z-index: 5;
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  background-color: #021a2e;
 }
 
-form{
-
+fieldset {
+  border: none;
 }
 
-fieldset{
-    border: none;
+legend {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
 }
 
-legend{
-    color: white;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-    width: 100%;
-
+label {
+  margin: 3px 20px 3px 0px;
+  padding: 3px;
+  white-space: nowrap;
+  border-radius: 100px;
+  display: inline-block;
+  width: 120px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #0052cc;
 }
 
-label{
-    margin: 3px 20px 3px 0px;
-    padding: 3px;
-    white-space: nowrap;
-    border-radius: 100px;
-    display: inline-block;
-    width: 120px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: white;
-    border:1px solid #0052cc;
+input[type="submit"] {
+  display: none;
 }
 
-input[type=submit]{
-    display: none;
+label[for="checkweb"] {
+  background-color: #076492;
+}
+label[for="checkweb"]:hover {
+  background-color: #0a96db;
 }
 
-label[for=checkweb]{
-    background-color: #076492;
-}
-label[for=checkweb]:hover{
-    background-color: #0a96db;
+label[for="checkint"] {
+  background-color: #475927;
 }
 
-
-label[for=checkint]{
-    background-color: #475927;
-}
-
-label[for=checkint]:hover{
-    background-color: #7fa046;
+label[for="checkint"]:hover {
+  background-color: #7fa046;
 }
 
 input#checkweb:focus,
-input#checkint:focus{
-
-
+input#checkint:focus {
 }
-
 
 /*--------- tooltip de todos os ano --------*/
 
 a.bullet:focus span,
-a.bullet:hover span{
-    display:inline;
-    position:absolute;
-    color:white;
-    border:1px solid gray;
-    background:#663399;
-    white-space: pre-wrap;
-    z-index: -1;
+a.bullet:hover span {
+  display: inline;
+  position: absolute;
+  color: white;
+  border: 1px solid gray;
+  background: #663399;
+  white-space: pre-wrap;
+  z-index: -1;
 }
 
-
 a.bullet span {
-    display:none;
-    padding:14px 20px;
-    margin-top:-35px;
-    margin-left:28px;
-    width:300px;
-    line-height:20px;
-    z-index: 1;
+  display: none;
+  padding: 14px 20px;
+  margin-top: -35px;
+  margin-left: 28px;
+  width: 300px;
+  line-height: 20px;
+  z-index: 1;
 }
 
 #ano2022 a.bullet span,
 #ano2025 a.bullet span {
-    display:none;
-    padding:14px 20px;
-    margin-top:-35px;
-    margin-left:-370px;
-    width:300px;
-    line-height:20px;
-    z-index: 1;
+  display: none;
+  padding: 14px 20px;
+  margin-top: -35px;
+  margin-left: -370px;
+  width: 300px;
+  line-height: 20px;
+  z-index: 1;
 }
 
 #ano2022 a.bullet:focus span,
 #ano2022 a.bullet:hover span,
 #ano2025 a.bullet:focus span,
-#ano2025 a.bullet:hover span{
-    display:inline;
-    position:absolute;
-    color:white;
-    border:1px solid gray;
-    background:#663399;
-    white-space: pre-wrap;
-    z-index: -1;
+#ano2025 a.bullet:hover span {
+  display: inline;
+  position: absolute;
+  color: white;
+  border: 1px solid gray;
+  background: #663399;
+  white-space: pre-wrap;
+  z-index: -1;
 }
 
 /*--------- Conteudo exibido ao clicar - Gerais--------*/
@@ -507,286 +491,274 @@ div[id|="historia"],
 div[id|="economia"],
 div[id|="browse"],
 div[id|="contrib"],
-div[id|="about"]{
-    position: fixed;
-    top:180px;
-    left: 20%;
-    z-index: 100;
-    height: 300px;
-    width: 500px;
-    color: white;
-    border: 7px solid white;
-    padding: 10px;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
-    font-family: 'Open Sans', sans-serif;
-    white-space: normal;
-    display: none;
+div[id|="about"] {
+  position: fixed;
+  top: 180px;
+  left: 20%;
+  z-index: 100;
+  height: 300px;
+  width: 500px;
+  color: white;
+  border: 7px solid white;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  font-family: "Open Sans", sans-serif;
+  white-space: normal;
+  display: none;
 }
 
-div[id|="internet"]{
-    background: #74913f;
+div[id|="internet"] {
+  background: #74913f;
 }
-div[id|="tecnologia"]{
-    background: #bfad06;
+div[id|="tecnologia"] {
+  background: #bfad06;
 }
-div[id|="web"]{
-    background: #377ba6;
+div[id|="web"] {
+  background: #377ba6;
 }
-div[id|="historia"]{
-    background: #a1742d;
-
+div[id|="historia"] {
+  background: #a1742d;
 }
-div[id|="economia"]{
-    background: #bd3d31;
-    color: black;
+div[id|="economia"] {
+  background: #bd3d31;
+  color: black;
 }
 
 div[id|="browse"],
 div[id|="contrib"],
-div[id|="about"]{
-    background: silver;
-    color: black;
+div[id|="about"] {
+  background: silver;
+  color: black;
 }
 
-
-
-div p{
-    text-align: left;
-    padding: 10px;
+div p {
+  text-align: left;
+  padding: 10px;
 }
 
-div img{
-    float: left;
-    width: 40%;
-    margin-right: 10px;
-    border: 2px solid white;
-    box-shadow: 2px 2px 5px black;
+div img {
+  float: left;
+  width: 40%;
+  margin-right: 10px;
+  border: 2px solid white;
+  box-shadow: 2px 2px 5px black;
 }
 
-.close{
-    border: 1px solid silver;
-    border-right: 2px solid silver;
-    border-bottom: 2px solid silver;
-    padding-left: 3px;
-    background-color:gray;
-    float: right;
-    width: 20px;
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    color: white;
-    text-decoration: none;
-    transition:0.5s;
-    font-size: 1px;
+.close {
+  border: 1px solid silver;
+  border-right: 2px solid silver;
+  border-bottom: 2px solid silver;
+  padding-left: 3px;
+  background-color: gray;
+  float: right;
+  width: 20px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 1px;
 }
 
-.close:before{
-    content: "X";
-    font-size: 12px;
+.close:before {
+  content: "X";
+  font-size: 12px;
 }
 
 .close:hover,
-.close:focus{
-    background-color:white;
-    color: gray;
+.close:focus {
+  background-color: white;
+  color: gray;
 }
-
 
 @media print {
-    body{
-        background-color: transparent;
-        color: black;
-    }
+  body {
+    background-color: transparent;
+    color: black;
+  }
 
+  ul#anos {
+    padding-left: 0px;
+    padding-top: 100px;
+    margin: 0 auto;
+    width: 600px;
+  }
 
-    ul#anos{
-        padding-left: 0px;
-        padding-top: 100px;
-        margin: 0 auto;
-        width: 600px;
-    }
+  ul#anos li {
+    display: table-row;
+    list-style: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px 0px;
+    text-align: center;
+    font-family: "Berkshire Swash", sans-serif;
+    font-size: 1.5em;
+    margin-left: 67px;
+    width: 600px;
+  }
 
-    ul#anos li{
-        display:table-row;
-        list-style: none;
-        border-collapse: collapse;
-        margin: 0px;
-        padding: 0px 0px;
-        padding-bottom: ;
-        text-align: center;
-        font-family: 'Berkshire Swash', sans-serif;
-        font-size: 1.5em;
-        margin-left: 67px;
-        width: 600px;
+  ul#anos li#end {
+    display: none;
+  }
+  ul#anos li#end h2 {
+    color: #021a2e;
+  }
 
+  li div.internet,
+  li div.tecnologia,
+  li div.historia,
+  li div.economia,
+  li div.web {
+    /*--------- mudar para deixar somente web como padrao --------*/
+    display: inline;
+    color: black;
+  }
 
-    }
+  div.hide {
+    display: block;
+    position: inherit;
+    width: 100%;
+  }
 
-    ul#anos li#end{
-        display:none;
-    }
-    ul#anos li#end h2{
-        color: #021a2e;
-    }
+  div a.bullet,
+  div[id|="browse"],
+  div[id|="contrib"],
+  div[id|="about"],
+  nav,
+  div#webfs:before,
+  div#webls:after,
+  div#internetfs:before,
+  div#internetls:after,
+  .close,
+  form,
+  .inst {
+    display: none;
+  }
 
-    li div.internet,
-    li div.tecnologia,
-    li div.historia,
-    li div.economia,
-    li div.web{
-        /*--------- mudar para deixar somente web como padrao --------*/
-        display:inline;
-        color: black;
-    }
+  li h2,
+  h1 {
+    color: black;
+  }
 
-    div.hide{
-        display: block;
-        position: inherit;
-        width: 100%;
-    }
+  main ul#anos {
+    margin-top: 0px;
+  }
 
-    div a.bullet,
-    div[id|="browse"],
-    div[id|="contrib"],
-    div[id|="about"],
-    nav,
-    div#webfs:before,
-    div#webls:after,
-    div#internetfs:before,
-    div#internetls:after,
-    .close,
-    form,
-    .inst{
-
-        display: none;
-    }
-
-    li h2,
-    h1{
-        color: black;
-    }
-
-    main ul#anos{
-        margin-top: 0px;
-
-    }
-
-    header img[src|="img/logow3c.svg"],
-    header img[src|="img/logosceweb.svg"]{
-        background-color: black;
-        top: 50px;
-    }
+  header img[src|="img/logow3c.svg"],
+  header img[src|="img/logosceweb.svg"] {
+    background-color: black;
+    top: 50px;
+  }
 }
 
-.github{
-    color: white;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    font-size: 0.7em;
-    margin: 0px;
+.github {
+  color: white;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  font-size: 0.7em;
+  margin: 0px;
 }
 /* formulario de perguntas */
 
-@keyframes animaform{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+@keyframes animaform {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes animaformout{
-    0%{
-        opacity: 0;
-    }
+@keyframes animaformout {
+  0% {
+    opacity: 0;
+  }
 
-    0.0001%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
+  0.0001% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-.previous{
-    position: absolute;
-    z-index: 6;
-    background-color: rgba(256, 256, 256, 0.95);
-    background-size: 2000px;
-    top: 0px;
-    right: 0px;
-    width: 100%;
-    height: 100%;
-    color: black;
-    padding-top: 130px;
-
-
+.previous {
+  position: absolute;
+  z-index: 6;
+  background-color: rgba(256, 256, 256, 0.95);
+  background-size: 2000px;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  color: black;
+  padding-top: 130px;
 }
 
-.previous form{
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+.previous form {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.previous > p{
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1em;
+.previous > p {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em;
 }
 
 .previous legend,
 .previous label,
-.previous a{
-    color: black;
+.previous a {
+  color: black;
 }
 
-.previous label{
-    display: block;
+.previous label {
+  display: block;
 }
 
-.previous p{
-    margin-bottom: 20px;
-    margin-top: 0px;
-    padding-top: 20px;
+.previous p {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  padding-top: 20px;
 }
 
 .usointernet,
-.classeusointernet{
-    background-color: red;
+.classeusointernet {
+  background-color: red;
 }
 
 .usoweb,
-.classeusoweb{
-    background-color: blue;
+.classeusoweb {
+  background-color: blue;
 }
 
 .usoimagem,
-.classusoimagem{
-    background-color: pink;
+.classusoimagem {
+  background-color: pink;
 }
 
 .usovideo,
-.classusovideo{
-    background-color: yellow;
+.classusovideo {
+  background-color: yellow;
 }
 
 .usocompra,
-.classusocompra{
-    background-color: green;
+.classusocompra {
+  background-color: green;
 }
 
 .usobusca,
-.classusobusca{
-    background-color: #00CCFF;
+.classusobusca {
+  background-color: #00ccff;
 }
 
 .usorede,
-.classusorede{
-    background-color: gold;
+.classusorede {
+  background-color: gold;
 }
 
 .usointernet,
@@ -795,11 +767,9 @@ div img{
 .usovideo,
 .usocompra,
 .usobusca,
-.usorede{
-    padding: 3px;
+.usorede {
+  padding: 3px;
 }
-
-
 
 .classeusointernet,
 .classeusoweb,
@@ -807,37 +777,33 @@ div img{
 .classusovideo,
 .classusocompra,
 .classusobusca,
-.classusorede{
-    float: left;
-    font-family: verdana;
-    font-size: 0.6em;
-    z-index: 1;
-    width: 100%;
-    display: inline;
-    min-height: 40px;
+.classusorede {
+  float: left;
+  font-family: verdana;
+  font-size: 0.6em;
+  z-index: 1;
+  width: 100%;
+  display: inline;
+  min-height: 40px;
 }
 
-
-
-.previous a{
-    background-color: #3399FF;
-    padding: 10px;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 3px 3px 3px silver;
-    transition: 1s;
+.previous a {
+  background-color: #3399ff;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px silver;
+  transition: 1s;
 }
 
 .previous a:hover,
-.previous a:focus{
-    background-color: #3399CC;
-    text-decoration: underline;
-    transform: scale(1.1);
-
+.previous a:focus {
+  background-color: #3399cc;
+  text-decoration: underline;
+  transform: scale(1.1);
 }
-
 
 div.anoempty .classeusointernet,
 div.anoempty .classeusoweb,
@@ -845,205 +811,205 @@ div.anoempty .classusoimagem,
 div.anoempty .classusovideo,
 div.anoempty .classusocompra,
 div.anoempty .classusobusca,
-div.anoempty .classusorede{
-    background: red;
-    display: none;
-    visibility: hidden;
+div.anoempty .classusorede {
+  background: red;
+  display: none;
+  visibility: hidden;
 }
 
-
-label[for|="buscanaweblist"]{
-    display: none;
+label[for|="buscanaweblist"] {
+  display: none;
 }
-
 
 /* MOBILE */
 
-
 @media (min-width: 0px) and (max-width: 1023px) {
-    body{
-        width: 100%;
-    }
+  body {
+    width: 100%;
+  }
 
+  header h1 {
+    font-size: 180%;
+    padding: 5px 0px 0px 10px;
+    text-align: center;
+  }
+  body header {
+    padding-top: 1px;
+  }
 
+  main ul#anos {
+    margin-top: 140px;
+  }
 
-    header h1{
-        font-size: 180%;
-        padding: 5px 0px 0px 10px;
-        text-align: center;
-    }
-    body header{
-        padding-top: 1px;
-    }
+  li h2 {
+    font-size: 1em;
+  }
 
-    main ul#anos{
-        margin-top: 140px;
-    }
+  div a.bullet {
+    display: block;
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    border: 2px solid;
+  }
 
-    li h2{
-        font-size: 1em;
-    }
+  div a.bullet[id|="web"] {
+    border: 4px solid #197eb0;
+  }
 
-    div a.bullet{
-        display: block;
-        height: 80px;
-        width: 80px;
-        display: inline-block;
-        border: 2px solid;
-    }
+  div a.bullet[id|="internet"] {
+    border: 4px solid #74913f;
+  }
 
-    div a.bullet[id|="web"]{
-        border: 4px solid #197eb0;
-    }
+  div a.bullet[id|="tecnologia"] {
+    border: 4px solid #bfad06;
+  }
 
-    div a.bullet[id|="internet"]{
-        border: 4px solid #74913f;
-    }
+  div a.bullet[id|="historia"] {
+    border: 4px solid #a1742d;
+  }
 
-    div a.bullet[id|="tecnologia"]{
-        border: 4px solid #bfad06;
-    }
+  div a.bullet[id|="economia"] {
+    border: 4px solid #bd3d31;
+  }
 
-    div a.bullet[id|="historia"]{
-        border: 4px solid #a1742d;
-    }
+  .skip,
+  #vertical {
+    display: none;
+  }
 
-    div a.bullet[id|="economia"]{
-        border: 4px solid #bd3d31;
-    }
+  a.simple :visited {
+    color: white;
+  }
 
+  body nav {
+    top: 50px;
+    background-color: #021a2e;
+  }
+  nav fieldset {
+    padding: 0px;
+  }
 
-    .skip,
-    #vertical
-    {
-        display: none;
-    }
+  fieldset legend {
+  }
 
-    a.simple :visited{
-        color: white;
-    }
+  header img,
+  header img[src|="img/logosceweb.svg"] {
+    left: auto;
+    top: 400px;
+    z-index: 0;
+  }
 
-    body nav{
-        top: 50px;
-        background-color: #021a2e;
+  header img[src|="img/logow3c.svg"] {
+    left: 10px;
+    top: 400px;
+    z-index: 0;
+  }
 
-    }
-    nav fieldset{
-        padding: 0px;
-    }
+  header a[href|="http://www.w3c.br/"]:focus,
+    header a[href|="http://www.w3c.br/"]:hover
+  {
+    top: 400px;
+  }
 
-    fieldset legend{
+  header a[href|="http://www.ceweb.br/"]:focus,
+    header a[href|="http://www.ceweb.br/"]:hover
+  {
+    top: 400px;
+  }
 
-    }
+  main div[id|="internet"],
+  main div[id|="tecnologia"],
+  main div[id|="web"],
+  main div[id|="historia"],
+  main div[id|="economia"],
+  header div[id|="browse"],
+  header div[id|="contrib"],
+  header div[id|="about"] {
+    top: 40px;
+    left: 10px;
+    width: 270px;
+    height: 240px;
+    font-size: 0.8em;
+  }
 
-    header img,
-    header img[src|="img/logosceweb.svg"]{
-        left: auto;
-        top: 400px;
-        z-index: 0;
-    }
+  main div.internet,
+  main div.tecnologia,
+  main div.historia,
+  main div.economia,
+  main div.web {
+    height: 100px;
+  }
 
+  main div#webfs:before,
+  main div#internetfs:before,
+  main div#tecnologiafs:before,
+  main div#historiafs:before,
+  main div#economiafs:before,
+  main div#webls:after,
+  main div#internetls:after,
+  main div#tecnologials:after,
+  main div#historials:after,
+  main div#economials:after {
+    width: 130px;
+    height: 100px;
+  }
 
-    header img[src|="img/logow3c.svg"]{
-        left: 10px;
-        top: 400px;
-        z-index: 0;
-    }
+  div h3 {
+    margin-top: 0px;
+    font-size: 0.9em;
+  }
 
-    header a[href|="http://www.w3c.br/"]:focus,
-    header a[href|="http://www.w3c.br/"]:hover{
-        top: 400px;
-    }
+  div a.bullet span,
+  div a.bullet span {
+    display: none;
+    padding: 7px 10px;
+    margin-top: -30px;
+    margin-left: -170px;
+    width: 300px;
+    line-height: 20px;
+    position: fixed;
+  }
 
-    header a[href|="http://www.ceweb.br/"]:focus,
-    header a[href|="http://www.ceweb.br/"]:hover{
-        top: 400px;
-    }
+  div img {
+    width: 20%;
+  }
 
-
-    main div[id|="internet"],
-    main div[id|="tecnologia"],
-    main div[id|="web"],
-    main div[id|="historia"],
-    main div[id|="economia"],
-    header div[id|="browse"],
-    header div[id|="contrib"],
-    header div[id|="about"]{
-        top: 40px;
-        left: 10px;
-        width: 270px;
-        height: 240px;
-        font-size: 0.8em;
-    }
-
-    main div.internet,
-    main div.tecnologia,
-    main div.historia,
-    main div.economia,
-    main div.web{
-        height: 100px;
-    }
-
-    main div#webfs:before,
-    main div#internetfs:before,
-    main div#tecnologiafs:before,
-    main div#historiafs:before,
-    main div#economiafs:before,
-    main div#webls:after,
-    main div#internetls:after,
-    main div#tecnologials:after,
-    main div#historials:after,
-    main div#economials:after{
-        width: 130px;
-        height: 100px;
-    }
-
-    div h3{
-        margin-top: 0px;
-        font-size: 0.9em;
-    }
-
-    div a.bullet span,
-    div a.bullet span {
-        display:none;
-        padding:7px 10px;
-        margin-top:-30px;
-        margin-left:-170px;
-        width:300px;
-        line-height:20px;
-        position: fixed;
-    }
-
-    div img{
-        width: 20%;
-    }
-
-
-    .github{
-        position: fixed;
-        top: 430px;
-    }
+  .github {
+    position: fixed;
+    top: 430px;
+  }
 }
-
 
 @media (min-width: 0px) and (max-width: 1023px) and (orientation: landscape) {
-    main div[id|="internet"],
-    main div[id|="tecnologia"],
-    main div[id|="web"],
-    main div[id|="historia"],
-    main div[id|="economia"],
-    header div[id|="browse"],
-    header div[id|="contrib"],
-    header div[id|="about"]{
-        top: 40px;
-        left: 10px;
-        width: 470px;
-        height: 240px;
-        font-size: 0.9em;
-        z-index: 6;
-    }
-
-
+  main div[id|="internet"],
+  main div[id|="tecnologia"],
+  main div[id|="web"],
+  main div[id|="historia"],
+  main div[id|="economia"],
+  header div[id|="browse"],
+  header div[id|="contrib"],
+  header div[id|="about"] {
+    top: 40px;
+    left: 10px;
+    width: 470px;
+    height: 240px;
+    font-size: 0.9em;
+    z-index: 6;
+  }
 }
 
+/* === ACESSIBILIDADE === */
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px dashed yellow !important;
+  outline-offset: 2px;
+}
 
+/* === PERFORMANCE === */
+@font-face {
+  font-family: "Berkshire Swash";
+  src: url("BerkshireSwash-Regular.ttf") format("truetype");
+  font-display: swap; 
+}
